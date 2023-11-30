@@ -22,7 +22,6 @@ import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
 import utils.Paths;
 
-@Test(groups = "ABEVerifyMurabahaAccountOpeningMurabahaFinancingTest", dependsOnGroups = "ABEOpenMurabahaAccountMurabahaFinancingTest")
 @Listeners({AllureTestNg.class})
 public class ABEVerifyMurabahaAccountOpeningMurabahaFinancingTest {
 	WebDriver driver = null;

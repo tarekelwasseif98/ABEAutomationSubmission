@@ -220,6 +220,7 @@ public class ABEOpenMudarabahTUAPage {
 	@Step("Press submit button")
 	public ABEOpenMudarabahTUAPage pressSubmitButton() throws Exception {
 		PageFunctionUtils.clickOnElement(driver, submitButton);
+		PageFunctionUtils.sleep();
 		PageFunctionUtils.acceptWarning(driver);
 		PageFunctionUtils.waitOnElement(driver, accountIdSuccessMessage);
 		accountId = driver.findElement(accountIdSuccessMessage).getText().substring(87);

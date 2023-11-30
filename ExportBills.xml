@@ -6,18 +6,6 @@
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
 </listeners>
 <test thread-count="1" name="Export Bills">
-	<groups>
-		<run>
-			<include name="ABELodgeExportBillsTradeFinanceTest"/>
-			<include name="ABEVerifyLodgeExportBillsTradeFinanceTest"/>
-			<include name="ABEAcceptExportBillsTradeFinanceTest"/>
-			<include name="ABEVerifyAcceptExportBillsTradeFinanceTest"/>
-			<include name="ABEPurchaseExportBillsTradeFinanceTest"/>
-			<include name="ABEVerifyPurchaseExportBillsTradeFinanceTest"/>
-			<include name="ABERealizeExportBillsTradeFinanceTest"/>
-			<include name="ABEVerifyRealizeExportBillsTradeFinanceTest"/>
-        </run>
-    </groups>
     <classes>
 		<class name="tests.ABELodgeExportBillsTradeFinanceTest"/>
 		<class name="tests.ABEVerifyLodgeExportBillsTradeFinanceTest"/>

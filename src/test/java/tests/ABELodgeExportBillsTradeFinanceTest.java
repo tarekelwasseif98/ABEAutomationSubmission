@@ -26,7 +26,6 @@ import utils.AssertionFactory;
 import utils.CSVUtils;
 import io.qameta.allure.testng.AllureTestNg;
 
-@Test(groups = "ABELodgeExportBillsTradeFinanceTest")
 @Listeners({AllureTestNg.class})
 public class ABELodgeExportBillsTradeFinanceTest {
 	@BeforeClass
@@ -52,7 +51,7 @@ public class ABELodgeExportBillsTradeFinanceTest {
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYREALIZEEXPORTBILLSTRADEFINANCECSV, "mixedBillId1");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYREALIZEEXPORTBILLSTRADEFINANCECSV, "mixedBillId2");
 	}
-
+	
 	WebDriver driver = null;
 	@BeforeMethod(description= "Initiating Browser")
 	public void beforeTest(Object [] testData) throws Exception {

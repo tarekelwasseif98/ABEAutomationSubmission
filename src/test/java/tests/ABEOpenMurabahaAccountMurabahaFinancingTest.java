@@ -26,15 +26,16 @@ import utils.AssertionFactory;
 import utils.CSVUtils;
 import io.qameta.allure.testng.AllureTestNg;
 
-@Test(groups = "ABEOpenMurabahaAccountMurabahaFinancingTest")
 @Listeners({AllureTestNg.class})
 public class ABEOpenMurabahaAccountMurabahaFinancingTest {
 	@BeforeClass
 	public void oneTimeSetUp() throws IOException, CsvException {
 		CSVUtils.clearColumnByName(Paths.ABEOPENMURABAHAACCOUNTMURABAHAFINANCINGCSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYMURABAHAACCOUNTOPENINGMURABAHAFINANCINGCSV, "accountId");
+		CSVUtils.clearColumnByName(Paths.ABEDISBURSEMURABAHAACCOUNTMURABAHAFINANCINGCSV, "murabahaAccountId");
+		CSVUtils.clearColumnByName(Paths.ABEVERIFYMURABAHAACCOUNTDISBURSEMENTMURABAHAFINANCINGCSV, "accountId");
 	}
-
+	
 	WebDriver driver = null;
 	@BeforeMethod(description= "Initiating Browser")
 	public void beforeTest(Object [] testData) throws Exception {
@@ -72,11 +73,9 @@ public class ABEOpenMurabahaAccountMurabahaFinancingTest {
 	public void after(ITestResult result) {
 		if (result.getStatus() == ITestResult.SUCCESS) {
             ScreenshotHelper.captureScreenshot(driver);
-            System.out.println("success");
         }
 		 if (result.getStatus() == ITestResult.FAILURE) {
 	            ScreenshotHelper.captureScreenshot(driver);
-	            System.out.println("fail");
 
 	        }
 		 

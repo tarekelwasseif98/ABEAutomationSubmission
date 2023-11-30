@@ -145,7 +145,7 @@
 		<name>Aspose Java API</name>
 		<url>https://repository.aspose.com/repo/</url>
 	</repository>
-	</repositories>
+</repositories>
   
  <build>
 	 <plugins>
@@ -155,7 +155,7 @@
     		 <version>3.0.0-M4</version>
     		 <configuration>
 				 <suiteXmlFiles>
-					 <suiteXmlFile>TUA.xml</suiteXmlFile>
+					 <suiteXmlFile>ExportBills.xml</suiteXmlFile>
 				</suiteXmlFiles>
 				<properties>
 					<property>

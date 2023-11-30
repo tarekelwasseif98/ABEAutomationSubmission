@@ -23,7 +23,6 @@ import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
 
-@Test(groups = "ABEDisburseCorporateLoanCorporateLoansTest")
 @Listeners({AllureTestNg.class})
 public class ABEDisburseCorporateLoanCorporateLoansTest {
 	WebDriver driver = null;

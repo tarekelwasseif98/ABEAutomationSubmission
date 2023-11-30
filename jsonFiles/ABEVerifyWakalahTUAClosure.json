@@ -1,0 +1,145 @@
+[
+ {
+  "tcId": "FCB-10178",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WakalahTUA_WTD07_ByChecker_H2",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10180",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WakalahTUA_WTD1M_ByChecker_I2",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1772062489510101756",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10182",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WakalahTUA_WTD3M_ByChecker_J2",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1773062489510101762",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10184",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WakalahTUA_WTD6M_ByChecker_K2",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1774062489510101778",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10186",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WakalahTUA_WTD9M_ByChecker_L2",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1775062489510101784",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10188",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WakalahTUA_WTD1Y_ByChecker_M2",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1777062489510101799",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10190",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WakalahTUA_WTD2Y_ByChecker_N2",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1778062489510101804",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10192",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WakalahTUA_WTD3Y_ByChecker_O2",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1779062489510101810",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-22637",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WTD1Y_Account_Monthly_ByChecker",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1780062489510101823",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-22638",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WTD2Y_Account_Monthly_ByChecker",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1782062489510101838",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-22639",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WTD3Y_Account_Monthly_ByChecker",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1784062489510101843",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-22640",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WTD1Y_Account_Quarterly_ByChecker",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1781062489510101853",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-22641",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WTD2Y_Account_Quarterly_ByChecker",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1783062489510101868",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-22642",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_WTD3Y_Account_Quarterly_ByChecker",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1785062489510101873",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-22635",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_AlKhayr3Years_Account_Monthly_ByChecker",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1786062489510101889",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-22636",
+  "summary": "IslamicBanking_WakalahTUA_Verify_Preclosure_AlKhayr3Years_Account_Annually_ByChecker",
+  "username": "PT10",
+  "password": "Infy@123",
+  "menu": "VTDAC",
+  "accountId": "'1787062489510101895",
+  "expectedResult": "successfully"
+ }
+]

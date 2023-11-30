@@ -6,14 +6,6 @@
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
 </listeners>
 <test thread-count="1" name="Murabaha Financing">
-	<groups>
-		<run>
-			<include name="ABEOpenMurabahaAccountMurabahaFinancingTest"/>
-            <include name="ABEVerifyMurabahaAccountOpeningMurabahaFinancingTest"/>
-            <include name="ABEDisburseMurabahaAccountMurabahaFinancingTest"/>
-            <include name="ABEVerifyMurabahaAccountDisbursementMurabahaFinancingTest"/>
-        </run>
-    </groups>
     <classes>
 		<class name="tests.ABEOpenMurabahaAccountMurabahaFinancingTest"/>
 	 	<class name="tests.ABEVerifyMurabahaAccountOpeningMurabahaFinancingTest"/>

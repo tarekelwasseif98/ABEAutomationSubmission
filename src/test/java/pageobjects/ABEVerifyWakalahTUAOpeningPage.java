@@ -92,6 +92,7 @@ public class ABEVerifyWakalahTUAOpeningPage {
 	public ABEVerifyWakalahTUAOpeningPage pressSubmitButton() throws Exception {
 		PageFunctionUtils.clickOnElement(driver, submitButton);
 		PageFunctionUtils.acceptWarning(driver);
+		PageFunctionUtils.sleep();
 		PageFunctionUtils.acceptWarning(driver);
 		PageFunctionUtils.scrollUpToElement(driver, menuNameTextBox);
 		return this;
