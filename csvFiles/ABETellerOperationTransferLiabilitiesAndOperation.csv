@@ -1,0 +1,24 @@
+tcId,summary,username,password,menu,accountIdCr,ccyCr,accountIdDr,ccyDr,transactionAmount,expectedResult,reference
+FCB-2167,Operations_TellerOperations_CashTransfer_CrossCurrency_USDtoEUR_Maker,PT42,Infy@123,MCITTD,'10060616861003903,EUR,'11120618641902001 ,USD,1,posted successfully,'AE0000661
+FCB-2020,Operations_TellerOperation_CashTransfer_EGP_Maker,PT42,Infy@123,MCITTD,'10100661764201001,EGP,'10100661764301001,EGP,800,posted successfully,'AE0000662
+FCB-2029,Operations_TellerOperation_CashTransfer_AED_Maker,PT42,Infy@123,MCITTD,'10060616861005868 ,AED,'10080616861005875,AED,25,posted successfully,'AE0000663
+FCB-2035,Operations_TellerOperation_CashTransfer_AUD_Maker,PT42,Infy@123,MCITTD,'10060616861008883,AUD,'10060616861008892,AUD,25,posted successfully,'AE0000664
+FCB-2032,Operations_TellerOperation_CashTransfer_CHF_Maker,PT42,Infy@123,MCITTD,,CHF,,CHF,25,posted successfully,
+FCB-2102,Operations_TellerOperation_CashTransfer_CrossCurrency_Entry_Maker,PT42,Infy@123,MCITTD,'10160066408802077,USD,'10100661764301001,EGP,100,posted successfully,'AE0000665
+FCB-2100,Operations_TellerOperation_CashTransfer_EGP_Entry_Maker,PT42,Infy@123,MCITTD,'10100661764201001,EGP,'10100661764301001,EGP,900,posted successfully,'AE0000666
+FCB-2023,Operations_TellerOperation_CashTransfer_EUR_Maker,PT42,Infy@123,MCITTD,'10060616861003903,EUR,'10060616861003912,EUR,30,posted successfully,'AE0000667
+FCB-2026,Operations_TellerOperation_CashTransfer_GBP_Maker,PT42,Infy@123,MCITTD,'10060616861004920,GBP,'10060616861004939,GBP,15,posted successfully,'AE0000668
+FCB-2041,Operations_TellerOperation_CashTransfer_JPY_Maker,PT42,Infy@123,MCITTD,'10060616861009943 ,JPY,'10060616861009952,JPY,15,posted successfully,'AE0000669
+FCB-2038,Operations_TellerOperation_CashTransfer_SAR_Maker,PT42,Infy@123,MCITTD,'10100659324507001,SAR,'11120540843107001,SAR,15,posted successfully,'AE0000670
+FCB-2017,Operations_TellerOperation_CashTransfer_USD_Maker,PT42,Infy@123,MCITTD,'10160066408802077,USD,'11120618641902001 ,USD,3,posted successfully,'AE0000671
+FCB-1976,Operations_TellerOperations_CashTransfer_Validate_ValueDate_Maker,PT42,Infy@123,MCITTD,'10100661764201001,EGP,'10100661764301001,EGP,450,posted successfully,'AE0000672
+FCB-2006,Operations_TellerOperations_FundsTransfer_DifferentCustomerAccounts_EGP_Maker,PT42,Infy@123,MCITTD,'10100661764201001,EGP,'10100661764301001,EGP,300,posted successfully,'AE0000673
+FCB-2005,Operations_TellerOperations_Fundsransfer_SameCustomerAccounts_EGP_Maker,PT42,Infy@123,MCITTD,'10100661764201001,EGP,'10100661764301001,EGP,400,posted successfully,'AE0000674
+FCB-2007,Operations_TellerOperations_Validate_FundsTransfer_SameCustomerAccounts_RealTime_Maker,PT42,Infy@123,MCITTD,'10100661764201001,EGP,'10100661764301001,EGP,500,posted successfully,'AE0000675
+FCB-2008,Operations_TellerOperations_Validate_Fundsransfer_differentCustomerAccounts_RealTime_Maker,PT42,Infy@123,MCITTD,'10100661764201001,EGP,'10100661764301001,EGP,600,posted successfully,'AE0000676
+FCB-2011,Operations_TellerOperation_CrossCurrencyTransaction_Transfer_exchangedRate_USD_Maker,PT42,Infy@123,MCITTD,'10160066408802077,USD,'10100661764301001,EGP,100,posted successfully,'AE0000677
+FCB-2163,Operations_TellerOperations_CashTransfer_CrossCurrency_EGPtoUSD_Maker,PT42,Infy@123,MCITTD,'10160066408802077,USD,'10100661764301001,EGP,150,posted successfully,'AE0000678
+FCB-2164,Operations_TellerOperations_CashTransfer_CrossCurrency_USDtoEGP_Maker,PT42,Infy@123,MCITTD,'10100661764201001,EGP,'11120618641902001 ,USD,2,posted successfully,'AE0000679
+FCB-2165,Operations_TellerOperations_CashTransfer_CrossCurrency_EGPtoEUR_Maker,PT42,Infy@123,MCITTD,'10060616861003903,EUR,'10100661764301001,EGP,30,posted successfully,'AE0000680
+FCB-2166,Operations_TellerOperations_CashTransfer_CrossCurrency_EURtoEGP_Maker,PT42,Infy@123,MCITTD,'10100661764201001,EGP,'10060616861003912,EUR,20,posted successfully,'AE0000681
+FCB-2168,Operations_TellerOperations_CashTransfer_CrossCurrency_EURtoUSD_Maker,PT42,Infy@123,MCITTD,'10160066408802077,USD,'10060616861003912,EUR,20,posted successfully,'AE0000683
