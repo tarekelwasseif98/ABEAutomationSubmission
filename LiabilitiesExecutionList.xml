@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" >
+
+<listeners>
+
+       <listener class-name="listeners.Listeners"/>
+       <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+
+</listeners>
+    <test  parallel="classes" thread-count="1" name="Liabilities">
+
+         <classes>
+			 
+ 			 <class name="tests.ABETellerOperationTransferLiabilitiesAndOperationTest"/>
+
+
+		<!--	
+		     <class name="tests.ABECreateCASACurrentAccountLiabilitiesAndOperationTest"/>
+  			 <class name="tests.ABEVerifyCasaCurrentAccountCreationLiabilitiesAndOperationTest"/>
+		    
+		     <class name="tests.ABECreateCASASavingsAccountLiabilitiesAndOperationTest"/>
+		     <class name="tests.ABEVerifyCASASavingsAccountCreationLiabilitiesAndOperationTest"/>
+		    
+
+		     <class name="tests.ABECreateTdLiabilitiesAndOperationTest"/>		
+		     <class name="tests.ABEVerifyTdLiabilitiesAndOperationTest"/>    -->
+		     
+          </classes>
+     </test>
+</suite>
