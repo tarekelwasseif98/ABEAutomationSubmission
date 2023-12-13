@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Import Bills">
+<listeners>
+	<listener class-name="listeners.Listeners"/>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+</listeners>
+<test thread-count="1" name="Import Bills">
+	
+    <classes>
+		<class name="tests.ABETradeFinanceImportBillsLodgeTest"/>
+		 <class name="tests.ABETradeFinanceImportBillsLodgeVerifyTest"/>
+		 
+		 <class name="tests.ABEAcceptImportBillTradeFinanceTest"/>
+		 <class name="tests.ABEVerifyAcceptImportBillsTradeFinanceTest"/>
+		 
+		 <class name="tests.ABECoAcceptImportBillsTradeFinanceTest"/>
+		 <class name="tests.ABEVerifyCoAcceptImportBillsTradeFinanceTest"/>
+		 
+		 <class name="tests.ABERealizeImportBillsTradeFinanceTest"/>
+		 <class name="tests.ABEVerifyRealizeImportBillsTradeFinanceTest"/>
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+    </classes>
+</test>
+</suite>
+ 
