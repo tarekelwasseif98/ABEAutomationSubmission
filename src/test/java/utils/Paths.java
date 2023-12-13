@@ -109,4 +109,30 @@ public class Paths {
 	public static final String ABEVERIFYRETAILLOANDISBURSMENTRETAILLOANSCSV  = "csvFiles\\ABEVerifyRetailLoanDisbursmentRetailLoans.csv";
 	public static final String ABEVERIFYRETAILLOANDISBURSMENTRETAILLOANSJSON =  "jsonFiles\\" + ABEVERIFYRETAILLOANDISBURSMENTRETAILLOANSCSV.substring(9, Paths.ABEVERIFYRETAILLOANDISBURSMENTRETAILLOANSCSV.length()-4) + ".json";
 
+	public static final String ABETRADEFINANCEIMPORTBILLSLODGECSV  = "csvFiles\\ABETradeFinanceImportBillsLodge.csv";
+	public static final String ABEETRADEFINANCEIMPORTBILLSLODGEJSON =  "jsonFiles\\" + ABETRADEFINANCEIMPORTBILLSLODGECSV.substring(9, Paths.ABETRADEFINANCEIMPORTBILLSLODGECSV.length()-4) + ".json";
+	
+	public static final String ABETRADEFINANCEIMPORTBILLSLODGEVERIFYCSV  = "csvFiles\\ABETradeFinanceImportBillsLodgeVerify.csv";
+	public static final String ABEETRADEFINANCEIMPORTBILLSLODGEVERIFYJSON =  "jsonFiles\\" + ABETRADEFINANCEIMPORTBILLSLODGEVERIFYCSV.substring(9, Paths.ABETRADEFINANCEIMPORTBILLSLODGEVERIFYCSV.length()-4) + ".json";
+	
+	public static final String ABEACCEPTIMPORTBILLSTRADEFINANCECSV  = "csvFiles\\ABEAcceptImportBillsTradeFinance.csv";
+	public static final String ABEVERIFYACCEPTIMPORTBILLSTRADEFINANCECSV  = "csvFiles\\ABEVerifyAcceptImportBillsTradeFinance.csv";
+	
+	public static final String ABEACCEPTIMPORTBILLSTRADEFINANCEJSON =  "jsonFiles\\" + ABEACCEPTIMPORTBILLSTRADEFINANCECSV.substring(9, Paths.ABEACCEPTIMPORTBILLSTRADEFINANCECSV.length()-4) + ".json";
+	public static final String ABEVERIFYACCEPTIMPORTBILLSTRADEFINANCEJSON =  "jsonFiles\\" + ABEVERIFYACCEPTIMPORTBILLSTRADEFINANCECSV.substring(9, Paths.ABEVERIFYACCEPTIMPORTBILLSTRADEFINANCECSV.length()-4) + ".json";
+	
+	public static final String ABEREALIZEIMPORTBILLSTRADEFINANCECSV  = "csvFiles\\ABERealizeImportBillsTradeFinance.csv";
+	public static final String ABEVERIFYREALIZEIMPORTBILLSTRADEFINANCECSV  = "csvFiles\\ABEVerifyRealizeImportBillsTradeFinance.csv";
+	
+	public static final String ABEREALIZEIMPORTBILLSTRADEFINANCEJSON =  "jsonFiles\\" + ABEREALIZEIMPORTBILLSTRADEFINANCECSV.substring(9, Paths.ABEREALIZEIMPORTBILLSTRADEFINANCECSV.length()-4) + ".json";
+	public static final String ABEVERIFYREALIZEIMPORTBILLSTRADEFINANCEJSON =  "jsonFiles\\" + ABEVERIFYREALIZEIMPORTBILLSTRADEFINANCECSV.substring(9, Paths.ABEVERIFYREALIZEIMPORTBILLSTRADEFINANCECSV.length()-4) + ".json";
+
+
+	public static final String ABECoAcceptImportBillsTradeFinanceCsv = "csvFiles\\ABECoAcceptImportBillsTradeFinance.csv";
+	public static final String ABECoAcceptImportBillsTradeFinanceJson = "jsonFiles\\" + ABECoAcceptImportBillsTradeFinanceCsv.substring(9, Paths.ABECoAcceptImportBillsTradeFinanceCsv.length()-4) + ".json";
+
+	public static final String ABEVerifyCoAcceptImportBillsTradeFinanceCsv = "csvFiles\\ABEVerifyCoAcceptImportBillsTradeFinance.csv";
+	public static final String ABEVerifyCoAcceptImportBillsTradeFinanceJson = "jsonFiles\\" + ABEVerifyCoAcceptImportBillsTradeFinanceCsv.substring(9, Paths.ABEVerifyCoAcceptImportBillsTradeFinanceCsv.length()-4) + ".json";
+
+
 }

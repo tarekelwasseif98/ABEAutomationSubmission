@@ -80,4 +80,6 @@ public class FinacleFieldsUtils {
     public static final String INTERESTPLANFIXEDANDFLOATINGWITHOUTREPRICING = "Fixed and Floating without Repricing";
     public static final String INTERESTPLANFIXEDANDFLOATINGWITHREPRICING = "Fixed and Floating with Repricing";
     public static final String INTERESTPLANFLOATINGUPTOMATURITY = "Floating up to Maturity";
+    public static final String UNDERDOCUMENTRYCREDITYES = "yes";
+
 }
