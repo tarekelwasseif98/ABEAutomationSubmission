@@ -1,0 +1,16 @@
+tcid,summary,username,password,menu,customerType,expectedResult,cif
+FCB-10210,Customer_Corporate_Verify_CustomerToBeExisted_SocietyCorp_EGP_ByChecker_A2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660884
+FCB-10212,Customer_Corporate_Verify_CustomerToBeExisted_OffshoreCorp_EGP_ByChecker_A2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660885
+FCB-10214,Customer_Corporate_Verify_CustomerToBeExisted_LimitedCorp_EGP_ByChecker_A2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660886
+FCB-10216,Customer_Corporate_Verify_CustomerToBeExisted_GOVCorp_EGP_ByChecker_A2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660887
+FCB-10218,Customer_Corporate_Verify_CustomerToBeExisted_NGOCorp_EGP_ByChecker_A2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660888
+FCB-2484,Customer_Corporate_Verify_CustomerToBeExisted_withExistingRelationship_EGP_ByChecker_A2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660889
+FCB-2486,Customer_Corporate_Verify_CustomerToBeExisted_withProspectRelationships_EGP_ByChecker_B2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660890
+FCB-2488,Customer_Corporate_Verify_ExistingCustomerEnrichment_EGP_ByChecker_C2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660891
+FCB-2490,Customer_Corporate_Verify_ProspectCustomerEnrichment_EGP_ByChecker_D2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660892
+FCB-2517,Customer_Corporate_Verify_CorporateCustomer_CHF_Currency_ByChecker_K2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660894
+FCB-2554,Customer_Corporate_Verify_CustomerToBeExisted_USD_ByChecker_T2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660895
+FCB-2556,Customer_Corporate_Verify_CustomerToBeExisted_Euro_ByChecker_U2,PT165,Infy@123,RCCAT,Customer,The CIF ID is saved successfully.,'006660896
+FCB-2559,Customer_Corporate_Verify_ProspectCustomer_EGP_ByChecker_V2,PT165,Infy@123,RCCAT,Prospect,The CIF ID is saved successfully.,'006660897
+FCB-2561,Customer_Corporate_Verify_ProspectCustomer_USD_ByChecker_W2,PT165,Infy@123,RCCAT,Prospect,The CIF ID is saved successfully.,'006660898
+FCB-2563,Customer_Corporate_Verify_ProspectCustomer_Euro_ByChecker_X2,PT165,Infy@123,RCCAT,Prospect,The CIF ID is saved successfully.,'006660899

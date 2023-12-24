@@ -1,0 +1,3 @@
+tcId,summary,username,password,menu,Pos,expectedResult,paysysID
+FCB-4785,Payments_ACH_OutwardPayment_VerifyingOutwardPaymentUSD_ByAuthorizer_H3,PT161,Infy@123,AOPO,'000000000140,successfully,ACHUS
+FCB-4815,Payments_ACH_OutwardPayment_VerifyingOutwardPaymentUSD_LocalAccount_ByAuthorizer_N3,PT161,Infy@123,AOPO,'000000000142,successfully,ACHUS

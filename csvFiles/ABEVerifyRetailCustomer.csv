@@ -1,0 +1,12 @@
+tcid,summary,username,password,menu,expectedResult,CIF
+FCB-1115,Customer_Retail_VerifyNewCIFCreation_UsingEgyptianPassportNo_ByChecker_E2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660959
+FCB-1103,Customer_Retail_Verify_NewCIFCreation&Enrich_UsingNationalID_ByChecker_A2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660947
+FCB-1113,Customer_Retail_VerifyNewCIFCreation_UsingMIlitaryID_ByChecker_D2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660948
+FCB-1117,Customer_Retail_VerifyNewCIF_UsingForeignPassportNo_ByChecker_F2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660950
+FCB-1120,Customer_Retail_VerifyNewCIFCreation_CustomerWithTwoNationalities_ByChecker_G2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660951
+FCB-1122,Customer_Retail_VerifyNewCIFCreation_PayrollFlagYes_ByChecker_H2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660952
+FCB-1124,Customer_Retail_VerifyNewCIFCreation_PayrollFlagNo_ByChecker_I2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660953
+FCB-1126,Customer_Retail_VerifyNewCIFCreation_PoliticallyExposed_ByChecker_J2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660954
+FCB-1136,Customer_Retail_Verify_NewCIF_ForeignCurrencyUSD_ByChecker_K2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660955
+FCB-1205,Customer_Retail_Verify_EnrichedCustomer_ByChecker_AC2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660957
+FCB-1210,Customer_Retail_Verify_EnrichedCustomer_ChangeCustomerFromIndividualToStaff_ByChecker_AE2,PT164,Infy@123,RCCAT,The CIF ID is saved successfully.,'006660958
