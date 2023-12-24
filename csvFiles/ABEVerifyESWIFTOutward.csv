@@ -1,0 +1,10 @@
+tcId,summary,username,password,menu,Pos,expectedResult
+FCB-8981,Payment_SWIFT_Local_Verify_OutwardPayment_EGP_ByChecker_A2,PT165,Infy@123,MPOR,'000000000188,The record is verified successfully.
+FCB-8992,Payment_SWIFT_Local_Verify_OutwardPayment_Currency_EGP_ByChecker_D2,PT165,Infy@123,MPOR,'000000000190,The record is verified successfully.
+FCB-8995,Payment_SWIFT_Local_Verify_OutwardPayment_Currency_USD_ByChecker_E2,PT165,Infy@123,MPOR,'000000000192,The record is verified successfully.
+FCB-8998,Payment_SWIFT_Local_Verify_OutwardPayment_Currency_EUR_ByChecker_F2,PT165,Infy@123,MPOR,'000000000194,The record is verified successfully.
+FCB-9001,Payment_SWIFT_Local_Verify_OutwardPayment_Currency_GBP_ByChecker_AB2,PT165,Infy@123,MPOR,',The record is verified successfully.
+FCB-9014,Payment_SWIFT_Local_Verify_OutwardPayment_Charge_OUR_ByChecker_X2,PT165,Infy@123,MPOR,'000000000196,The record is verified successfully.
+FCB-9017,Payment_SWIFT_Local_Verify_OutwardPayment_Charge_BEN_ByChecker_S2,PT165,Infy@123,MPOR,'000000000198,The record is verified successfully.
+FCB-9020,Payment_SWIFT_Local_Verify_OutwardPayment_Charge_SHA_ByChecker_XA2,PT165,Infy@123,MPOR,'000000000200,The record is verified successfully.
+FCB-9023,Payment_SWIFT_Local_Verify_OutwardPayment_WaiveChargesYes_ByChecker_DF2,PT165,Infy@123,MPOR,'000000000202,The record is verified successfully.

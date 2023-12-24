@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="listeners.Listeners"/>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+</listeners>
+<test thread-count="1" name="Advise Inward LCs">
+    <classes>
+		<class name="tests.ABEAdviseInwardLCTradeFinanceTest"/>
+		<class name="tests.ABEVerifyAdviseInwardLCTradeFinanceTest"/>
+    </classes>
+</test>
+</suite>

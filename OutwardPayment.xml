@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="listeners.Listeners"/>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+</listeners>
+<test thread-count="1" name="Outward Payment">
+    <classes>
+		<class name="tests.ABECreateACHOutwardTest"/>
+		<class name="tests.ABEVerifyACHOutwardTest"/>
+		<class name="tests.ABEAuthorizeACHOutwardTest"/>
+		
+		<class name="tests.ABECreateACHUSOutwardTest"/>
+		<class name="tests.ABEVerifyACHUSOutwardTest"/>
+	 	<class name="tests.ABEAuthorizeACHUSOutwardTest"/>
+	 	
+	 	<class name="tests.ABECreateACHEROutwardTest"/>
+	 	<class name="tests.ABEVerifyACHEROutwardTest"/>
+	 	<class name="tests.ABEAuthorizeACHEROutwardTest"/>
+	 	
+	 	<class name="tests.ABECreateSWIFTOutwardTest"/>
+	 	<class name="tests.ABEVerifySWIFTOutwardTest"/>
+	 	<class name="tests.ABEAuthorizeSWIFTOutwardTest"/>
+	 	
+	 	<class name="tests.ABECreateESWIFTOutwardTest"/>
+	 	<class name="tests.ABEVerifyESWIFTOutwardTest"/>
+	 	<class name="tests.ABEAuthorizeESWIFTOutwardTest"/>
+    </classes>
+</test>
+</suite>

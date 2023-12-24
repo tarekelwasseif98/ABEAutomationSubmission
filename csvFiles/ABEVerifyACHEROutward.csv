@@ -1,0 +1,2 @@
+tcId,summary,username,password,menu,Pos,expectedResult
+FCB-4787,Payments_ACH_OutwardPayment_VerifyingOutwardPaymentEUR_ByBranchChecker_I2,PT164,Infy@123,MPOR,'000000000144,The record is verified successfully.
