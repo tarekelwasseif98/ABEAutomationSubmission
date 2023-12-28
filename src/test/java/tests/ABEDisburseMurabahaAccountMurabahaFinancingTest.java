@@ -4,6 +4,7 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
@@ -25,6 +26,12 @@ import io.qameta.allure.testng.AllureTestNg;
 @Listeners({AllureTestNg.class})
 public class ABEDisburseMurabahaAccountMurabahaFinancingTest {
 	WebDriver driver = null;
+	
+	@BeforeClass
+	public void beforeClass() throws Exception
+	{
+		testdataupdate.ABEDisburseMurabahaAccountMurabahaFinancing_TestDataUpdate.Update();
+	}
 	@BeforeMethod(description= "Initiating Browser")
 	public void beforeTest(Object [] testData) throws Exception {
 		ABEDisburseMurabahaAccountMurabahaFinancingData data = (ABEDisburseMurabahaAccountMurabahaFinancingData) testData[0];

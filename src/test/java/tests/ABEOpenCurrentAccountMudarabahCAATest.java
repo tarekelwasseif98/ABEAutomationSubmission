@@ -18,6 +18,7 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import pageobjects.FinacleLoginPage;
 import procedures.ABEOpenCurrentAccountMudarabahCAAProcedures;
+import testdataupdate.ABEOpenCurrentAccountMudarabahCAA_TestDataUpdate;
 import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
@@ -29,9 +30,11 @@ import io.qameta.allure.testng.AllureTestNg;
 @Listeners({AllureTestNg.class})
 public class ABEOpenCurrentAccountMudarabahCAATest {
 	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABEOPENCURRENTACCOUNTMUDARABAHCAACSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYCURRENTACCOUNTOPENINGCSV, "accountId");
+		
+		ABEOpenCurrentAccountMudarabahCAA_TestDataUpdate.Update();
 	}
 	
 	WebDriver driver = null;
