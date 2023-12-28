@@ -1,6 +1,5 @@
 package tests;
 
-import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -12,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.aspose.cells.Workbook;
-import com.opencsv.exceptions.CsvException;
+
 import data.ABEOpenRetailLoanRetailLoansData;
 import data.JsonReader;
 import io.qameta.allure.Allure;
@@ -20,6 +19,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.testng.AllureTestNg;
 import pageobjects.FinacleLoginPage;
 import procedures.ABEOpenRetailLoanRetailLoansProcedures;
+import testdataupdate.ABEOpenRetailLoanRetailLoans_TestDataUpdate;
 import utils.AssertionFactory;
 import utils.CSVUtils;
 import utils.Paths;
@@ -32,11 +32,13 @@ import utils.WebdriverFactory;
 public class ABEOpenRetailLoanRetailLoansTest {
 	
 	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABEOPENRETAILLOANRETAILLOANSCSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYRETAILLOANRETAILLOANSCSV, "accountId");
 		CSVUtils.clearColumnByName(Paths.ABEDISBURSERETAILLOANRETAILLOANSCSV, "accountId");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYRETAILLOANDISBURSMENTRETAILLOANSCSV, "accountId");
+		
+		ABEOpenRetailLoanRetailLoans_TestDataUpdate.Update();
 	}
 	
 	WebDriver driver = null;

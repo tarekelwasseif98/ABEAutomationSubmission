@@ -206,5 +206,10 @@ public class Paths {
 	public static final String ABECREATESTOJSON =  "jsonFiles\\" + ABECREATESTOCSV.substring(9, Paths.ABECREATESTOCSV.length()-4) + ".json";
 	public static final String ABEVERIFYSTOJSON = "jsonFiles\\" + ABEVERIFYSTOCSV.substring(9, Paths.ABEVERIFYSTOCSV.length()-4) + ".json";
 
+	public static final String Create_ACH_Outward = "";
+	public static final String ABECreateACHUSOutward = "";
+	public static final String ABECreateACHEROutward = "";
+	public static final String ABECreateESWIFTOutward = "";
+	public static final String ABECreateSWIFTOutward = "";
 
 }
