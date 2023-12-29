@@ -19,6 +19,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.testng.AllureTestNg;
 import pageobjects.FinacleLoginPage;
 import procedures.ABECreateCASASavingsAccountLiabilitiesAndOperationProcedures;
+import testdataupdate.ABECreateCASASavingsAccountLiabilitiesAndOperation_TestDataUpdate;
 import utils.AssertionFactory;
 import utils.CSVUtils;
 import utils.Paths;
@@ -30,9 +31,11 @@ import utils.WebdriverFactory;
 public class ABECreateCASASavingsAccountLiabilitiesAndOperationTest {
 
 	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABECREATECASASAVINGSACCOUNTLIABILITIESANDOPERATIONCSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYCASASAVINGSACCOUNTCREATIONLIABILITIESANDOPERATIONCSV, "accountId");
+		
+    	ABECreateCASASavingsAccountLiabilitiesAndOperation_TestDataUpdate.Update();
 
 	}
 	

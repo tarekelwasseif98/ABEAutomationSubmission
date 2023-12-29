@@ -20,6 +20,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.testng.AllureTestNg;
 import pageobjects.FinacleLoginPage;
 import procedures.ABECreateTdLiabilitiesAndOperationProcedures;
+import testdataupdate.ABECreateTdLiabilitiesAndOperation_TestDataUpdate;
 import utils.AssertionFactory;
 import utils.CSVUtils;
 import utils.Paths;
@@ -31,10 +32,11 @@ import utils.WebdriverFactory;
 public class ABECreateTdLiabilitiesAndOperationTest {
 
 	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABECREATETDLIABILITIESANDOPERATIONCSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONCSV, "accountId");
 
+		ABECreateTdLiabilitiesAndOperation_TestDataUpdate.Update();
 	}
 	
 	WebDriver driver = null;
