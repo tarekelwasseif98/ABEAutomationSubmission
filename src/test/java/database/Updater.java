@@ -93,19 +93,29 @@ public class Updater {
         	
         	StringBuilder sb = new StringBuilder(query);
         	
-        	try {
-        		sb.insert(ControlAttributes[0] , csvRecord.get( ControlColumns[0]).substring(1) );
-        	}
-        	catch (StringIndexOutOfBoundsException e)
+        	for( int i = 0 ; i< ControlColumns.length ; i++)
         	{
-        		System.err.println("[db Error] : "+ ControlColumns[0] +" column is empty ");
-        		continue;
+	        	try 
+	        	{
+	        		if(csvRecord.get( ControlColumns[i]).substring(1,1) == "'")
+	    			{
+	    				sb.insert(ControlAttributes[i] , csvRecord.get( ControlColumns[i]).substring(1) );
+	    			}
+	        		else 
+	        		{
+	        			sb.insert(ControlAttributes[i] , csvRecord.get( ControlColumns[i]));
+	        		}
+	        	}
+	        	catch (StringIndexOutOfBoundsException e)
+	        	{
+	        		System.err.println("[db Error] : "+ ControlColumns[i] +" column is empty ");
+	        		continue;
+	        	}
         	}
-			
 			query = sb.toString();
 			
         	
-        	//System.out.println("[debug] :"+ query);
+        	//System.err.println("[debug] :"+ query);
         	
         	
         	// open db connection and run query 

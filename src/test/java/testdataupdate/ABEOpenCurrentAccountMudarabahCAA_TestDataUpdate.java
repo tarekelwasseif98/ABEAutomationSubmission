@@ -12,7 +12,7 @@ public class ABEOpenCurrentAccountMudarabahCAA_TestDataUpdate {
 	
 	private static final String csvFilePath = Paths.ABEOPENCURRENTACCOUNTMUDARABAHCAACSV;
 	
-	private static final String basequery = "SELECT CRML1.ORGKEY FROM CRMUSER.ACCOUNTS CRML1 "
+	/*private static final String basequery = "SELECT CRML1.ORGKEY FROM CRMUSER.ACCOUNTS CRML1 "
 			+ "join  TBAADM.GAM GAML1 on CRML1.ORGKEY = GAML1.CIF_ID "
 			+ "join tbaadm.SMT SMTL1 on GAML1.ACID = SMTL1.ACID "
 			+ "WHERE NOT EXISTS( "
@@ -20,8 +20,21 @@ public class ABEOpenCurrentAccountMudarabahCAA_TestDataUpdate {
 			+ "where GAML2.CIF_ID = CRML1.ORGKEY "
 			+ "and SMTL1.ACCT_STATUS = 'D') "
 			+ "AND CRML1.KYC_STATUS = 'A' "
+			+ "AND ROWNUM <= 50 "
 			+ "ORDER by DBMS_RANDOM.value "
-			+ "FETCH NEXT 1 rows only ";
+			+ "FETCH NEXT 1 rows only ";*/
+	
+	private static final String basequery = "SELECT C.ORGKEY FROM CRMUSER.ACCOUNTS C  "
+			+ "WHERE C.KYC_STATUS = 'A'  "
+			+ "AND NOT EXISTS(  "
+			+ "        select 1 from TBAADM.GAM A  "
+			+ "        join tbaadm.SMT S on S.ACID = A.ACID  "
+			+ "        where A.CIF_ID = C.ORGKEY  "
+			+ "        and S.ACCT_STATUS = 'D')  "
+			+ " AND ROWNUM <= 50  "
+			+ " ORDER by DBMS_RANDOM.value  "
+			+ " FETCH NEXT 1 rows only ";
+	
 	
 	public static void Update() throws Exception {
 		Updater.update( csvFilePath , UpdatedColumns , ControlColumns , basequery );
