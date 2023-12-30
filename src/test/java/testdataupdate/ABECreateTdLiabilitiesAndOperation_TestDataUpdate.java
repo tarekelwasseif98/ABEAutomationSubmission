@@ -9,7 +9,6 @@ public class ABECreateTdLiabilitiesAndOperation_TestDataUpdate {
 	
 	private static final String[] UpdatedColumns  = {"cif" , "debitAcId"};
 	private static final String[] ControlColumns  = {"ccy" , "initialDepositAmmount"};
-	private static final int[] insertLocation = {186,216};
 	
 	private static final String csvFilePath = Paths.ABECREATETDLIABILITIESANDOPERATIONCSV;
 	
@@ -17,8 +16,8 @@ public class ABECreateTdLiabilitiesAndOperation_TestDataUpdate {
 			+ "    JOIN tbaadm.SMT S ON S.ACID = A.ACID "
 			+ "    WHERE S.ACCT_STATUS = 'A' "
 			+ "    AND A.SCHM_TYPE in ( 'CAA' , 'SBA') "
-			+ "    AND A.ACCT_CRNCY_CODE = '' "
-			+ "    AND A.clr_bal_amt > "
+			+ "    AND A.ACCT_CRNCY_CODE = '{0}' "
+			+ "    AND A.clr_bal_amt > {1} "
 			+ "    AND EXISTS  "
 			+ "    ( "
 			+ "        SELECT 1 "
@@ -32,7 +31,7 @@ public class ABECreateTdLiabilitiesAndOperation_TestDataUpdate {
 			+ "    FETCH FIRST 1 ROWS ONLY";
 	
 	public static void Update() throws Exception {
-		Updater.update( csvFilePath , UpdatedColumns , ControlColumns ,insertLocation ,  basequery );
+		Updater.update( csvFilePath , UpdatedColumns , ControlColumns  ,  basequery );
 	}
 	
 }

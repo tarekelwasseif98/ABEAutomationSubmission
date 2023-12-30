@@ -1,6 +1,5 @@
 package tests;
 
-import java.io.IOException;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -11,7 +10,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.aspose.cells.Workbook;
-import com.opencsv.exceptions.CsvException;
 import data.JsonReader;
 import data.ABECreateOutwardTransferPaymentData;
 import io.qameta.allure.Allure;
@@ -19,6 +17,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import pageobjects.FinacleLoginPage;
 import procedures.ABECreateOutwardTransferPaymentProcedures;
+import testdataupdate.Create_ACH_OutwardCSV_TestDataUpdate;
 import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
@@ -34,8 +33,9 @@ import io.qameta.allure.testng.AllureTestNg;
 public class ABECreateACHOutwardTest {
 
 	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABECREATEACHOUTWARDCSV, "Pos");
+		Create_ACH_OutwardCSV_TestDataUpdate.Update();
 	}
 
 	WebDriver driver = null;

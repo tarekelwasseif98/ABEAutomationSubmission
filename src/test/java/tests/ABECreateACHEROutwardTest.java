@@ -27,15 +27,17 @@ import utils.AssertionFactory;
 import utils.CSVUtils;
 import utils.PageFunctionUtils;
 import io.qameta.allure.testng.AllureTestNg;
-
+import testdataupdate.ABECreateACHEROutward_TestDataUpdate;
 @Test( groups = "CreateACHER")
 @Listeners({AllureTestNg.class})
 
 public class ABECreateACHEROutwardTest {
 
 	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABECREATEACHEROUTWARDCSV, "Pos");
+    	ABECreateACHEROutward_TestDataUpdate.Update();
+
 	}
 
 	WebDriver driver = null;
