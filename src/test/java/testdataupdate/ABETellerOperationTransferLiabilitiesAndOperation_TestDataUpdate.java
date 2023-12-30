@@ -9,13 +9,12 @@ public class ABETellerOperationTransferLiabilitiesAndOperation_TestDataUpdate {
 	
 	private static final String[] UpdatedColumns  = {"accountIdCr" , "accountIdDr"};
 	private static final String[] ControlColumns  = {"ccyCr" ,"ccyDr" , "transactionAmount"};
-	private static final int[] insertLocation = {122 , 369 , 426};
 	private static final String csvFilePath = Paths.ABETELLEROPERATIONTRANSFERLIABILITIESANDOPERATIONCSV;
 
 	private static final String basequery = "SELECT  "
 			+ "    ( SELECT FORACID FROM TBAADM.GAM G  "
 			+ "      JOIN tbaadm.SMT B on G.ACID = B.ACID "
-			+ "      where ACCT_CRNCY_CODE = '' "
+			+ "      where ACCT_CRNCY_CODE = '{0}' "
 			+ "      AND ACCT_STATUS = 'A' "
 			+ "      AND ROWNUM <= 100 "
 			+ "      ORDER BY DBMS_RANDOM.value "
@@ -23,9 +22,9 @@ public class ABETellerOperationTransferLiabilitiesAndOperation_TestDataUpdate {
 			+ "    ) AS CR , "
 			+ "    ( SELECT FORACID FROM TBAADM.GAM G "
 			+ "      JOIN tbaadm.SMT B on G.ACID = B.ACID "
-			+ "      where ACCT_CRNCY_CODE = '' "
+			+ "      where ACCT_CRNCY_CODE = '{1}' "
 			+ "      AND ACCT_STATUS = 'A' "
-			+ "      AND clr_bal_amt > "
+			+ "      AND clr_bal_amt > {2} "
 			+ "      AND ROWNUM <= 100 "
 			+ "      ORDER BY DBMS_RANDOM.value "
 			+ "      FETCH FIRST 1 ROWS ONLY "
@@ -34,7 +33,7 @@ public class ABETellerOperationTransferLiabilitiesAndOperation_TestDataUpdate {
 			+ "    FETCH FIRST 1 ROWS ONLY";
 	
 	public static void Update() throws Exception {
-		Updater.update( csvFilePath , UpdatedColumns , ControlColumns ,insertLocation, basequery );
+		Updater.update( csvFilePath , UpdatedColumns , ControlColumns, basequery );
 	}
 	
 }

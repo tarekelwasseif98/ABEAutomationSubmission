@@ -3,14 +3,14 @@ package testdataupdate;
 import database.Updater;
 import utils.Paths;
 
-public class Create_ACH_OutwardCSV_TestDataUpdate {
+public class ABECreateACHEROutward_TestDataUpdate {
 
 	//columns names in the CSV that need to be updated . must be in the same order of the CSV file  
 	
 	private static final String[] UpdatedColumns  = {"Account"};
 	private static final String[] ControlColumns  = {"CCY" , "Amount"};
 	
-	private static final String csvFilePath = Paths.ABECREATEACHOUTWARDCSV;
+	private static final String csvFilePath = Paths.ABECREATEACHEROUTWARDCSV;
 	
 	private static final String basequery = "select A.FORACID from TBAADM.GAM A  "
 			+ "join tbaadm.SMT S on S.ACID = A.ACID  "
