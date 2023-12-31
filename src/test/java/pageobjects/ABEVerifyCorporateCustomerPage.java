@@ -65,6 +65,7 @@ public class ABEVerifyCorporateCustomerPage {
 	
 	@Step("Open RCCAT and verify")
 	public ABEVerifyCorporateCustomerPage enterDataAtRCCAT(String cif, String customerType) throws Exception{
+		PageFunctionUtils.sleep2();
 		PageFunctionUtils.waitOnElement(driver, corporateradioButton);
 		PageFunctionUtils.clickOnElement(driver, corporateradioButton);
 		PageFunctionUtils.selectDropDownListByIndex(driver, operationApproveDropDownList, 1);
