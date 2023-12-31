@@ -63,6 +63,7 @@ public class ABEVerifyRetailCustomerPage {
 	
 	@Step("Open RCCAT and verify")
 	public ABEVerifyRetailCustomerPage enterDataAtRCCAT(String cif) throws Exception{
+		PageFunctionUtils.sleep2();
 		PageFunctionUtils.selectDropDownListByIndex(driver, operationApproveDropDownList, 1);
 		PageFunctionUtils.enterDataInWebElement(driver, cifIDTextField, cif.substring(1));
 		PageFunctionUtils.clickOnElement(driver, searchButtonRCCAT);
