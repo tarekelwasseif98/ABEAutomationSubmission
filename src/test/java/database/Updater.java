@@ -33,10 +33,12 @@ public class Updater {
         	String query = basequery;
         	
         	boolean ErrorFlag = false;
+        
             for(int i = 0 ; i < ControlColumns.length ; i++)
             {
             	String CsvColumnValue = null;
-            	CsvColumnValue = csvRecord.get( ControlColumns[i]);
+            	try{CsvColumnValue = csvRecord.get( ControlColumns[i]);}
+            	catch (Exception IllegalArgumentException) {}
             	
         		if( CsvColumnValue == null || CsvColumnValue == "" || CsvColumnValue == "\'" )
         		{
@@ -45,7 +47,7 @@ public class Updater {
 	        		continue;
         		}
             
-            	if( CsvColumnValue.startsWith("'"))
+            	if( CsvColumnValue.startsWith("'") || CsvColumnValue.startsWith("\""))
     			{
             		query = query.replace("{"+i+"}", CsvColumnValue.substring(1) );
       			}
@@ -68,6 +70,7 @@ public class Updater {
 			catch(Exception e)
 			{
 				System.err.println("[db Error] : Invalid Query");
+				System.err.println(e);
 				continue;
 			}
 			
@@ -86,6 +89,7 @@ public class Updater {
 	            }
 	            catch (Exception e) {
 	            	System.err.println("[db ERROR] : NO available record the meet the criteria on the database");
+	            	System.err.println(e);
 	            	continue;
 	            }
 	        }

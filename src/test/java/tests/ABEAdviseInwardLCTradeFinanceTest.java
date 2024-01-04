@@ -3,6 +3,7 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
@@ -15,6 +16,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import pageobjects.FinacleLoginPage;
 import procedures.ABEAdviseInwardLCTradeFinanceProcedures;
+import testdataupdate.ABEAdviseInwardLCTradeFinance_TestDataUpdate;
 import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
@@ -29,6 +31,13 @@ import io.qameta.allure.testng.AllureTestNg;
 public class ABEAdviseInwardLCTradeFinanceTest {
 
 	WebDriver driver = null;
+	
+	@BeforeClass
+	public void beforeclass() throws Exception 
+	{
+		ABEAdviseInwardLCTradeFinance_TestDataUpdate.Update();
+	}
+	
 	@BeforeMethod(description= "Initiating Browser")
 	public void beforeTest(Object [] testData) throws Exception {
 		ABEAdviseInwardLCTradeFinanceData data = (ABEAdviseInwardLCTradeFinanceData) testData[0];
