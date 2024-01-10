@@ -1,0 +1,33 @@
+[
+ {
+  "tcId": "FCB-4731",
+  "summary": "Payments_ACH_OutwardPayment_CreatingOutgoingPaymentEGP_ByMaker_A1",
+  "username": "PT164",
+  "password": "Infy@123",
+  "menu": "MPOR",
+  "PaysysID": "ACH",
+  "Date": 31012025,
+  "serviceTypeID": "Customer Payment",
+  "Name_REM": "Mourad Ahmed Nabawy",
+  "Address1_REM": "MAADi",
+  "Address2_REM": "Zahraa El Maadi",
+  "Amount": "'120",
+  "Purpose_Code": "CASH",
+  "waiveChargeRemark": "Gad3ana",
+  "chargeWaiveOption": "NO",
+  "Charge_type": "BEN",
+  "Line1_RI": "TEST",
+  "CCY": "EGP",
+  "BIC_BEN": "CIBEEGCX039",
+  "Network_BEN": "ACH",
+  "Address1_BEN": "MAADI",
+  "Address2_BEN": "Zahraa El Maadi",
+  "countryCode_REM": "EG",
+  "Name_BEN": "TEST",
+  "Account_BEN": 132456,
+  "Account": "'10040587878101001",
+  "expectedResult": "The record is added successfully.",
+  "VerifylinkedTcid": "FCB-4734",
+  "AuthLinkedTcid": "FCB-4735"
+ }
+]

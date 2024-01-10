@@ -1,0 +1,62 @@
+[
+ {
+  "tcId": "FCB-12815",
+  "summary": "Assets_LAA_Retail_Verify_Disburse_Manual_Partial_Backdated_Net_UnsecuredLoan_EGP_ByChecker_BR2",
+  "username": "PT65",
+  "password": "Infy@123",
+  "menu": "VLDR",
+  "accountId": "'3008006640870100166 ",
+  "transactionId": "'AE0000705",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-12811",
+  "summary": "Assets_LAA_Retail_Verify_Disburse_Manual_Full_BackDated_Net_UnsecuredLoan_EGP_ByChecker_BP2",
+  "username": "PT65",
+  "password": "Infy@123",
+  "menu": "VLDR",
+  "accountId": "'3019006640870100144 ",
+  "transactionId": "'AE0000709",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-12813",
+  "summary": "Assets_LAA_Retail_Verify_Disburse_Manual_Full_Current_Gross_UnsecuredLoan_EGP_ByChecker_BQ2",
+  "username": "PT65",
+  "password": "Infy@123",
+  "menu": "VLDR",
+  "accountId": "'3010006640870100152 ",
+  "transactionId": "'AE0000712",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-12817",
+  "summary": "Assets_LAA_Retail_Verify_Disburse_Manual_Partial_Current_Gross_UnsecuredLoan_EGP_ByChecker_BS2",
+  "username": "PT65",
+  "password": "Infy@123",
+  "menu": "VLDR",
+  "accountId": "'3037006640870100177 ",
+  "transactionId": "'AE0000715",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-12944",
+  "summary": "Assets_LAA_Retail_Verify_Disburse_Manual_Full_BackDated_Net_SecuredLoan_EGP_ByChecker_DG2",
+  "username": "PT65",
+  "password": "Infy@123",
+  "menu": "VLDR",
+  "accountId": "'3037006640860100479 ",
+  "transactionId": "'AE0000718",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-129444",
+  "summary": "Assets_LAA_Retail_Verify_Disburse_Manual_Full_BackDated_Net_SecuredLoan_EGP_ByChecker_DG2",
+  "username": "PT65",
+  "password": "Infy@123",
+  "menu": "VLDR",
+  "accountId": "'3008006640850100177 ",
+  "transactionId": "'AE0000720",
+  "expectedResult": "successfully"
+ }
+]

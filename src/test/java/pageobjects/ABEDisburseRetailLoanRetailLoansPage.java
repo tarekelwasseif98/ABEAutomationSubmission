@@ -76,6 +76,7 @@ public class ABEDisburseRetailLoanRetailLoansPage {
 		PageFunctionUtils.clickOnElement(driver,accountIdTextField);
 		PageFunctionUtils.enterDataInWebElement(driver,accountIdTextField,accountId.substring(1));
 		PageFunctionUtils.clickOnElement(driver,goButton);
+		PageFunctionUtils.clickOnElement(driver,goButton);
 
 		return this;
 	}
@@ -138,7 +139,9 @@ public class ABEDisburseRetailLoanRetailLoansPage {
 	@Step("Press save And Preview Button")
 	public ABEDisburseRetailLoanRetailLoansPage PressSaveAndPreviewButton() throws Exception {
 		PageFunctionUtils.clickOnElement(driver, saveAndPreviewButton);
+		PageFunctionUtils.clickOnElement(driver, saveAndPreviewButton);
 		return this;
+		
 	}
 	
 	@Step("Press disbursment Mode Continue Button")

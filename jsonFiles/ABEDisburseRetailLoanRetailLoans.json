@@ -1,0 +1,80 @@
+[
+ {
+  "tcId": "FCB-12814",
+  "summary": "Assets_LAA_Retail_Disburse_Manual_Partial_Backdated_Net_UnsecuredLoan_EGP_ByMaker_BR1",
+  "username": "PT45",
+  "password": "Infy@123",
+  "menu": "PLD",
+  "accountId": "'3008006640870100166 ",
+  "DisbursmentType": "Net",
+  "finalDisbursment": "No",
+  "disbursmentAccount": "'10110066408701029",
+  "expectedResult": "successfully",
+  "linkedTcId": "FCB-12815"
+ },
+ {
+  "tcId": "FCB-12810",
+  "summary": "Assets_LAA_Retail_Disburse_Manual_Full_BackDated_Net_UnsecuredLoan_EGP_ByMaker_BP1",
+  "username": "PT45",
+  "password": "Infy@123",
+  "menu": "PLD",
+  "accountId": "'3019006640870100144 ",
+  "DisbursmentType": "Net",
+  "finalDisbursment": "Yes",
+  "disbursmentAccount": "'10110066408701029",
+  "expectedResult": "successfully",
+  "linkedTcId": "FCB-12811"
+ },
+ {
+  "tcId": "FCB-12812",
+  "summary": "Assets_LAA_Retail_Disburse_Manual_Full_Current_Gross_UnsecuredLoan_EGP_ByMaker_BQ1",
+  "username": "PT45",
+  "password": "Infy@123",
+  "menu": "PLD",
+  "accountId": "'3010006640870100152 ",
+  "DisbursmentType": "Gross",
+  "finalDisbursment": "Yes",
+  "disbursmentAccount": "'10110066408701029",
+  "expectedResult": "successfully",
+  "linkedTcId": "FCB-12813"
+ },
+ {
+  "tcId": "FCB-12816",
+  "summary": "Assets_LAA_Retail_Disburse_Manual_Partial_Current_Gross_UnsecuredLoan_EGP_ByMaker_BS1",
+  "username": "PT45",
+  "password": "Infy@123",
+  "menu": "PLD",
+  "accountId": "'3037006640870100177 ",
+  "DisbursmentType": "Gross",
+  "finalDisbursment": "No",
+  "disbursmentAccount": "'10110066408701029",
+  "expectedResult": "successfully",
+  "linkedTcId": "FCB-12817"
+ },
+ {
+  "tcId": "FCB-12943",
+  "summary": "Assets_LAA_Retail_Disburse_Manual_Full_BackDated_Net_SecuredLoan_EGP_ByMaker_DG1",
+  "username": "PT45",
+  "password": "Infy@123",
+  "menu": "PLD",
+  "accountId": "'3037006640860100479 ",
+  "DisbursmentType": "Net",
+  "finalDisbursment": "Yes",
+  "disbursmentAccount": "'10090066408601056",
+  "expectedResult": "successfully",
+  "linkedTcId": "FCB-12944"
+ },
+ {
+  "tcId": "FCB-129433",
+  "summary": "Assets_LAA_Retail_Disburse_Manual_Full_BackDated_Net_SecuredLoan_EGP_ByMaker_DG1",
+  "username": "PT45",
+  "password": "Infy@123",
+  "menu": "PLD",
+  "accountId": "'3008006640850100177 ",
+  "DisbursmentType": "Net",
+  "finalDisbursment": "Yes",
+  "disbursmentAccount": "'10110066408501069",
+  "expectedResult": "successfully",
+  "linkedTcId": "FCB-129444"
+ }
+]

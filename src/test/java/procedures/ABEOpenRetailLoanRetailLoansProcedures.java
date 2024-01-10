@@ -27,7 +27,7 @@ public class ABEOpenRetailLoanRetailLoansProcedures {
 									  .pressRepaymentParameterContinueButton()
 									  .SendKeysOperativeAccount(data.getOperativeAccount())
 									  .PressSubmit()
-									  .saveAccountId(data.getLinkedTcId(), data.getSeconfLinkedTcId(), data.getThirdLinkedTcId());
+									  .saveAccountId(data.getLinkedTcId(), data.getSeconfLinkedTcId(), data.getThirdLinkedTcId() , data.getOperativeAccount());
 		}
 
 }

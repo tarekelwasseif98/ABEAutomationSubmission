@@ -1,7 +1,10 @@
 package utils;
 
 public class Properties {
+	
 	public static final String HUBURL = "http://10.43.174.19:4444";
+	
+	//public static final String HUBURL = "http://10.43.174.19:4444";
 	public static final int MINTIME = 15;
 	public static final int MAXTIME = 65;
 	public static final int SLEEPTIME = 6000;
@@ -13,4 +16,5 @@ public class Properties {
 	public static final String DBSCHEMA = "tbaadm";
 	public static final String DBUSER = "readonly";
 	public static final String DBPASSWORD = "readonly";
+	
 }

@@ -1,0 +1,11 @@
+[
+ {
+  "tcId": "FCB-4734",
+  "summary": "Payments_ACH_OutwardPayment_VerifyingOutwardPaymentEGP_ByBranchChecker_A2",
+  "username": "PT165",
+  "password": "Infy@123",
+  "menu": "MPOR",
+  "Pos": "'000000000275",
+  "expectedResult": "The record is verified successfully."
+ }
+]
