@@ -1,0 +1,621 @@
+[
+ {
+  "tcId": "FCB-11192",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM2_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1153006640850100064",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11255",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY3_EUR_3YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1159006640860301017",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11170",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TW14_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11181",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM1_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11178",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM1_EUR_1MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1159006640860301024",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11168",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TW7_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1157006640880100043",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11172",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM1_USD_1MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11175",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM1_GBP_1MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11183",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM2_USD_2MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11186",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM2_GBP_2MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11189",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM2_EUR_2MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1153006640860301037",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11194",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM3_USD_3MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11197",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM3_GBP_3MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11200",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM3_EUR_3MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1154006640860301043",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11203",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM3_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11205",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM6_USD_6MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11208",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM6_GBP_6MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11211",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM6_EUR_6MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1155006640860301059",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11214",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM6_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11216",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM9_USD_9MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11219",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM9_GBP_9MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11222",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM9_EUR_9MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1155006640860301066",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11225",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM9_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11227",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY1_USD_1YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11230",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY1_GBP_1YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11233",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY1_EUR_1YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1150006640860301078",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11236",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY1_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11238",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY2_USD_2YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11241",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY2_GBP_2YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11244",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY2_EUR_2YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1150006640860301085",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11247",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY2_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11249",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY3_USD_3YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11252",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY3_GBP_3YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11258",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY3_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11260",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY5_USD_5YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11263",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY5_GBP_5YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11266",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY5_EUR_5YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1150006640860301092",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11269",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY5_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11271",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY7_USD_7YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11274",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY7_GBP_7YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11277",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY7_EUR_7YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1150006640860301108",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11280",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY7_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11282",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY1M_EGP_1YEAR_MonthlyInterest_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11285",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY1M_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11287",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY2M_EGP_2YEAR_MonthlyInterest_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11290",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY2M_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11292",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY3M_EGP_3YEAR_MonthlyInterest_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11295",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY3M_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11297",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY5M_EGP_5YEAR_MonthlyInterest_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11300",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY5M_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1150006640880100057",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11302",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY7M_EGP_7YEAR_MonthlyInterest_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1150006640870100058",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11305",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY7M_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11307",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY1Q_EGP_1YEAR_QuartlyInterest_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11310",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY1Q_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11312",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY2Q_EGP_2YEAR_QuartlyInterest_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11315",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY2Q_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11317",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY3Q_EGP_3YEAR_QuartlyInterest_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11320",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY3Q_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11322",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY5Q_EGP_5YEAR_QuartlyInterest_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1150006640890100018",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11325",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY5Q_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1150006640860101117",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11327",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY7Q_EGP_7YEAR_QuartlyInterest_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1150006655860100013",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-11330",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY7Q_EGP_MinimumAmount_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1150006645860100054",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10947",
+  "summary": "Liabilities_TermDeposit_VerifyCreation_EGP_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2892",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TW7_EGP_1week_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2895",
+  "summary": "Liabilities_Deposit_Veify_TimeDeposit_TW14_EGP_2week_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1158006645860100063",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2898",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM1_EGP_1MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2901",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM2_EGP_2MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2904",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM3_EGP_3MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2907",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM6_EGP_6MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2910",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TM9_EGP_9MON_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2913",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY1_EGP_1YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2916",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY2_EGP_2YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2919",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY3_EGP_3YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2922",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY5_EGP_5YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2925",
+  "summary": "Liabilities_Deposit_Verify_TimeDeposit_TY7_EGP_7YEAR_Checker",
+  "username": "PT50",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ }
+]

@@ -88,6 +88,7 @@ public class ABEVerifyTdLiabilitiesAndOperationPage {
 	@Step("press go button")
 	public ABEVerifyTdLiabilitiesAndOperationPage pressGoButton() throws Exception {
 		PageFunctionUtils.clickOnElement(driver,GoButton);
+		PageFunctionUtils.clickOnElement(driver,GoButton);
 
 		return this;	
 	}

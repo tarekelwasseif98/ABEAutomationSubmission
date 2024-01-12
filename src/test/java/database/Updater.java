@@ -71,7 +71,7 @@ public class Updater {
             	continue;
             }
             
-        	//System.out.println("[debug] :"+ query);
+        	System.out.println("[debug] :"+ query);
             	
 	    	// open db connection and run query 
 			try{dbResults = dbConnection.runQuery(query).getResults();}
@@ -112,10 +112,13 @@ public class Updater {
 	
 	private static String FixKeyWords(String str)
 	{
-		switch(str)
+		switch(str.toLowerCase())
 		{
-			case "Retail"			:str="RETL";break;
-			case "Corporate"		:str="CO";break;
+			case "retail"			:str=" C.SEGMENTATION_CLASS = 'RETL' AND C.STAFFFLAG = 'N' ";break;
+			case "corporate"		:str=" C.SEGMENTATION_CLASS = 'CO' AND C.STAFFFLAG = 'N' ";break;
+			case "staff"		:str=" C.STAFFFLAG = 'Y' AND C.STAFFEMPLOYEEID NOT IN ('1589') ";break;
+			case "minor"		:str=" C.CUSTOMERMINOR = 'Y' ";break;
+			case "adult"		:str="CURRENT_DATE - C.CUST_DOB between 7665 and 21170 ";break;
 			default:{}
 		}
 		

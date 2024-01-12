@@ -1,0 +1,110 @@
+[
+ {
+  "tcId": "FCB-5776",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_YSF_1102_GBP_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-582",
+  "summary": "Liabilities_CASA_VerifyCreatingAccount_Retail_SBA_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "accountId": "'11000066708401026",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5742",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_SHF_EUR_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5744",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_SHF_USD_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "accountId": "'11040066609302022",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5746",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_SHF_GBP_1104_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5748",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_SHL_EGP__Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "accountId": "'11060066408601128",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5762",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_SSL_1105_EGP_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "accountId": "'11050353132601018",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5764",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_SSF_USD_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5766",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_SSF_EUR_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5768",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_SSF_1103_GBP_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5770",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_YSL_1110_EGP_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5772",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_YSF_EUR_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5774",
+  "summary": "Liabilities_CASA_VerifyCreation_SavingA\/C_YSF_USD_Checker",
+  "username": "PT51",
+  "password": "Infy@123",
+  "menu": "VSAO",
+  "expectedResult": "successfully"
+ }
+]
