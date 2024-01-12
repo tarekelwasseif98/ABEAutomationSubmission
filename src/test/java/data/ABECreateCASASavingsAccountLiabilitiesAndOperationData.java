@@ -7,6 +7,8 @@ public class ABECreateCASASavingsAccountLiabilitiesAndOperationData {
 	private String username;
 	private String password;
 	private String menu;
+	private String cifType;
+	private String cifAge;
 	private String cif;
 	private String SchemeCode;
 	private String ccy;
@@ -47,6 +49,19 @@ public class ABECreateCASASavingsAccountLiabilitiesAndOperationData {
 	}
 	public void setMenu(String menu) {
 		this.menu = menu;
+	}
+	
+	public String getCifType() {
+		return cifType;
+	}
+	public void setCifType(String cifType) {
+		this.cifType = cifType;
+	}
+	public String getCifAge() {
+		return cifAge;
+	}
+	public void setCifAge(String cifAge) {
+		this.cifAge = cifAge;
 	}
 	
 	public String getCif() {
@@ -90,34 +105,15 @@ public class ABECreateCASASavingsAccountLiabilitiesAndOperationData {
 	public void setCcy(String ccy) {
 		this.ccy = ccy;
 	}
+	
 	@Override
 	public String toString() {
-		return "ABE_Create_CASA_SavingsAccount_LiabilitiesAndOperation_Data [tcId=" + tcId + ", summary=" + summary
-				+ ", username=" + username + ", password=" + password + ", menu=" + menu + ", cif=" + cif
-				+ ", SchemeCode=" + SchemeCode + ", ccy=" + ccy + ", expectedResult=" + expectedResult + ", reference="
-				+ reference + ", linkedTcid=" + linkedTcid + "]";
+		return "ABECreateCASASavingsAccountLiabilitiesAndOperationData [tcId=" + tcId + ", summary=" + summary
+				+ ", username=" + username + ", password=" + password + ", menu=" + menu + ", cifType=" + cifType
+				+ ", cifAge=" + cifAge + ", cif=" + cif + ", SchemeCode=" + SchemeCode + ", ccy=" + ccy
+				+ ", expectedResult=" + expectedResult + ", reference=" + reference + ", linkedTcid=" + linkedTcid
+				+ "]";
 	}
 	
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
+	
