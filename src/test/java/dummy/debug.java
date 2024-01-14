@@ -10,7 +10,7 @@ public class debug {
     	StopWatch stopwatch = new StopWatch();
     	stopwatch.start();
     	//----------------BATCH 1 ----------------------------
-    	//
+    	ABEOpenCorporateLoanCorporateLoans_TestDataUpdate.Update();
     	//ABEDisburseCorporateLoanCorporateLoans_TestDataUpdate.Update();
     	//ABEOpenCurrentAccountMudarabahCAA_TestDataUpdate.Update();
     	//

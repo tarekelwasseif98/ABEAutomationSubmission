@@ -18,6 +18,7 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import pageobjects.FinacleLoginPage;
 import procedures.ABEOpenCorporateLoanCorporateLoansProcedures;
+import testdataupdate.ABEOpenCorporateLoanCorporateLoans_TestDataUpdate;
 import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
@@ -28,13 +29,16 @@ import io.qameta.allure.testng.AllureTestNg;
 
 @Listeners({AllureTestNg.class})
 public class ABEOpenCorporateLoanCorporateLoansTest {
-	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	
+	@BeforeClass(description= "Update CSV file")
+	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABEOPENCORPORATELOANCORPORATELOANSCSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEMODIFYCORPORATELOANCORPORATELOANSCSV, "accountId");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYCORPORATELOANCORPORATELOANSCSV, "accountId");
 		CSVUtils.clearColumnByName(Paths.ABEDISBURSECORPORATELOANCORPORATELOANSCSV, "accountId");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYCORPORATELOANDISBURSMENTCORPORATELOANSCSV, "accountId");
+		
+		ABEOpenCorporateLoanCorporateLoans_TestDataUpdate.Update();
 	}
 	
 	WebDriver driver = null;

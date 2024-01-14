@@ -162,7 +162,7 @@
     		 <version>3.0.0-M4</version>
     		 <configuration>
 				 <suiteXmlFiles>
-					 <suiteXmlFile>AssetsRetailLoanExecutionList.xml</suiteXmlFile>
+					 <suiteXmlFile>CorporateLoans.xml</suiteXmlFile>
 				</suiteXmlFiles>
 				<properties>
 					<property>
