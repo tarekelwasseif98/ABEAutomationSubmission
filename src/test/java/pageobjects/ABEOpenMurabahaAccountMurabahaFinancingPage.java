@@ -447,6 +447,7 @@ public class ABEOpenMurabahaAccountMurabahaFinancingPage {
 	@Step("Press continue button")
 	public ABEOpenMurabahaAccountMurabahaFinancingPage pressContinue8Button() throws Exception {
 		PageFunctionUtils.clickOnElement(driver, continue8Button);
+		PageFunctionUtils.clickOnElement(driver, continue8Button);
 		return this;
 	}
 	
