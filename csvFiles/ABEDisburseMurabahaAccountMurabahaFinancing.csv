@@ -1,11 +1,11 @@
-tcId,summary,username,password,menu,murabahaAccountId,valueDate,creditAccountId,expectedResult,linkedTcid
-FCB-10020,IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_CarsShortTerm_4010_ByMaker_D1,PT13,Infy@123,PFAD,'4010066111090100013 ,'10-10-2023,'11000476267901001,successfully,FCB-10055
-FCB-10021,IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_CarsMedium&LongTerm_4011_ByMaker_D2,PT13,Infy@123,PFAD,'4011066065010100012 ,'10-10-2022,'10100465693401001,successfully,FCB-10056
-FCB-10022,IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_MicroFinanceShortTerm_4012_ByMaker_D3,PT13,Infy@123,PFAD,'4012066073650100025 ,'10-10-2023,'11000578642901001,successfully,FCB-10057
-FCB-10023,IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_RetailProjectsShortTerm_4013_ByMaker_D4,PT13,Infy@123,PFAD,'4013066043820100013 ,'10-08-2023,'10020618947401001,successfully,FCB-10058
-FCB-10024,IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_RetailProjectsMedium&LongTerm_4014_ByMaker_D5,PT13,Infy@123,PFAD,'4014065816830100012 ,'10-10-2023,'11050555985001001,successfully,FCB-10059
-FCB-10025,IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_LivestockShortTerm_4015_ByMaker_D6,PT13,Infy@123,PFAD,'4015066073650100039 ,'10-05-2023,'11090531409801001,successfully,FCB-10060
-FCB-10026,IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_LivestockMedium&LongTerm_4016_ByMaker_D7,PT13,Infy@123,PFAD,'4016065842560101155 ,'10-10-2023,'11000481528201001,successfully,FCB-10061
-FCB-10027,IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_MicroFinanceCBEShortTerm_4017_ByMaker_D8,PT13,Infy@123,PFAD,'4017066065010100023 ,'03-10-2023,'10020476766501001,successfully,FCB-10062
-FCB-10028,IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_MicroFinanceCBEMedium&LongTerm_4018_ByMaker_D9,PT13,Infy@123,PFAD,'4018065816830100025 ,'10-10-2023,'11000459538101001,successfully,FCB-10063
-FCB-10029,IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_SMEs-S-CBE-ShortTerm_4000_ByMaker_D10,PT13,Infy@123,PFAD,'4000065816830100033 ,'10-10-2023,'11000442520601001,successfully,FCB-10064
+"tcId","summary","username","password","menu","murabahaAccountId","valueDate","creditAccountId","expectedResult","linkedTcid"
+"FCB-10020","IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_CarsShortTerm_4010_ByMaker_D1","PT13","Infy@123","PFAD","","'10-10-2023","","successfully","FCB-10055"
+"FCB-10021","IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_CarsMedium&LongTerm_4011_ByMaker_D2","PT13","Infy@123","PFAD","","'10-10-2022","","successfully","FCB-10056"
+"FCB-10022","IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_MicroFinanceShortTerm_4012_ByMaker_D3","PT13","Infy@123","PFAD","","'10-10-2023","","successfully","FCB-10057"
+"FCB-10023","IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_RetailProjectsShortTerm_4013_ByMaker_D4","PT13","Infy@123","PFAD","","'10-08-2023","","successfully","FCB-10058"
+"FCB-10024","IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_RetailProjectsMedium&LongTerm_4014_ByMaker_D5","PT13","Infy@123","PFAD","","'10-10-2023","","successfully","FCB-10059"
+"FCB-10025","IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_LivestockShortTerm_4015_ByMaker_D6","PT13","Infy@123","PFAD","","'10-05-2023","","successfully","FCB-10060"
+"FCB-10026","IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_LivestockMedium&LongTerm_4016_ByMaker_D7","PT13","Infy@123","PFAD","","'10-10-2023","","successfully","FCB-10061"
+"FCB-10027","IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_MicroFinanceCBEShortTerm_4017_ByMaker_D8","PT13","Infy@123","PFAD","","'03-10-2023","","successfully","FCB-10062"
+"FCB-10028","IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_MicroFinanceCBEMedium&LongTerm_4018_ByMaker_D9","PT13","Infy@123","PFAD","","'10-10-2023","","successfully","FCB-10063"
+"FCB-10029","IslamicBanking_MurabahaFinancing_Disburse_MurabahaAccount_SMEs-S-CBE-ShortTerm_4000_ByMaker_D10","PT13","Infy@123","PFAD","","'10-10-2023","","successfully","FCB-10064"

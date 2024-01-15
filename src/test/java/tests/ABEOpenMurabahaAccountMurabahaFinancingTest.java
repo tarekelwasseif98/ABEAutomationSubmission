@@ -29,11 +29,13 @@ import io.qameta.allure.testng.AllureTestNg;
 public class ABEOpenMurabahaAccountMurabahaFinancingTest {
 	@BeforeClass
 	public void oneTimeSetUp() throws Exception {
+		
 		CSVUtils.clearColumnByName(Paths.ABEOPENMURABAHAACCOUNTMURABAHAFINANCINGCSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYMURABAHAACCOUNTOPENINGMURABAHAFINANCINGCSV, "accountId");
 		CSVUtils.clearColumnByName(Paths.ABEDISBURSEMURABAHAACCOUNTMURABAHAFINANCINGCSV, "murabahaAccountId");
+		CSVUtils.clearColumnByName(Paths.ABEDISBURSEMURABAHAACCOUNTMURABAHAFINANCINGCSV, "creditAccountId");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYMURABAHAACCOUNTDISBURSEMENTMURABAHAFINANCINGCSV, "accountId");
-		
+	
 		ABEOpenMurabahaAccountMurabahaFinancing_TestDataUpdate.Update();
 	}
 	

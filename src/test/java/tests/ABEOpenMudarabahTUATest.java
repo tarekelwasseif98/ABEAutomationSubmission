@@ -30,8 +30,12 @@ public class ABEOpenMudarabahTUATest {
 	@BeforeClass
 	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABEOPENMUDARABAHTUACSV, "reference");
+		
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYMUDARABAHTUAOPENINGCSV, "accountId");
+		
 		CSVUtils.clearColumnByName(Paths.ABECLOSEMUDARABAHTUACSV, "accountId");
+		CSVUtils.clearColumnByName(Paths.ABECLOSEMUDARABAHTUACSV, "repaymentAccountId");
+		
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYMUDARABAHTUACLOSURECSV, "accountId");
 		
 		ABEOpenMudarabahTUA_TestDataUpdate.Update();

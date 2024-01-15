@@ -1,8 +1,8 @@
-tcId,summary,username,password,menu,cif,schemeCode,generalLedgerSubheadCode,expectedResult,reference,linkedTcid
-FCB-9827,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_Corporate_CACO_ByMaker_A1,PT1,Infy@123,OICAC,'03809784,1610,21901,successfully,'16100657943001151,FCB-9836
-FCB-9829,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_Pension_CAP_ByMaker_A3,PT1,Infy@123,OICAC,'05275607,1603,21904,successfully,'16030624895101738,FCB-9838
-FCB-9830,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_Co-OprerativeOrganization_CACOOP_ByMaker_A4,PT1,Infy@123,OICAC,'05585684,1604,21902,successfully,'16040624895101746,FCB-9839
-FCB-9831,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_Inherit_CAINH_ByMaker_A5,PT1,Infy@123,OICAC,'04412777,1605,21905,successfully,'16050624895101754,FCB-9840
-FCB-9832,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_Individuals_CAIN_ByMaker_A6,PT1,Infy@123,OICAC,'03266991,1606,21903,successfully,'16060624895101762,FCB-9841
-FCB-9833,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_AgriculturePersons_CAAP_ByMaker_A7,PT1,Infy@123,OICAC,'03809784,1607,21906,successfully,'16070624895101770,FCB-9842
-FCB-9834,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_FacilityService_CALC_ByMaker_A8,PT1,Infy@123,OICAC,'05932780,1609,21908,successfully,'16090624895101787,FCB-9843
+tcId,summary,username,password,menu,cifType,cif,schemeCode,generalLedgerSubheadCode,expectedResult,reference,linkedTcid
+FCB-9827,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_Corporate_CACO_ByMaker_A1,PT1,Infy@123,OICAC,Corporate,'06619093,1610,21901,successfully,,FCB-9836
+FCB-9829,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_Pension_CAP_ByMaker_A3,PT1,Infy@123,OICAC,Retail,'006635858,1603,21904,successfully,'16030066609301036,FCB-9838
+FCB-9830,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_Co-OprerativeOrganization_CACOOP_ByMaker_A4,PT1,Infy@123,OICAC,Retail,'006670895,1604,21902,successfully,'16040066708801047,FCB-9839
+FCB-9831,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_Inherit_CAINH_ByMaker_A5,PT1,Infy@123,OICAC,Retail,'006660886,1605,21905,successfully,'16050066708801053,FCB-9840
+FCB-9832,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_Individuals_CAIN_ByMaker_A6,PT1,Infy@123,OICAC,Retail,'006635858,1606,21903,successfully,'16060066609001081,FCB-9841
+FCB-9833,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_AgriculturePersons_CAAP_ByMaker_A7,PT1,Infy@123,OICAC,Retail,'006635858,1607,21906,successfully,'16070066708601046,FCB-9842
+FCB-9834,IslamicBanking_MudarabahCAA_Open_IslamicCurrentAccount_FacilityService_CALC_ByMaker_A8,PT1,Infy@123,OICAC,Retail,'006640883,1609,21908,successfully,'16090066609301047,FCB-9843

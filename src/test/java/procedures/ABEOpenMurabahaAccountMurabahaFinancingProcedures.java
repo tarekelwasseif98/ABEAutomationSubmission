@@ -150,6 +150,6 @@ public class ABEOpenMurabahaAccountMurabahaFinancingProcedures {
 															   												  openMurabahaAccountMurabahaFinancingPage.pressContinue9Button()
 															   											    										   .pressContinue10Button()
 															   											    										    .pressSubmitButton()
-															   											    										     .saveAccountId(data.getLinkedTcid(), data.getDisburseTcid());
+															   											    										     .saveAccountId(data.getLinkedTcid(), data.getDisburseTcid() , data.getOperativeAccountId());
 		}
 	}

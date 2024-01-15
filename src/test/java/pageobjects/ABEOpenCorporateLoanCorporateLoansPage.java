@@ -75,6 +75,7 @@ public class ABEOpenCorporateLoanCorporateLoansPage {
 	public static String  linkedTcidCsvColumnName = "linkedTcid";
 	public static String  modifyLinkedTcidCsvColumnName = "modifyLinkedTcid";
 	public static String  disburseLinkedTcidCsvColumnName = "disburseLinkedTcid";
+	public static String  disbursementAccountindisburseLinkedTcColumnName = "disbursmentAccount";
 	
 	public ABEOpenCorporateLoanCorporateLoansPage(WebDriver driver) {
 		this.driver = driver;
@@ -572,9 +573,10 @@ public class ABEOpenCorporateLoanCorporateLoansPage {
 	}
 	
 	@Step("Save account id")
-	public ABEOpenCorporateLoanCorporateLoansPage saveAccountId(String linkedId, String modifyLinkedTcid, String disburseLinkedTcid) throws Exception {
+	public ABEOpenCorporateLoanCorporateLoansPage saveAccountId(String linkedId, String modifyLinkedTcid, String disburseLinkedTcid , String disbursementAccount) throws Exception {
 		int rowByTcid1 = CSVUtils.getRowByTcid(Paths.ABEOPENCORPORATELOANCORPORATELOANSCSV, linkedTcidCsvColumnName, linkedId);
 		int columnByColumnName1 = CSVUtils.getColumnByColumnName(Paths.ABEOPENCORPORATELOANCORPORATELOANSCSV, referenceCsvColumnName);
+		
 		int rowByTcid2 = CSVUtils.getRowByTcid(Paths.ABEVERIFYCORPORATELOANCORPORATELOANSCSV, tcIdCsvColumnName, linkedId);
 		int columnByColumnName2 = CSVUtils.getColumnByColumnName(Paths.ABEVERIFYCORPORATELOANCORPORATELOANSCSV, accountIdCsvColumnName);
 		
@@ -584,7 +586,10 @@ public class ABEOpenCorporateLoanCorporateLoansPage {
 		
 		int rowByTcid5 = CSVUtils.getRowByTcid(Paths.ABEOPENCORPORATELOANCORPORATELOANSCSV, disburseLinkedTcidCsvColumnName, disburseLinkedTcid);
 		int rowByTcid6 = CSVUtils.getRowByTcid(Paths.ABEDISBURSECORPORATELOANCORPORATELOANSCSV, tcIdCsvColumnName, disburseLinkedTcid);
+		
+		
 		int columnByColumnName6 = CSVUtils.getColumnByColumnName(Paths.ABEDISBURSECORPORATELOANCORPORATELOANSCSV, accountIdCsvColumnName);
+		int columnByColumnName7 = CSVUtils.getColumnByColumnName(Paths.ABEDISBURSECORPORATELOANCORPORATELOANSCSV, disbursementAccountindisburseLinkedTcColumnName);
 		
 		if(rowByTcid1 != -1 && rowByTcid2 != -1) {
 			CSVUtils.insertValueInCsvCell(Paths.ABEOPENCORPORATELOANCORPORATELOANSCSV, rowByTcid1, columnByColumnName1, acId);
@@ -595,6 +600,7 @@ public class ABEOpenCorporateLoanCorporateLoansPage {
 		}
 		if(rowByTcid5 != -1 && rowByTcid6 != -1) {
 			CSVUtils.insertValueInCsvCell(Paths.ABEDISBURSECORPORATELOANCORPORATELOANSCSV, rowByTcid6, columnByColumnName6, acId);
+			CSVUtils.insertValueInCsvCell(Paths.ABEDISBURSECORPORATELOANCORPORATELOANSCSV, rowByTcid6, columnByColumnName7, disbursementAccount.substring(1));
 		}
 		return this;
 	}

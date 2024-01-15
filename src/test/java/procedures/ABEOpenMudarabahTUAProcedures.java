@@ -26,6 +26,6 @@ public class ABEOpenMudarabahTUAProcedures {
 					               .pressContinue3Button()
 					                .navigateRenewalAndClosureDetailsTabMenu()
 					                 .pressSubmitButton()
-					                  .saveAccountId(data.getLinkedTcid(), data.getCloseLinkedTcid());
+					                  .saveAccountId(data.getLinkedTcid(), data.getCloseLinkedTcid() , data.getRepaymentAccountId());
 		}
 	}

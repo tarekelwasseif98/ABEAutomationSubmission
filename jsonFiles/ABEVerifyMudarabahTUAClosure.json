@@ -5,7 +5,6 @@
   "username": "PT6",
   "password": "Infy@123",
   "menu": "VITUDAC",
-  "accountId": "'1752062489510101721",
   "expectedResult": "successfully"
  },
  {
@@ -14,7 +13,6 @@
   "username": "PT6",
   "password": "Infy@123",
   "menu": "VITUDAC",
-  "accountId": "'1750062489510101730",
   "expectedResult": "successfully"
  },
  {
@@ -23,7 +21,6 @@
   "username": "PT6",
   "password": "Infy@123",
   "menu": "VITUDAC",
-  "accountId": "'1757062489510101740",
   "expectedResult": "successfully"
  }
 ]

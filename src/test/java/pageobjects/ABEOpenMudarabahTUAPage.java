@@ -43,7 +43,7 @@ public class ABEOpenMudarabahTUAPage {
 	public static String  tcIdCsvColumnName = "tcId";
 	public static String  linkedTcidCsvColumnName = "linkedTcid";
 	public static String  closeLinkedTcidCsvColumnName = "closeLinkedTcid";
-	
+	public static String  repaymnetAccountinClousercloseLinkedTcCsvColumnName = "repaymentAccountId";
 	public ABEOpenMudarabahTUAPage(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -229,7 +229,7 @@ public class ABEOpenMudarabahTUAPage {
 	}
 	
 	@Step("Save account id")
-	public ABEOpenMudarabahTUAPage saveAccountId(String linkedId, String closeLinkedTcid) throws Exception {
+	public ABEOpenMudarabahTUAPage saveAccountId(String linkedId, String closeLinkedTcid , String repaymentAccountId) throws Exception {
 		int rowByTcid1 = CSVUtils.getRowByTcid(Paths.ABEOPENMUDARABAHTUACSV, linkedTcidCsvColumnName, linkedId);
 		int columnByColumnName1 = CSVUtils.getColumnByColumnName(Paths.ABEOPENMUDARABAHTUACSV, referenceCsvColumnName);
 		int rowByTcid2 = CSVUtils.getRowByTcid(Paths.ABEVERIFYMUDARABAHTUAOPENINGCSV, tcIdCsvColumnName, linkedId);
@@ -238,11 +238,14 @@ public class ABEOpenMudarabahTUAPage {
 			CSVUtils.insertValueInCsvCell(Paths.ABEOPENMUDARABAHTUACSV, rowByTcid1, columnByColumnName1, accountId);
 			CSVUtils.insertValueInCsvCell(Paths.ABEVERIFYMUDARABAHTUAOPENINGCSV, rowByTcid2, columnByColumnName2, accountId);
 		}
+		
 		int rowByTcid3 = CSVUtils.getRowByTcid(Paths.ABEOPENMUDARABAHTUACSV, closeLinkedTcidCsvColumnName, closeLinkedTcid);
 		int rowByTcid4 = CSVUtils.getRowByTcid(Paths.ABECLOSEMUDARABAHTUACSV, tcIdCsvColumnName, closeLinkedTcid);
 		int columnByColumnName4 = CSVUtils.getColumnByColumnName(Paths.ABECLOSEMUDARABAHTUACSV, accountIdCsvColumnName);
+		int columnByColumnName5 = CSVUtils.getColumnByColumnName(Paths.ABECLOSEMUDARABAHTUACSV, repaymnetAccountinClousercloseLinkedTcCsvColumnName);
 		if(rowByTcid3 != -1 && rowByTcid4 != -1) {
 			CSVUtils.insertValueInCsvCell(Paths.ABECLOSEMUDARABAHTUACSV, rowByTcid4, columnByColumnName4, accountId);
+			CSVUtils.insertValueInCsvCell(Paths.ABECLOSEMUDARABAHTUACSV, rowByTcid4, columnByColumnName5,repaymentAccountId.substring(1) );
 		}
 		return this;
 	}							
