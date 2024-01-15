@@ -114,8 +114,8 @@ public class Updater {
 	{
 		switch(str.toLowerCase())
 		{
-			case "retail"			:str=" C.SEGMENTATION_CLASS = 'RETL' AND C.STAFFFLAG = 'N' ";break;
-			case "corporate"		:str=" C.SEGMENTATION_CLASS = 'CO' AND C.STAFFFLAG = 'N' ";break;
+			case "retail"			:str=" C.SEGMENTATION_CLASS = 'RETL' AND (C.STAFFFLAG is null or C.STAFFFLAG != 'Y') ";break;
+			case "corporate"		:str=" C.SEGMENTATION_CLASS = 'CO' AND (C.STAFFFLAG is null or C.STAFFFLAG != 'Y') ";break;
 			case "staff"		:str=" C.STAFFFLAG = 'Y' AND C.STAFFEMPLOYEEID NOT IN ('1589') ";break;
 			case "minor"		:str=" C.CUSTOMERMINOR = 'Y' ";break;
 			case "adult"		:str="CURRENT_DATE - C.CUST_DOB between 7665 and 21170 ";break;

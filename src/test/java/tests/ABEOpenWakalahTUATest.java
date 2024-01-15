@@ -31,8 +31,12 @@ public class ABEOpenWakalahTUATest {
 	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABEOPENWAKALAHTUACSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYWAKALAHTUAOPENINGCSV, "accountId");
+		
 		CSVUtils.clearColumnByName(Paths.ABECLOSEWAKALAHTUACSV, "accountId");
+		CSVUtils.clearColumnByName(Paths.ABECLOSEWAKALAHTUACSV, "repaymentAccountId");
+		
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYWAKALAHTUACLOSURECSV, "accountId");
+		
 		
 		ABEOpenWakalahTUA_TestDataUpdate.Update();
 	}

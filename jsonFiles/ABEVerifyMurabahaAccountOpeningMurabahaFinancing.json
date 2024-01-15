@@ -5,7 +5,6 @@
   "username": "PT12",
   "password": "Infy@123",
   "menu": "AIFAT",
-  "accountId": "'4010065842560100602 ",
   "expectedResult": "successfully"
  },
  {
@@ -14,7 +13,6 @@
   "username": "PT12",
   "password": "Infy@123",
   "menu": "AIFAT",
-  "accountId": "'4011065842560100610 ",
   "expectedResult": "successfully"
  },
  {
@@ -23,7 +21,6 @@
   "username": "PT12",
   "password": "Infy@123",
   "menu": "AIFAT",
-  "accountId": "'4012065842560100628 ",
   "expectedResult": "successfully"
  },
  {
@@ -32,7 +29,6 @@
   "username": "PT12",
   "password": "Infy@123",
   "menu": "AIFAT",
-  "accountId": "'4013065842560100636 ",
   "expectedResult": "successfully"
  },
  {
@@ -41,7 +37,6 @@
   "username": "PT12",
   "password": "Infy@123",
   "menu": "AIFAT",
-  "accountId": "'4014065842560100644 ",
   "expectedResult": "successfully"
  },
  {
@@ -50,7 +45,6 @@
   "username": "PT12",
   "password": "Infy@123",
   "menu": "AIFAT",
-  "accountId": "'4015065842560100652 ",
   "expectedResult": "successfully"
  },
  {
@@ -59,7 +53,6 @@
   "username": "PT12",
   "password": "Infy@123",
   "menu": "AIFAT",
-  "accountId": "'4016065842560100660 ",
   "expectedResult": "successfully"
  },
  {
@@ -68,7 +61,6 @@
   "username": "PT12",
   "password": "Infy@123",
   "menu": "AIFAT",
-  "accountId": "'4017065842560100678 ",
   "expectedResult": "successfully"
  },
  {
@@ -77,7 +69,6 @@
   "username": "PT12",
   "password": "Infy@123",
   "menu": "AIFAT",
-  "accountId": "'4018065842560100686 ",
   "expectedResult": "successfully"
  },
  {
@@ -86,7 +77,6 @@
   "username": "PT12",
   "password": "Infy@123",
   "menu": "AIFAT",
-  "accountId": "'4000065842560100696 ",
   "expectedResult": "successfully"
  }
 ]

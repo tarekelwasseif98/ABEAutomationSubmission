@@ -8,9 +8,9 @@
 <test thread-count="1" name="Murabaha Financing">
     <classes>
 		<class name="tests.ABEOpenMurabahaAccountMurabahaFinancingTest"/>
-	 <!--	<class name="tests.ABEVerifyMurabahaAccountOpeningMurabahaFinancingTest"/>
+		<class name="tests.ABEVerifyMurabahaAccountOpeningMurabahaFinancingTest"/>
 	 	<class name="tests.ABEDisburseMurabahaAccountMurabahaFinancingTest"/>
-	 	<class name="tests.ABEVerifyMurabahaAccountDisbursementMurabahaFinancingTest"/>-->
+	 	<class name="tests.ABEVerifyMurabahaAccountDisbursementMurabahaFinancingTest"/>
     </classes>
 </test>
 </suite>

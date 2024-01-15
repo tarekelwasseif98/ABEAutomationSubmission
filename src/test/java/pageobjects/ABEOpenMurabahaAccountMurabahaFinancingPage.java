@@ -71,6 +71,7 @@ public class ABEOpenMurabahaAccountMurabahaFinancingPage {
 	public static String  linkedTcidCsvColumnName = "linkedTcid";
 	public static String disburseTcidCsvColumnName = "disburseTcid";
 	public static String  murabahaAccountIdCsvColumnName = "murabahaAccountId";
+	public static String  disbursementAccountindisburseLinkedTcColumnName = "creditAccountId";
 	
 	public ABEOpenMurabahaAccountMurabahaFinancingPage(WebDriver driver) {
 		this.driver = driver;
@@ -447,7 +448,7 @@ public class ABEOpenMurabahaAccountMurabahaFinancingPage {
 	@Step("Press continue button")
 	public ABEOpenMurabahaAccountMurabahaFinancingPage pressContinue8Button() throws Exception {
 		PageFunctionUtils.clickOnElement(driver, continue8Button);
-		PageFunctionUtils.clickOnElement(driver, continue8Button);
+		//PageFunctionUtils.clickOnElement(driver, continue8Button);
 		return this;
 	}
 	
@@ -556,14 +557,16 @@ public class ABEOpenMurabahaAccountMurabahaFinancingPage {
 	}
 	
 	@Step("Save account id")
-	public ABEOpenMurabahaAccountMurabahaFinancingPage saveAccountId(String linkedId, String disburseTcid) throws Exception {
+	public ABEOpenMurabahaAccountMurabahaFinancingPage saveAccountId(String linkedId, String disburseTcid , String disbursementAccount) throws Exception {
 		int rowByTcid1 = CSVUtils.getRowByTcid(Paths.ABEOPENMURABAHAACCOUNTMURABAHAFINANCINGCSV, linkedTcidCsvColumnName, linkedId);
 		int columnByColumnName1 = CSVUtils.getColumnByColumnName(Paths.ABEOPENMURABAHAACCOUNTMURABAHAFINANCINGCSV, referenceCsvColumnName);
 		int rowByTcid2 = CSVUtils.getRowByTcid(Paths.ABEVERIFYMURABAHAACCOUNTOPENINGMURABAHAFINANCINGCSV, tcIdCsvColumnName, linkedId);
 		int columnByColumnName2 = CSVUtils.getColumnByColumnName(Paths.ABEVERIFYMURABAHAACCOUNTOPENINGMURABAHAFINANCINGCSV, accountIdCsvColumnName);
 		int rowByTcid3 = CSVUtils.getRowByTcid(Paths.ABEOPENMURABAHAACCOUNTMURABAHAFINANCINGCSV, disburseTcidCsvColumnName, disburseTcid);		
 		int rowByTcid4 = CSVUtils.getRowByTcid(Paths.ABEDISBURSEMURABAHAACCOUNTMURABAHAFINANCINGCSV, tcIdCsvColumnName, disburseTcid);
+		
 		int columnByColumnName4 = CSVUtils.getColumnByColumnName(Paths.ABEDISBURSEMURABAHAACCOUNTMURABAHAFINANCINGCSV, murabahaAccountIdCsvColumnName);
+		int columnByColumnName5 = CSVUtils.getColumnByColumnName(Paths.ABEDISBURSEMURABAHAACCOUNTMURABAHAFINANCINGCSV, disbursementAccountindisburseLinkedTcColumnName);
 		
 		if(rowByTcid1 != -1 && rowByTcid2 != -1) {
 			CSVUtils.insertValueInCsvCell(Paths.ABEOPENMURABAHAACCOUNTMURABAHAFINANCINGCSV, rowByTcid1, columnByColumnName1, acId);
@@ -572,6 +575,7 @@ public class ABEOpenMurabahaAccountMurabahaFinancingPage {
 		
 		if(rowByTcid3 != -1 && rowByTcid4 != -1) {
 			CSVUtils.insertValueInCsvCell(Paths.ABEDISBURSEMURABAHAACCOUNTMURABAHAFINANCINGCSV, rowByTcid4, columnByColumnName4, acId);
+			CSVUtils.insertValueInCsvCell(Paths.ABEDISBURSEMURABAHAACCOUNTMURABAHAFINANCINGCSV, rowByTcid4, columnByColumnName5, disbursementAccount.substring(1));
 		}
 		return this;
 	}								

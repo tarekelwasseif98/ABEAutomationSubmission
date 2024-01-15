@@ -13,9 +13,10 @@ public class debug {
     	//ABEOpenCorporateLoanCorporateLoans_TestDataUpdate.Update();
     	//ABEDisburseCorporateLoanCorporateLoans_TestDataUpdate.Update();
     	//ABEOpenCurrentAccountMudarabahCAA_TestDataUpdate.Update();
-    	ABEOpenMurabahaAccountMurabahaFinancing_TestDataUpdate.Update();
+    	//ABEOpenMurabahaAccountMurabahaFinancing_TestDataUpdate.Update();
     	//ABEDisburseMurabahaAccountMurabahaFinancing_TestDataUpdate.Update();
-    	//ABEOpenMudarabahTUA_TestDataUpdate.Update();
+    	
+    	ABEOpenMudarabahTUA_TestDataUpdate.Update();
     	//ABECloseMudarabahTUA_TestDataUpdate.Update(); 
     	//ABEOpenWakalahTUA_TestDataUpdate.Update();
     	//ABECloseWakalahTUA_TestDataUpdate.Update();	

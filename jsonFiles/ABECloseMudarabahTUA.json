@@ -5,8 +5,6 @@
   "username": "PT5",
   "password": "Infy@123",
   "menu": "CITUDA",
-  "accountId": "'1752062489510101721",
-  "repaymentAccountId": "'16060624895101023",
   "expectedResult": "successfully",
   "linkedTcid": "FCB-9882"
  },
@@ -16,8 +14,6 @@
   "username": "PT5",
   "password": "Infy@123",
   "menu": "CITUDA",
-  "accountId": "'1750062489510101730",
-  "repaymentAccountId": "'16060624895101023",
   "expectedResult": "successfully",
   "linkedTcid": "FCB-20082"
  },
@@ -27,8 +23,6 @@
   "username": "PT5",
   "password": "Infy@123",
   "menu": "CITUDA",
-  "accountId": "'1757062489510101740",
-  "repaymentAccountId": "'16060624895101023",
   "expectedResult": "successfully",
   "linkedTcid": "FCB-20084"
  }

@@ -47,6 +47,7 @@ public class ABEOpenWakalahTUAPage {
 	public static String  tcIdCsvColumnName = "tcId";
 	public static String  linkedTcidCsvColumnName = "linkedTcid";
 	public static String  closeLinkedTcidCsvColumnName = "closeLinkedTcid";
+	public static String  repaymentAccountIdincloseLinkedTcCsvColumnName = "repaymentAccountId";
 	
 	public ABEOpenWakalahTUAPage(WebDriver driver) {
 		this.driver = driver;
@@ -238,7 +239,7 @@ public class ABEOpenWakalahTUAPage {
 	}
 	
 	@Step("Save account id")
-	public ABEOpenWakalahTUAPage saveAccountId(String linkedId, String closeLinkedTcid) throws Exception {
+	public ABEOpenWakalahTUAPage saveAccountId(String linkedId, String closeLinkedTcid , String repaymentAccountId) throws Exception {
 		int rowByTcid1 = CSVUtils.getRowByTcid(Paths.ABEOPENWAKALAHTUACSV, linkedTcidCsvColumnName, linkedId);
 		int columnByColumnName1 = CSVUtils.getColumnByColumnName(Paths.ABEOPENWAKALAHTUACSV, referenceCsvColumnName);
 		int rowByTcid2 = CSVUtils.getRowByTcid(Paths.ABEVERIFYWAKALAHTUAOPENINGCSV, tcIdCsvColumnName, linkedId);
@@ -250,8 +251,10 @@ public class ABEOpenWakalahTUAPage {
 		int rowByTcid3 = CSVUtils.getRowByTcid(Paths.ABEOPENWAKALAHTUACSV, closeLinkedTcidCsvColumnName, closeLinkedTcid);
 		int rowByTcid4 = CSVUtils.getRowByTcid(Paths.ABECLOSEWAKALAHTUACSV, tcIdCsvColumnName, closeLinkedTcid);
 		int columnByColumnName4 = CSVUtils.getColumnByColumnName(Paths.ABECLOSEWAKALAHTUACSV, accountIdCsvColumnName);
+		int columnByColumnName5 = CSVUtils.getColumnByColumnName(Paths.ABECLOSEWAKALAHTUACSV, repaymentAccountIdincloseLinkedTcCsvColumnName);
 		if(rowByTcid3 != -1 && rowByTcid4 != -1) {
 			CSVUtils.insertValueInCsvCell(Paths.ABECLOSEWAKALAHTUACSV, rowByTcid4, columnByColumnName4, accountId);
+			CSVUtils.insertValueInCsvCell(Paths.ABECLOSEWAKALAHTUACSV, rowByTcid4, columnByColumnName5, repaymentAccountId.substring(1) );
 		}
 		return this;
 	}							

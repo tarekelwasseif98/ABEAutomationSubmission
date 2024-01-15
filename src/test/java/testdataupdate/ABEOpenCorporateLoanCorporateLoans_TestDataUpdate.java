@@ -29,13 +29,10 @@ public class ABEOpenCorporateLoanCorporateLoans_TestDataUpdate {
 			+ "    AND A.ACCT_CRNCY_CODE = 'EGP' "
 			+ "    AND A.clr_bal_amt > 20000 "
 			+ "    AND S.ACCT_STATUS = 'A' "
-			+ "    AND EXISTS ( SELECT 1 FROM CRMUSER.ACCOUNTS C  "
-			+ "                        WHERE C.ORGKEY = A.CIF_ID "
-			+ "                            AND C.KYC_STATUS = 'A' "
-			+ "                            AND C.RECORDSTATUS = 'A' "
-			+ "                            AND C.SEGMENTATION_CLASS = 'CO') "
-			+ " "
-			+ "AND ROWNUM <= 50 "
+			+ "    AND EXISTS ( SELECT 1 FROM CRMUSER.ACCOUNTS C WHERE C.ORGKEY = A.CIF_ID AND C.KYC_STATUS = 'A' AND C.SEGMENTATION_CLASS = 'CO') "
+			+ "    AND EXISTS (select 1 from Crmuser.ENTITYDOCUMENT D where D.ORGKEY = A.CIF_ID AND DOCEXPIRYDATE > Current_Date) "
+			+ "    AND EXISTS (select 1 from crmuser.AMLKYC K where K.orgkey = A.CIF_ID AND KYC_RECERTDATE > Current_Date) "
+			+ "    AND ROWNUM <= 50 "
 			+ "ORDER BY DBMS_RANDOM.value "
 			+ "FETCH FIRST 1 ROWS ONLY";
 	

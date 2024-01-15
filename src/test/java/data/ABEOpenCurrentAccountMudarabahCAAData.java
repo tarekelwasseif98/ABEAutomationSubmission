@@ -7,6 +7,7 @@ public class ABEOpenCurrentAccountMudarabahCAAData {
 	private String username;
 	private String password;
 	private String menu;
+	private String cifType;
 	private String cif;
 	private String schemeCode;
 	private String generalLedgerSubheadCode;
@@ -53,7 +54,15 @@ public class ABEOpenCurrentAccountMudarabahCAAData {
 	public void setMenu(String menu) {
 		this.menu = menu;
 	}
+	
+	public String getCifType() {
+		return cifType;
+	}
 
+	public void setCifType(String cifType) {
+		this.cifType = cifType;
+	}
+	
 	public String getCif() {
 		return cif;
 	}
@@ -102,11 +111,5 @@ public class ABEOpenCurrentAccountMudarabahCAAData {
 		this.linkedTcid = linkedTCID;
 	}
 
-	@Override
-	public String toString() {
-		return "ABEOpenCurrentAccountMudarabahCAAData [tcId=" + tcId + ", summary=" + summary + ", username=" + username
-				+ ", password=" + password + ", menu=" + menu + ", cif=" + cif + ", schemeCode=" + schemeCode
-				+ ", generalLedgerSubheadCode=" + generalLedgerSubheadCode + ", expectedResult=" + expectedResult
-				+ ", linkedTcid=" + linkedTcid + "]";
-	}
+	
 }

@@ -7,13 +7,14 @@
 </listeners>
 <test thread-count="1" name="TUA">
     <classes>
-		<class name="tests.ABEOpenMudarabahTUATest"/>
+		<!--<class name="tests.ABEOpenMudarabahTUATest"/>
 	 	<class name="tests.ABEVerifyMudarabahTUAOpeningTest"/>
 	 	<class name="tests.ABECloseMudarabahTUATest"/>
-	 	<class name="tests.ABEVerifyMudarabahTUAClosureTest"/>
+	 	<class name="tests.ABEVerifyMudarabahTUAClosureTest"/>-->
+	 	
 	 	<class name="tests.ABEOpenWakalahTUATest"/>
 	 	<class name="tests.ABEVerifyWakalahTUAOpeningTest"/>
-	 	<class name="tests.ABECloseWakalahTUATest"/>
+     	<class name="tests.ABECloseWakalahTUATest"/>
 	 	<class name="tests.ABEVerifyWakalahTUAClosureTest"/>
     </classes>
 </test>
