@@ -12,12 +12,12 @@
 		
 		<class name="tests.ABEAcceptExportBillsTradeFinanceTest"/>
 		<class name="tests.ABEVerifyAcceptExportBillsTradeFinanceTest"/>
-	<!--	
+
 		<class name="tests.ABEPurchaseExportBillsTradeFinanceTest"/>
 		<class name="tests.ABEVerifyPurchaseExportBillsTradeFinanceTest"/>
 		
-		<class name="tests.ABERealizeExportBillsTradeFinanceTest"/>
-		<class name="tests.ABEVerifyRealizeExportBillsTradeFinanceTest"/>-->
+	    <class name="tests.ABERealizeExportBillsTradeFinanceTest"/>
+		<class name="tests.ABEVerifyRealizeExportBillsTradeFinanceTest"/>
     </classes>
 </test>
 </suite>

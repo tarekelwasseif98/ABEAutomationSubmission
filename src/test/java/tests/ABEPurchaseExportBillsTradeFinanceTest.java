@@ -15,6 +15,7 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import pageobjects.FinacleLoginPage;
 import procedures.ABEPurchaseExportBillsTradeFinanceProcedures;
+import testdataupdate.ABEPurchaseExportBillsTradeFinance_TestDataUpdate;
 import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
@@ -25,6 +26,14 @@ import io.qameta.allure.testng.AllureTestNg;
 @Listeners({AllureTestNg.class})
 public class ABEPurchaseExportBillsTradeFinanceTest {
 	WebDriver driver = null;
+	
+	@BeforeMethod(description= "Update csv")
+	public void beforeMethod() throws Exception
+	{
+    	ABEPurchaseExportBillsTradeFinance_TestDataUpdate.Update();
+	}
+	
+	
 	@BeforeMethod(description= "Initiating Browser")
 	public void beforeTest(Object [] testData) throws Exception {
 		ABEPurchaseExportBillsTradeFinanceData data = (ABEPurchaseExportBillsTradeFinanceData) testData[0];

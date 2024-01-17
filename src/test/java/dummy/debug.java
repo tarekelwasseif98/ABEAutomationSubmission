@@ -15,9 +15,9 @@ public class debug {
     	//ABEOpenMurabahaAccountMurabahaFinancing_TestDataUpdate.Update();
     	//ABEOpenMudarabahTUA_TestDataUpdate.Update();
     	//ABEOpenWakalahTUA_TestDataUpdate.Update();
-    	ABELodgeExportBillsTradeFinance_TestDataUpdate.Update();
-    	//
-    	//
+    	//ABELodgeExportBillsTradeFinance_TestDataUpdate.Update();
+    	//ABEPurchaseExportBillsTradeFinance_TestDataUpdate.Update();
+    	ABERealizeExportBillsTradeFinance_TestDataUpdate.Update();
     	
     	//----------------BATCH 2 ----------------------------
     	//ABEOpenRetailLoanRetailLoans_TestDataUpdate.Update();

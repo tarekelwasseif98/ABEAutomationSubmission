@@ -6,6 +6,7 @@ public class ABERealizeExportBillsTradeFinanceData {
 	private String username;
 	private String password;
 	private String menu;
+	private String ccy;
 	private String billId;
 	private String mixedBillId1;
 	private String mixedBillId2;
@@ -61,6 +62,14 @@ public class ABERealizeExportBillsTradeFinanceData {
 		this.menu = menu;
 	}
 	
+	public String getCcy() {
+		return ccy;
+	}
+
+	public void setCcy(String ccy) {
+		this.ccy = ccy;
+	}
+
 	public String getBillId() {
 		return billId;
 	}

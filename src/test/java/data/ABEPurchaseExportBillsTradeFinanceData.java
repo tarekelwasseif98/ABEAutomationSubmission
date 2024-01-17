@@ -6,6 +6,7 @@ public class ABEPurchaseExportBillsTradeFinanceData {
 	private String username;
 	private String password;
 	private String menu;
+	private String ccy;
 	private String billId;
 	private String mixedBillId1;
 	private String mixedBillId2;
@@ -65,6 +66,12 @@ public class ABEPurchaseExportBillsTradeFinanceData {
 	
 	public void setMenu(String menu) {
 		this.menu = menu;
+	}
+	public String getCcy() {
+		return ccy;
+	}
+	public void setCcy(String ccy) {
+		this.ccy = ccy;
 	}
 	
 	public String getBillId() {
@@ -230,10 +237,10 @@ public class ABEPurchaseExportBillsTradeFinanceData {
 	@Override
 	public String toString() {
 		return "ABEPurchaseExportBillsTradeFinanceData [tcId=" + tcId + ", summary=" + summary + ", username="
-				+ username + ", password=" + password + ", menu=" + menu + ", billId=" + billId + ", mixedBillId1="
-				+ mixedBillId1 + ", mixedBillId2=" + mixedBillId2 + ", limitIdPrefix=" + limitIdPrefix
-				+ ", limitIdSuffix=" + limitIdSuffix + ", billPurchaseAccountId=" + billPurchaseAccountId
-				+ ", billPurchaseAmount=" + billPurchaseAmount + ", valueDate=" + valueDate
+				+ username + ", password=" + password + ", menu=" + menu + ", ccy=" + ccy + ", billId=" + billId
+				+ ", mixedBillId1=" + mixedBillId1 + ", mixedBillId2=" + mixedBillId2 + ", limitIdPrefix="
+				+ limitIdPrefix + ", limitIdSuffix=" + limitIdSuffix + ", billPurchaseAccountId="
+				+ billPurchaseAccountId + ", billPurchaseAmount=" + billPurchaseAmount + ", valueDate=" + valueDate
 				+ ", mixedBill1LimitIdPrefix=" + mixedBill1LimitIdPrefix + ", mixedBill1LimitIdSuffix="
 				+ mixedBill1LimitIdSuffix + ", mixedBill1PurchaseAccountId=" + mixedBill1PurchaseAccountId
 				+ ", mixedBill1PurchaseAmount=" + mixedBill1PurchaseAmount + ", mixedBill1ValueDate="
@@ -242,5 +249,7 @@ public class ABEPurchaseExportBillsTradeFinanceData {
 				+ mixedBill2PurchaseAccountId + ", mixedBill2PurchaseAmount=" + mixedBill2PurchaseAmount
 				+ ", mixedBill2ValueDate=" + mixedBill2ValueDate + ", expectedResult=" + expectedResult
 				+ ", linkedTcid=" + linkedTcid + "]";
-	}	
+	}
+
+	
 }

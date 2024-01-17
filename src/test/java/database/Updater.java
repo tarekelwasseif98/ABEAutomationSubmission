@@ -94,13 +94,15 @@ public class Updater {
 	
 	            try {
 	                Result = dbResults.getString(i+1);
+	                if(Result == null ) { throw new Exception();}
+	                
 	                CSVUtils.insertValueInCsvCell(csvFilePath, rowIndexInCSV , colIndexInCSV , Result);
 	            }
 	            catch (Exception e) {
 	            	System.out.println(ANSI_RED + "[db ERROR] : NO available record the meet the criteria on the database"   + ANSI_RESET);
 	            	System.out.println(ANSI_RED + e  + ANSI_RESET);
 	            	
-	            	continue;
+	            	break;
 	            }
 	        }
 	            System.out.println("[db Info] : update testdata : done");
