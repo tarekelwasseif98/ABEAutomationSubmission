@@ -13,6 +13,7 @@ public class ABELodgeExportBillsTradeFinanceProcedures {
 				    					  .sendKeysBillTypeTextField(data.getBillType())
 				    					   .sendKeysBillCcyTextField(data.getBillCcy())
 				    					    .sendKeysCifIdTextField(data.getCifId());
+		
 		if(data.getUnderDocumentaryCredit().equalsIgnoreCase(FinacleFieldsUtils.UNDERDOCUMENTARYCREDITYES)) {
 			lodgeExportBillsTradeFinancePage.pressUnderDocumentaryCreditYesButton()
 											 .sendKeysDocumentaryCreditNoTextField(data.getDocumentaryCreditNo());
@@ -20,33 +21,40 @@ public class ABELodgeExportBillsTradeFinanceProcedures {
 		else if(data.getUnderDocumentaryCredit().equalsIgnoreCase(FinacleFieldsUtils.UNDERDOCUMENTARYCREDITNO)) {
 			lodgeExportBillsTradeFinancePage.pressUnderDocumentaryCreditNoButton();
 			}
+		
 		lodgeExportBillsTradeFinancePage.pressGoButton()
 										 .sendKeysOperativeAccountIdTextField(data.getOperativeAccountId());
+		
 		if(data.getDrawerSwiftAddressDetails().equalsIgnoreCase(FinacleFieldsUtils.SWIFTADDRESSDETAILSYES)) {
 			lodgeExportBillsTradeFinancePage.pressDrawerSwiftAddressDetailsYesButton();
 			}
 		else if(data.getDrawerSwiftAddressDetails().equalsIgnoreCase(FinacleFieldsUtils.SWIFTADDRESSDETAILSNO)) {
 			lodgeExportBillsTradeFinancePage.pressDrawerSwiftAddressDetailsNoButton();
 			}
+		
 		lodgeExportBillsTradeFinancePage.sendKeysBillAmountTextField(data.getBillAmount())
 										 .sendKeysBillCountryTextField(data.getBillCountry())
 										  .sendKeysLodgeDateTextField(data.getLodgeDate())
 										   .pressContinue1Button()
 										    .sendKeysDraweeNameTextField(data.getDraweeName())
 										     .sendKeysDraweeAddressLine1TextField(data.getDraweeAddress());
+		
 		if(data.getDraweeSwiftAddressDetails().equalsIgnoreCase(FinacleFieldsUtils.SWIFTADDRESSDETAILSYES)) {
 			lodgeExportBillsTradeFinancePage.pressDraweeSwiftAddressDetailsYesButton();
 			}
 		else if(data.getDraweeSwiftAddressDetails().equalsIgnoreCase(FinacleFieldsUtils.SWIFTADDRESSDETAILSNO)) {
 			lodgeExportBillsTradeFinancePage.pressDraweeBankSwiftAddressDetailsNoButton();
 			}
+		
 		lodgeExportBillsTradeFinancePage.pressDraweeBankDetailsButton();
+		
 		if(data.getDraweeBankAddressType().equalsIgnoreCase(FinacleFieldsUtils.ADDRESSTYPEBANKIDENTIFIER)) {
 			lodgeExportBillsTradeFinancePage.selectDraweeBankAddressTypeBankIdentifier();
 			}
 		else if(data.getDraweeBankAddressType().equalsIgnoreCase(FinacleFieldsUtils.ADDRESSTYPENAMEANDADDRESS)) {
 			lodgeExportBillsTradeFinancePage.selectDraweeBankAddressTypeNameAndAddress();
 			}
+		
 		lodgeExportBillsTradeFinancePage.sendKeysDraweeBankIdentifierTextField(data.getDraweeBankIdentifier());
 		if(data.getDraweeBankSwiftAddressDetails().equalsIgnoreCase(FinacleFieldsUtils.SWIFTADDRESSDETAILSYES)) {
 			lodgeExportBillsTradeFinancePage.pressDraweeBankSwiftAddressDetailsYesButton()
@@ -56,14 +64,18 @@ public class ABELodgeExportBillsTradeFinanceProcedures {
 		else if(data.getDraweeBankSwiftAddressDetails().equalsIgnoreCase(FinacleFieldsUtils.SWIFTADDRESSDETAILSNO)) {
 			lodgeExportBillsTradeFinancePage.pressDraweeBankSwiftAddressDetailsNoButton();
 			}
+		
 		lodgeExportBillsTradeFinancePage.pressBeneficiaryBankDetailsButton();
+		
 		if(data.getBeneficiaryBankAddressType().equalsIgnoreCase(FinacleFieldsUtils.ADDRESSTYPEBANKIDENTIFIER)) {
 			lodgeExportBillsTradeFinancePage.selectBeneficiaryBankAddressTypeBankIdentifier();
 			}
 		else if(data.getBeneficiaryBankAddressType().equalsIgnoreCase(FinacleFieldsUtils.ADDRESSTYPENAMEANDADDRESS)) {
 			lodgeExportBillsTradeFinancePage.selectBeneficiaryBankAddressTypeNameAndAddress();
 			}
+		
 		lodgeExportBillsTradeFinancePage.sendKeysBeneficiaryBankIdentifierTextField(data.getBeneficiaryBankIdentifier());
+		
 		if(data.getBeneficiaryBankSwiftAddressDetails().equalsIgnoreCase(FinacleFieldsUtils.SWIFTADDRESSDETAILSYES)) {
 			lodgeExportBillsTradeFinancePage.pressBeneficiaryBankSwiftAddressDetailsYesButton()
 											 .sendKeysBeneficiaryBankNameTextField(data.getBeneficiaryBankName())
@@ -72,7 +84,9 @@ public class ABELodgeExportBillsTradeFinanceProcedures {
 		else if(data.getBeneficiaryBankSwiftAddressDetails().equalsIgnoreCase(FinacleFieldsUtils.SWIFTADDRESSDETAILSNO)) {
 			lodgeExportBillsTradeFinancePage.pressBeneficiaryBankSwiftAddressDetailsNoButton();
 			}
+		
 		lodgeExportBillsTradeFinancePage.pressCollectingBankDetailsButton();
+		
 		if(data.getCollectingBankAddressType() != null) {
 			if(data.getCollectingBankAddressType().equalsIgnoreCase(FinacleFieldsUtils.ADDRESSTYPEBANKIDENTIFIER)) {
 				lodgeExportBillsTradeFinancePage.selectCollectingBankAddressTypeBankIdentifier();
@@ -81,6 +95,7 @@ public class ABELodgeExportBillsTradeFinanceProcedures {
 				lodgeExportBillsTradeFinancePage.selectCollectingBankAddressTypeNameAndAddress();
 				}
 		}
+		
 		if(data.getCollectingBankIdentifier() != null) {
 			lodgeExportBillsTradeFinancePage.sendKeysCollectingBankIdentifierTextField(data.getCollectingBankIdentifier());
 		}
@@ -94,14 +109,18 @@ public class ABELodgeExportBillsTradeFinanceProcedures {
 				lodgeExportBillsTradeFinancePage.pressCollectingBankSwiftAddressDetailsNoButton();
 				}
 		}
+		
 		lodgeExportBillsTradeFinancePage.pressCorrespondentBankDetailsButton();
+		
 		if(data.getCorrespondentBankAddressType().equalsIgnoreCase(FinacleFieldsUtils.ADDRESSTYPEBANKIDENTIFIER)) {
 			lodgeExportBillsTradeFinancePage.selectCorrespondentBankAddressTypeBankIdentifier();
 			}
 		else if(data.getCorrespondentBankAddressType().equalsIgnoreCase(FinacleFieldsUtils.ADDRESSTYPENAMEANDADDRESS)) {
 			lodgeExportBillsTradeFinancePage.selectCorrespondentBankAddressTypeNameAndAddress();
 			}
+		
 		lodgeExportBillsTradeFinancePage.sendKeysCorrespondentBankIdentifierTextField(data.getCorrespondentBankIdentifier());
+		
 		if(data.getCorrespondentBankSwiftAddressDetails().equalsIgnoreCase(FinacleFieldsUtils.SWIFTADDRESSDETAILSYES)) {
 			lodgeExportBillsTradeFinancePage.pressCorrespondentBankSwiftAddressDetailsYesButton()
 											 .sendKeysCorrespondentBankNameTextField(data.getCorrespondentBankName())
@@ -110,6 +129,7 @@ public class ABELodgeExportBillsTradeFinanceProcedures {
 		else if(data.getCorrespondentBankSwiftAddressDetails().equalsIgnoreCase(FinacleFieldsUtils.SWIFTADDRESSDETAILSNO)) {
 			lodgeExportBillsTradeFinancePage.pressCorrespondentBankSwiftAddressDetailsNoButton();
 			}
+		
 		lodgeExportBillsTradeFinancePage.pressContinue2Button();
 		if(data.getType().equalsIgnoreCase(FinacleFieldsUtils.BILLTYPESIGHT)) {
 			lodgeExportBillsTradeFinancePage.pressTenorDetailsEditButton()

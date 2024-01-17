@@ -1,6 +1,5 @@
 package tests;
 
-import java.io.IOException;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -11,13 +10,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.aspose.cells.Workbook;
-import com.opencsv.exceptions.CsvException;
 import data.JsonReader;
 import data.ABELodgeExportBillsTradeFinanceData;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import pageobjects.FinacleLoginPage;
 import procedures.ABELodgeExportBillsTradeFinanceProcedures;
+import testdataupdate.ABELodgeExportBillsTradeFinance_TestDataUpdate;
 import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
@@ -28,8 +27,13 @@ import io.qameta.allure.testng.AllureTestNg;
 
 @Listeners({AllureTestNg.class})
 public class ABELodgeExportBillsTradeFinanceTest {
+	
 	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	public void oneTimeSetUp() throws Exception {
+		
+		ABELodgeExportBillsTradeFinance_TestDataUpdate.Update();
+		
+		
 		CSVUtils.clearColumnByName(Paths.ABELODGEEXPORTBILLSTRADEFINANCECSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYLODGEEXPORTBILLSTRADEFINANCECSV, "billId");
 		CSVUtils.clearColumnByName(Paths.ABEACCEPTEXPORTBILLSTRADEFINANCECSV, "billId");
@@ -50,6 +54,7 @@ public class ABELodgeExportBillsTradeFinanceTest {
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYREALIZEEXPORTBILLSTRADEFINANCECSV, "billId");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYREALIZEEXPORTBILLSTRADEFINANCECSV, "mixedBillId1");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYREALIZEEXPORTBILLSTRADEFINANCECSV, "mixedBillId2");
+
 	}
 	
 	WebDriver driver = null;

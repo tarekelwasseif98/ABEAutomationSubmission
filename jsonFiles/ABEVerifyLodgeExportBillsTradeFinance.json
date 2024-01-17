@@ -123,6 +123,7 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
+  "billId": "'1401EDC24000030",
   "expectedResult": "successfully",
   "acceptLinkedTcid": "FCB-7232",
   "verifyAcceptLinkedTcid": "FCB-7233",
