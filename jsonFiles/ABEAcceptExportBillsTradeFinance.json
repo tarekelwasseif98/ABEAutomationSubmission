@@ -5,6 +5,8 @@
   "username": "PT19",
   "password": "Infy@123",
   "menu": "AEOB",
+  "billId": "'1401EDC24000015",
+  "mixedBillId1": "'1401EDC24000016",
   "acceptanceDate": "'13-11-2023",
   "expectedResult": "successfully",
   "linkedTcid": "FCB-6854"
@@ -15,6 +17,7 @@
   "username": "PT19",
   "password": "Infy@123",
   "menu": "AEOB",
+  "billId": "'1401EDC24000018",
   "acceptanceDate": "'13-11-2023",
   "expectedResult": "successfully",
   "linkedTcid": "FCB-6806"
@@ -25,6 +28,7 @@
   "username": "PT19",
   "password": "Infy@123",
   "menu": "AEOB",
+  "billId": "'1401EDC24000019",
   "acceptanceDate": "'13-11-2023",
   "expectedResult": "successfully",
   "linkedTcid": "FCB-6814"
@@ -35,6 +39,7 @@
   "username": "PT19",
   "password": "Infy@123",
   "menu": "AEOB",
+  "billId": "'1401EDC24000020",
   "acceptanceDate": "'13-11-2023",
   "expectedResult": "successfully",
   "linkedTcid": "FCB-6826"
@@ -45,6 +50,9 @@
   "username": "PT19",
   "password": "Infy@123",
   "menu": "AEOB",
+  "billId": "'1401EDC24000021",
+  "mixedBillId1": "'1401EDC24000022",
+  "mixedBillId2": "'1401EDC24000023",
   "acceptanceDate": "'13-11-2023",
   "expectedResult": "successfully",
   "linkedTcid": "FCB-6834"
@@ -55,6 +63,7 @@
   "username": "PT19",
   "password": "Infy@123",
   "menu": "AEOB",
+  "billId": "'1401EDC24000024",
   "acceptanceDate": "'13-11-2023",
   "expectedResult": "successfully",
   "linkedTcid": "FCB-7179"
