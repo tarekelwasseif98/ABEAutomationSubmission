@@ -1,0 +1,11 @@
+[
+ {
+  "tcId": "FCB-7217",
+  "summary": "TradeFinance_Export_Bills_Under_Documentary_Credit_Verify_Purchase_Usance_Foreign_USD_ByChecker_F8",
+  "username": "PT20",
+  "password": "Infy@123",
+  "menu": "VEOB",
+  "billId": "'1401EDC24000033",
+  "expectedResult": "successfully"
+ }
+]

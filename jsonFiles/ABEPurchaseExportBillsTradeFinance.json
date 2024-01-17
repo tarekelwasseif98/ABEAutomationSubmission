@@ -1,0 +1,24 @@
+[
+ {
+  "tcId": "FCB-7216",
+  "summary": "TradeFinance_Export_Bills_Under_Documentary_Credit_Purchase_Lodge_Usance_Foreign_USD_ByMaker_F7",
+  "username": "PT19",
+  "password": "Infy@123",
+  "menu": "PEOBL",
+  "ccy": "USD",
+  "billId": "'1401EDC24000033",
+  "limitIdPrefix": "'06609582",
+  "limitIdSuffix": "'CUSTL",
+  "billPurchaseAccountId": "'1001002104010013",
+  "billPurchaseAmount": 1,
+  "valueDate": "'13-11-2023",
+  "mixedBill1LimitIdPrefix": "'06609582",
+  "mixedBill1LimitIdSuffix": "'CUSTL",
+  "mixedBill1PurchaseAccountId": "'1001002104010013",
+  "mixedBill2LimitIdPrefix": "'06609582",
+  "mixedBill2LimitIdSuffix": "'CUSTL",
+  "mixedBill2PurchaseAccountId": "'1001002104010013",
+  "expectedResult": "successfully",
+  "linkedTcid": "FCB-7217"
+ }
+]
