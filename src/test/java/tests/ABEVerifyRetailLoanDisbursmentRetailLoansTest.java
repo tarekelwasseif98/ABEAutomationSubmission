@@ -24,7 +24,7 @@ import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
 //, dependsOnGroups = "ABEDisburseRetailLoan"
-@Test(groups = "verifyRetailLoanDisbursment", dependsOnGroups = "ABEDisburseRetailLoan")
+@Test(groups = "verifyRetailLoanDisbursment")//, dependsOnGroups = "ABEDisburseRetailLoan")
 @Listeners({AllureTestNg.class})
 public class ABEVerifyRetailLoanDisbursmentRetailLoansTest {
 	

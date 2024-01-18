@@ -2,55 +2,55 @@
  {
   "tcId": "FCB-12750",
   "summary": "Assets_LAA_Retail_Verify_UnsecuredLoan_Fixed_Loan \/passengers cars individuals (Self employed )_LPCSE_Quarterly_Equated_EGP_ByChecker_B2",
-  "username": "PT50",
+  "username": "PT49",
   "password": "Infy@123",
   "menu": "VRLA",
-  "accountId": "'3019006640870100180 ",
+  "accountId": "'3019006640850100191 ",
   "expectedResult": "successfully"
  },
  {
   "tcId": "FCB-12748",
   "summary": "Assets_LAA_Retail_Verify_OpenedUnsecuredLoan_Fixed_ CashLoanPensionTransfer_CLPET_Monthly_Equated_EGP_ByChecker_A2",
-  "username": "PT50",
+  "username": "PT49",
   "password": "Infy@123",
   "menu": "VRLA",
-  "accountId": "'3010006640860100481 ",
+  "accountId": "'3010006655860100041 ",
   "expectedResult": "successfully"
  },
  {
   "tcId": "FCB-12752",
   "summary": "Assets_LAA_Retail_Verify_OpenedUnsecuredLoan_FixedWithCertainPeriod_PersonalLoan_PLABE_EGP_ByChecker_C2",
-  "username": "PT50",
+  "username": "PT49",
   "password": "Infy@123",
   "menu": "VRLA",
-  "accountId": "'3008006640850100186 ",
+  "accountId": "'3008006640850100201 ",
   "expectedResult": "successfully"
  },
  {
   "tcId": "FCB-12754",
   "summary": "Assets_LAA_Retail_Verify_OpenedUnsecuredLoan_Fixed_CashLoanBankers_CLBKR_EGP_ByChecker_D2",
-  "username": "PT50",
+  "username": "PT49",
   "password": "Infy@123",
   "menu": "VRLA",
-  "accountId": "'3037006640860100497 ",
+  "accountId": "'3037006640860100521 ",
   "expectedResult": "successfully"
  },
  {
   "tcId": "FCB-12756",
   "summary": "Assets_LAA_Retail_Verify_OpenedUnsecuredLoan_Fixed_���� ����� �������� ������_CLRCC_EGP_ByChecker_E2",
-  "username": "PT50",
+  "username": "PT49",
   "password": "Infy@123",
   "menu": "VRLA",
-  "accountId": "'3037006640870100195 ",
+  "accountId": "'3037006640850100212 ",
   "expectedResult": "successfully"
  },
  {
   "tcId": "FCB-12758",
   "summary": "Assets_LAA_Retail_Verify_OpenedUnsecuredLoan_Fixed_BuyingTrucksAndSemTransportation_TRSTL_EGP_ByChecker_F2",
-  "username": "PT50",
+  "username": "PT49",
   "password": "Infy@123",
   "menu": "VRLA",
-  "accountId": "'3008006640860100501 ",
+  "accountId": "'3008006640870100218 ",
   "expectedResult": "successfully"
  }
 ]

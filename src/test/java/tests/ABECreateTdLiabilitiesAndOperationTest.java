@@ -1,6 +1,5 @@
 package tests;
 
-import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -12,7 +11,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.aspose.cells.Workbook;
-import com.opencsv.exceptions.CsvException;
 import data.ABECreateTdLiabilitiesAndOperationData;
 import data.JsonReader;
 import io.qameta.allure.Allure;
@@ -33,11 +31,12 @@ public class ABECreateTdLiabilitiesAndOperationTest {
 
 	@BeforeClass
 	public void oneTimeSetUp() throws Exception {
+		
+		ABECreateTdLiabilitiesAndOperation_TestDataUpdate.Update();	
+		
 		CSVUtils.clearColumnByName(Paths.ABECREATETDLIABILITIESANDOPERATIONCSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONCSV, "accountId");
-
-		ABECreateTdLiabilitiesAndOperation_TestDataUpdate.Update();	
-	
+ 
 	}
 	
 	WebDriver driver = null;

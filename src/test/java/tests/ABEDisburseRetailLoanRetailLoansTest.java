@@ -23,7 +23,7 @@ import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
 
-@Test(groups = "ABEDisburseRetailLoan", dependsOnGroups = "verifyRetailLoan")
+@Test(groups = "ABEDisburseRetailLoan")//, dependsOnGroups = "verifyRetailLoan")
 @Listeners({AllureTestNg.class})
 public class ABEDisburseRetailLoanRetailLoansTest {
 

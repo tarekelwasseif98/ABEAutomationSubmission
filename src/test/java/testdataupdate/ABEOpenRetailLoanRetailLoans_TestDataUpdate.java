@@ -13,12 +13,13 @@ public class ABEOpenRetailLoanRetailLoans_TestDataUpdate {
 	private static final String csvFilePath = Paths.ABEOPENRETAILLOANRETAILLOANSCSV;
 	
 	private static final String basequery = "SELECT A.CIF_ID , A.FORACID "
-			+ "    FROM TBAADM.GAM A  "
+			+ "FROM TBAADM.GAM A  "
 			+ "JOIN tbaadm.SMT S on A.ACID = S.ACID  "
 			+ "WHERE A.ACCT_CRNCY_CODE = 'EGP'  "
 			+ "    AND S.ACCT_STATUS = 'A'  "
 			+ "    AND A.clr_bal_amt > 15000  "
 			+ "    AND CURRENT_DATE - A.ACCT_OPN_DATE > 31  "
+			+ "    AND EXISTS (select 1 from Crmuser.ENTITYDOCUMENT D where D.ORGKEY = A.CIF_ID AND DOCEXPIRYDATE > Current_Date) "
 			+ "    AND EXISTS( SELECT 1 FROM CRMUSER.ACCOUNTS C   "
 			+ "                    WHERE C.ORGKEY = A.CIF_ID  "
 			+ "                        AND C.KYC_STATUS = 'A'  "

@@ -14,22 +14,21 @@
 
          <classes>
 			
-			<!--  <class name="tests.ABETellerOperationTransferLiabilitiesAndOperationTest"/> -->
+			 <class name="tests.ABETellerOperationTransferLiabilitiesAndOperationTest"/> 
  			 
- 			<!--    
+ 					
 			<class name="tests.ABECreateCASASavingsAccountLiabilitiesAndOperationTest"/>
 		    <class name="tests.ABEVerifyCASASavingsAccountCreationLiabilitiesAndOperationTest"/> 
-		    -->
+		   
 
-		    <!--
+		    
 		     <class name="tests.ABECreateCASACurrentAccountLiabilitiesAndOperationTest"/>
   			 <class name="tests.ABEVerifyCasaCurrentAccountCreationLiabilitiesAndOperationTest"/> 
-		   -->
-		   
-		   
+		  
+		     
 		     <class name="tests.ABECreateTdLiabilitiesAndOperationTest"/>		
-		     <class name="tests.ABEVerifyTdLiabilitiesAndOperationTest"/>  
-		   
+		     <class name="tests.ABEVerifyTdLiabilitiesAndOperationTest"/> 
+		  
 		     
           </classes>
      </test>

@@ -1,12 +1,12 @@
 [
  {
   "tcId": "FCB-6854",
-  "summary": "TradeFinance_Export_Bills_Under_Collection_Verify_Accept_Mixed Tenor_Local_EGP_ByChecker_H4",
+  "summary": "TradeFinance_Export_Bills_Under_Collection_Verify_Accept_Mixed_Tenor_Local_EGP_ByChecker_H4",
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000015",
-  "mixedBillId1": "'1401EDC24000016",
+  "billId": "'1401EDC24000035",
+  "mixedBillId1": "'1401EDC24000036",
   "expectedResult": "successfully"
  },
  {
@@ -15,7 +15,7 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000018",
+  "billId": "'1401EDC24000038",
   "expectedResult": "successfully"
  },
  {
@@ -24,7 +24,7 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000019",
+  "billId": "'1401EDC24000039",
   "expectedResult": "successfully"
  },
  {
@@ -33,18 +33,18 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000020",
+  "billId": "'1401EDC24000040",
   "expectedResult": "successfully"
  },
  {
   "tcId": "FCB-6834",
-  "summary": "TradeFinance_Export_Bills_Under_Collection_Verify_Acceptance_Mixed Tenor_Foreign_USD_ByChecker_F4",
+  "summary": "TradeFinance_Export_Bills_Under_Collection_Verify_Acceptance_Mixed_Tenor_Foreign_USD_ByChecker_F4",
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000021",
-  "mixedBillId1": "'1401EDC24000022",
-  "mixedBillId2": "'1401EDC24000023",
+  "billId": "'1401EDC24000041",
+  "mixedBillId1": "'1401EDC24000042",
+  "mixedBillId2": "'1401EDC24000043",
   "expectedResult": "successfully"
  },
  {
@@ -53,7 +53,7 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000024",
+  "billId": "'1401EDC24000044",
   "expectedResult": "successfully"
  },
  {
@@ -66,7 +66,7 @@
  },
  {
   "tcId": "FCB-7233",
-  "summary": "TradeFinance_Export_Bills_Under_Documentary_Credit_Verify_Acceptance_Mixed Tenor_Foreign_USD_ByChecker_J4",
+  "summary": "TradeFinance_Export_Bills_Under_Documentary_Credit_Verify_Acceptance_Mixed_Tenor_Foreign_USD_ByChecker_J4",
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",

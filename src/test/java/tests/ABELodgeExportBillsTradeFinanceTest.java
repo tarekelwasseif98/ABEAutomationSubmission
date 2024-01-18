@@ -31,8 +31,8 @@ public class ABELodgeExportBillsTradeFinanceTest {
 	@BeforeClass
 	public void oneTimeSetUp() throws Exception {
 		
-		try {ABELodgeExportBillsTradeFinance_TestDataUpdate.Update();}
-		catch(Exception e) {};
+		ABELodgeExportBillsTradeFinance_TestDataUpdate.Update();
+		
 		
 		
 		CSVUtils.clearColumnByName(Paths.ABELODGEEXPORTBILLSTRADEFINANCECSV, "reference");

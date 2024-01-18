@@ -12,9 +12,10 @@ import utils.CSVUtils;
 
 public class Updater {
 
-	public static final String ANSI_RESET = "\u001B[0m";
-	public static final String ANSI_BLACK = "\u001B[30m";
-	public static final String ANSI_RED = "\u001B[31m";
+	private static final String ANSI_RESET = "\u001B[0m";
+	private static final String ANSI_BLACK = "\u001B[30m";
+	private static final String ANSI_RED = "\u001B[31m";
+	private static final int 	BufferSize = 1024*10;	
 
 	
 	public static void update(String csvFilePath , String[] UpdatedColumns , String[] ControlColumns , String basequery) throws Exception
@@ -24,7 +25,7 @@ public class Updater {
     	
 		DatabaseConnection dbConnection = new DatabaseConnection(csvFilePath , UpdatedColumns).connect();
 	
-		BufferedReader fileReader = new BufferedReader(new FileReader(csvFilePath));
+		BufferedReader fileReader = new BufferedReader(new FileReader(csvFilePath),BufferSize);
 	    CSVParser csvParser = new CSVParser(fileReader, CSVFormat.DEFAULT.withHeader());
     	
     	//clear all data from the columns that will be updated 
@@ -107,7 +108,9 @@ public class Updater {
 	        }
 	            System.out.println("[db Info] : update testdata : done");
         }
+        
         csvParser.close();
+        fileReader.close();
         dbConnection.disconnect();
 	}
 	
