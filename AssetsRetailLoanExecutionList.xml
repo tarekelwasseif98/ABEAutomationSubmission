@@ -27,8 +27,8 @@
 
          <classes>
 
-       	   <!--   <class name="tests.ABEOpenRetailLoanRetailLoansTest"/>
-             <class name="tests.ABEVerifyRetailLoanRetailLoansTest"/>-->
+       	  <!--   <class name="tests.ABEOpenRetailLoanRetailLoansTest"/>-->
+             <class name="tests.ABEVerifyRetailLoanRetailLoansTest"/>
              <class name="tests.ABEDisburseRetailLoanRetailLoansTest"/>
              <class name="tests.ABEVerifyRetailLoanDisbursmentRetailLoansTest"/>
 

@@ -72,6 +72,7 @@ public class ABEVerifyRetailLoanDisbursmentRetailLoansPage {
 		driver.findElement(acidTextField).click();
 		driver.findElement(acidTextField).sendKeys(acId);
 		driver.findElement(GoButton).click();
+		driver.findElement(GoButton).click();
 		return this;
 	}
 	

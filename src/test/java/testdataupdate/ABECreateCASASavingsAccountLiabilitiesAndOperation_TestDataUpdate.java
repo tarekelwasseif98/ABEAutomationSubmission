@@ -13,15 +13,20 @@ public class ABECreateCASASavingsAccountLiabilitiesAndOperation_TestDataUpdate {
 
 	private static final String csvFilePath = Paths.ABECREATECASASAVINGSACCOUNTLIABILITIESANDOPERATIONCSV;
 	
-	private static final String basequery = "SELECT C.ORGKEY FROM CRMUSER.ACCOUNTS C "
-			+ "WHERE C.KYC_STATUS = 'A' "
-			+ "AND {0} "
-			+ "AND C.RECORDSTATUS = 'A' "
-			+ "AND {1} "
-			+ "AND C.ENTITY_CRE_FLAG = 'Y' "
-			+ "AND ROWNUM <= 100 "
-			+ "ORDER by DBMS_RANDOM.value "
-			+ "FETCH NEXT 1 rows only ";
+	private static final String basequery = "SELECT C.ORGKEY "
+											+ "FROM CRMUSER.ACCOUNTS C "
+											+ "JOIN CRMUSER.ENTITYDOCUMENT D ON D.ORGKEY = C.ORGKEY AND D.DOCEXPIRYDATE > CURRENT_DATE "
+											+ "LEFT JOIN tbaadm.gam A ON A.cif_id = C.ORGKEY "
+											+ "LEFT JOIN tbaadm.smt S ON S.ACID = A.ACID AND S.ACCT_STATUS = 'D' "
+											+ "WHERE  "
+											+ "    C.ENTITY_CRE_FLAG = 'Y' "
+											+ "    AND C.KYC_STATUS = 'A' "
+											+ "    AND {0}"
+											+ "	   AND {1}"
+											+ "    AND S.ACID IS NULL "
+											+ "    AND ROWNUM <= 200 "
+											+ "ORDER BY DBMS_RANDOM.value "
+											+ "FETCH FIRST 1 ROWS ONLY";
 	
 	
 	public static void Update() throws Exception {

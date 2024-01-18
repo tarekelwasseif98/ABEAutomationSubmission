@@ -65,6 +65,7 @@ public class ABEVerifyCasaCurrentAccountCreationLiabilitiesAndOperationPage {
 	@Step("Press go button")
 	public ABEVerifyCasaCurrentAccountCreationLiabilitiesAndOperationPage pressGoButton() throws Exception {
 		PageFunctionUtils.clickOnElement(driver,goButton);
+		PageFunctionUtils.clickOnElement(driver,goButton);
 		return this;
 	}
 	
