@@ -3,29 +3,30 @@ package testdataupdate;
 import database.Updater;
 import utils.Paths;
 
-public class ABECreateTdLiabilitiesAndOperation_TestDataUpdate {
+public class ABECreateCDLiabilitiesAndOperation_TestDataUpdate {
 
 	//columns names in the CSV that need to be updated . must be in the same order of the CSV file  
 	
 	private static final String[] UpdatedColumns  = {"cif" , "debitAcId"};
-	private static final String[] ControlColumns  = {"ccy" , "initialDepositAmmount"};
+	private static final String[] ControlColumns  = {"cifType" , "ccy" , "initialDepositAmmount"};
 	
-	private static final String csvFilePath = Paths.ABECREATETDLIABILITIESANDOPERATIONCSV;
+	private static final String csvFilePath = Paths.ABECREATECDLIABILITIESANDOPERATIONCSV;
 	
 	private static final String basequery = "SELECT A.CIF_ID , A.FORACID FROM tbaadm.GAM A "
 			+ "    JOIN tbaadm.SMT S ON S.ACID = A.ACID "
 			+ "    WHERE S.ACCT_STATUS = 'A' "
 			+ "    AND A.SCHM_TYPE in ( 'CAA' , 'SBA') "
-			+ "    AND A.ACCT_CRNCY_CODE = '{0}' "
+			+ "    AND A.ACCT_CRNCY_CODE = '{1}' "
 			+ "    AND A.ACCT_CLS_FLG = 'N' "
-			+ "    AND A.clr_bal_amt > {1} "
+			+ "    AND A.clr_bal_amt > {2} "
 			+ "    AND EXISTS  "
 			+ "    ( "
 			+ "        SELECT 1 "
 			+ "        FROM CRMUSER.ACCOUNTS C  "
 			+ "        WHERE C.ORGKEY = A.CIF_ID "
 			+ "        AND C.KYC_STATUS = 'A' "
-			+ "		   AND C.SEGMENTATION_CLASS = 'RETL' "
+			+ "		   AND EXISTS (select 1 from Crmuser.ENTITYDOCUMENT D where D.ORGKEY = C.ORGKEY AND DOCEXPIRYDATE > Current_Date) "
+			+ "		   AND {0} "
 			+ "        AND CURRENT_DATE - C.CUST_DOB between 7665 AND 20075 "
 			+ "    ) "
 			+ "    AND ROWNUM <= 20 "

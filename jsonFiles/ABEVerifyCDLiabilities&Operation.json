@@ -1,0 +1,159 @@
+[
+ {
+  "tcId": "FCB-2754",
+  "summary": "Liabilities_CD_VerifyCreation_EGP_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1165006640890100128",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2780",
+  "summary": "Liabilities_Deposit_Verify_Certificates_CD3M_EGP_Monthly_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1165006640860101386",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-2783",
+  "summary": "Liabilities_Deposit_Verify_Certificates_CD3Q_EGP_Quarertly_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1171006640870100307",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5809",
+  "summary": "Liabilities_Deposit_Verify_Certificates_HASAD_EGP_Monthly_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1188006640890100138",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5812",
+  "summary": "Liabilities_Deposit_Verify_Certificates_MASAYA_EGP_Monthly_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1189065805450100018",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-5821",
+  "summary": "Liabilities_Deposit_Verify_Certificates_NAMAACD_EGP_Monthly_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1166006640850100291",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10973",
+  "summary": "Liabilities_Deposit_Verify_Certificates_CD3M_EGP_MinimumAmount_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1165006665840100090",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10979",
+  "summary": "Liabilities_Deposit_Verify_Certificates_CD3Q_EGP_MinimumAmount_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1171006645860100312",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10981",
+  "summary": "Liabilities_Deposit_Verify_Certificates_USDCDQ_1163_USD_MinimumAmount_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1163006640850200284",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10983",
+  "summary": "Liabilities_Deposit_Verify_Certificates_EURCDQ_1164_EUR_MinimumAmount_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1164006640860301361",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-10992",
+  "summary": "Liabilities_Verify_Certificates_HASAD_Annually_EGP_3Years_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-17193",
+  "summary": "Liabilities_Verify_Certificates_AMAN_RetailCIF_Amount1000_114_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1168006655860100081",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-17196",
+  "summary": "Liabilities_Verify_Certificates_AMAN_RetailCIF_Amount1500_114_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-17199",
+  "summary": "Liabilities_Verify_Certificates_AMAN_RetailCIF_Amount2000_114_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1168006640870100312",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-17202",
+  "summary": "Liabilities_Verify_Certificates_AMAN_RetailCIF_Amount2500_114_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-17205",
+  "summary": "Liabilities_Verify_Certificates_AMAN_RetailCIF_Amount1000_115_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-17211",
+  "summary": "Liabilities_Verify_Certificates_AMAN_RetailCIF_Amount2500_115_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "expectedResult": "successfully"
+ },
+ {
+  "tcId": "FCB-17219",
+  "summary": "Liabilities_Verify_Certificates_Limited_AutoRenwal_AMAN_114_Checker",
+  "username": "PT48",
+  "password": "Infy@123",
+  "menu": "INSTTD",
+  "accountId": "'1168006665840100080",
+  "expectedResult": "successfully"
+ }
+]

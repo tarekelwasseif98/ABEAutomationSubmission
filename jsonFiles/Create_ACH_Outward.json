@@ -25,7 +25,7 @@
   "countryCode_REM": "EG",
   "Name_BEN": "TEST",
   "Account_BEN": 132456,
-  "Account": "'10040587878101001",
+  "Account": "'10020597135101001",
   "expectedResult": "The record is added successfully.",
   "VerifylinkedTcid": "FCB-4734",
   "AuthLinkedTcid": "FCB-4735"

@@ -25,6 +25,7 @@ import utils.AssertionFactory;
 import utils.CSVUtils;
 import io.qameta.allure.testng.AllureTestNg;
 
+//@Test(groups = {"LodgeExportBills"} )
 @Listeners({AllureTestNg.class})
 public class ABELodgeExportBillsTradeFinanceTest {
 	

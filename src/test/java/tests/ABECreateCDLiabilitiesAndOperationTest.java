@@ -18,7 +18,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.testng.AllureTestNg;
 import pageobjects.FinacleLoginPage;
 import procedures.ABECreateDepositLiabilitiesAndOperationProcedures;
-import testdataupdate.ABECreateTdLiabilitiesAndOperation_TestDataUpdate;
+import testdataupdate.ABECreateCDLiabilitiesAndOperation_TestDataUpdate;
 import utils.AssertionFactory;
 import utils.CSVUtils;
 import utils.Paths;
@@ -27,15 +27,15 @@ import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
 
 @Listeners({AllureTestNg.class})
-public class ABECreateTdLiabilitiesAndOperationTest {
+public class ABECreateCDLiabilitiesAndOperationTest {
 
 	@BeforeClass
 	public void oneTimeSetUp() throws Exception {
 		
-		ABECreateTdLiabilitiesAndOperation_TestDataUpdate.Update();	
+		ABECreateCDLiabilitiesAndOperation_TestDataUpdate.Update();	
 		
-		CSVUtils.clearColumnByName(Paths.ABECREATETDLIABILITIESANDOPERATIONCSV, "reference");
-		CSVUtils.clearColumnByName(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONCSV, "accountId");
+		CSVUtils.clearColumnByName(Paths.ABECREATECDLIABILITIESANDOPERATIONCSV, "reference");
+		CSVUtils.clearColumnByName(Paths.ABEVERIFYCDLIABILITIESANDOPERATIONCSV, "accountId");
  
 	}
 	
@@ -52,19 +52,19 @@ public class ABECreateTdLiabilitiesAndOperationTest {
 		.clickOnLoginButton(data.getPassword());
 	}
 	
-	@DataProvider(name="Create Td DataProvider")
+	@DataProvider(name="Create CD DataProvider")
 	public Object[] dpMethod() throws Exception {
-    	Workbook workbook = new Workbook(Paths.ABECREATETDLIABILITIESANDOPERATIONCSV);
-		workbook.save(Paths.ABECREATETDLIABILITIESANDOPERATIONJSON);
+    	Workbook workbook = new Workbook(Paths.ABECREATECDLIABILITIESANDOPERATIONCSV);
+		workbook.save(Paths.ABECREATECDLIABILITIESANDOPERATIONJSON);
         Class<ABECreateDepositLiabilitiesAndOperationData> targetClass = ABECreateDepositLiabilitiesAndOperationData.class;
         JsonReader<ABECreateDepositLiabilitiesAndOperationData> jsonReader = new JsonReader<>(targetClass);
-        List<ABECreateDepositLiabilitiesAndOperationData> dataList = jsonReader.readJsonFile(Paths.ABECREATETDLIABILITIESANDOPERATIONJSON);
+        List<ABECreateDepositLiabilitiesAndOperationData> dataList = jsonReader.readJsonFile(Paths.ABECREATECDLIABILITIESANDOPERATIONJSON);
         dataList.toArray();
         return dataList.toArray();
 	}
 	
-	@Test(dataProvider = "Create Td DataProvider", dataProviderClass = ABECreateTdLiabilitiesAndOperationTest.class)
-	public void ABECreateTd(ABECreateDepositLiabilitiesAndOperationData data) throws Exception {
+	@Test(dataProvider = "Create CD DataProvider", dataProviderClass = ABECreateCDLiabilitiesAndOperationTest.class)
+	public void ABECreateCD(ABECreateDepositLiabilitiesAndOperationData data) throws Exception {
 		Allure.getLifecycle().updateTestCase(tc -> tc.setName("Test Case ID: " + data.getTcId()));
 		
 		Allure.parameter("Data: ", data.toString());		

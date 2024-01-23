@@ -12,8 +12,9 @@ import utils.AssertionFactory;
 import utils.CSVUtils;
 import utils.PageFunctionUtils;
 import utils.Paths;
+import utils.Properties;
 
-public class ABECreateTdLiabilitiesAndOperationPage {
+public class ABECreateDepositLiabilitiesAndOperationPage {
 	
 	private WebDriver driver;
 	private By searchBarTextField = By.id("menuSelect");
@@ -35,7 +36,7 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 	private By debitAcIdTextField = By.xpath("(//input[@id='_debitAcId'])[1]");
 	private By SubmitButton = By.xpath("(//button[normalize-space()='Submit'])[1]");
 	private By accountIdSuccessMessage = By.id("_resMsg_paraMsg");
-	public static String acId;
+	public static String  acId;
 	public static String  referenceCsvColumnName = "reference";
 	public static String  accountIdCsvColumnName = "accountId";
 	public static String  tcIdCsvColumnName = "tcId";
@@ -48,12 +49,12 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 	
 
 	
-	public ABECreateTdLiabilitiesAndOperationPage(WebDriver driver) {
+	public ABECreateDepositLiabilitiesAndOperationPage(WebDriver driver) {
 		this.driver = driver;
 	}
 	
 	@Step("Sending menu name: {0}")
-	public ABECreateTdLiabilitiesAndOperationPage sendKeysSearchBarTextField(String menu) throws Exception {
+	public ABECreateDepositLiabilitiesAndOperationPage sendKeysSearchBarTextField(String menu) throws Exception {
 	     	driver.switchTo().parentFrame();
 	     	PageFunctionUtils.waitOnFrameAndSwitchXpath(driver, loginFrameIframeID);
 			PageFunctionUtils.waitOnElement(driver, searchBarTextField);
@@ -72,7 +73,7 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 	
 	
 	@Step("Frame switching")
-	public ABECreateTdLiabilitiesAndOperationPage switchFormAreaFrame() throws Exception {
+	public ABECreateDepositLiabilitiesAndOperationPage switchFormAreaFrame() throws Exception {
 		PageFunctionUtils.sleep();
 		driver.switchTo().parentFrame();
 	    PageFunctionUtils.waitOnFrameAndSwitchId(driver, loginFrameById);
@@ -82,8 +83,8 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 		return this;	
 	}
 	
-	@Step("Selecting Td type: {0}")
-	public ABECreateTdLiabilitiesAndOperationPage SelectFunctionCodeDropDown() throws Exception {
+	@Step("Selecting Deposit type: {0}")
+	public ABECreateDepositLiabilitiesAndOperationPage SelectFunctionCodeDropDown() throws Exception {
 		
 		PageFunctionUtils.waitOnElement(driver, functionCodeDropdown);
 		PageFunctionUtils.clickOnElement(driver,functionCodeDropdown);
@@ -94,7 +95,7 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 	}
 	
 	@Step("Sending Cif: {0}")
-	public ABECreateTdLiabilitiesAndOperationPage sendKeysCif(String cif ) throws Exception {
+	public ABECreateDepositLiabilitiesAndOperationPage sendKeysCif(String cif ) throws Exception {
 		
 		PageFunctionUtils.clickOnElement(driver,cifTextField);
 		PageFunctionUtils.enterDataInWebElement(driver,cifTextField,cif.substring(1));
@@ -103,7 +104,7 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 		}
 	
 	@Step("Sending Scheme code: {0}")
-	public ABECreateTdLiabilitiesAndOperationPage sendKeysSchemeCode(String schemeCode ) throws Exception {
+	public ABECreateDepositLiabilitiesAndOperationPage sendKeysSchemeCode(String schemeCode ) throws Exception {
 	
 	PageFunctionUtils.clickOnElement(driver,schemeCodeField);
 	PageFunctionUtils.enterDataInWebElement(driver,schemeCodeField,schemeCode);
@@ -111,7 +112,7 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 	}
 	
 	@Step("Sending CCY: {0}")
-	public ABECreateTdLiabilitiesAndOperationPage sendKeysCcy(String ccy ) throws Exception {
+	public ABECreateDepositLiabilitiesAndOperationPage sendKeysCcy(String ccy ) throws Exception {
 	
 	PageFunctionUtils.clickOnElement(driver,ccyTextField);
 	PageFunctionUtils.enterDataInWebElement(driver,ccyTextField,ccy);
@@ -119,15 +120,15 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 	}
 	
 	@Step("Press go button")
-	public ABECreateTdLiabilitiesAndOperationPage PressGoButton() throws Exception {
+	public ABECreateDepositLiabilitiesAndOperationPage PressGoButton() throws Exception {
 	
 	PageFunctionUtils.clickOnElement(driver,GoButton);
 	return this;
 	}
 	
 	
-	@Step("Sending Td deposit amount: {0} ")
-	public ABECreateTdLiabilitiesAndOperationPage sendKeysInitialDepositAmmount(String initialDepositAmmount) throws Exception {
+	@Step("Sending deposit amount: {0} ")
+	public ABECreateDepositLiabilitiesAndOperationPage sendKeysInitialDepositAmmount(String initialDepositAmmount) throws Exception {
 
 		PageFunctionUtils.clickOnElement(driver,initialDepositAmmountTextField);
 		PageFunctionUtils.enterDataInWebElement(driver,initialDepositAmmountTextField,initialDepositAmmount);
@@ -137,7 +138,7 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 	}
 	
 	@Step("Sending debit AcId: {0} ")
-	public ABECreateTdLiabilitiesAndOperationPage sendKeysDebitAcId(String debitAcId ) throws Exception {
+	public ABECreateDepositLiabilitiesAndOperationPage sendKeysDebitAcId(String debitAcId ) throws Exception {
 
 		PageFunctionUtils.clickOnElement(driver,debitAcIdTextField);
 		PageFunctionUtils.enterDataInWebElement(driver,debitAcIdTextField,debitAcId.substring(1));
@@ -147,7 +148,7 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 	}
 	
 	@Step("select Renewal Type: ")
-	public ABECreateTdLiabilitiesAndOperationPage selectRenewalType() throws Exception {
+	public ABECreateDepositLiabilitiesAndOperationPage selectRenewalType() throws Exception {
 
 		Select renewalDropdownSelector = new Select(driver.findElement(renewalDropdown));
 		renewalDropdownSelector.selectByVisibleText(renewalType);
@@ -156,7 +157,7 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 		
 	}
 	
-	@Step("Sending Td details: ")
+	@Step("Sending  details: ")
 	public String getMonthPeriodValue() throws Exception {
 		
 		String f1= driver.findElement(mPeriodTextField).getAttribute("value");
@@ -165,7 +166,7 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 		
 	}
 	
-	@Step("Sending Td details: ")
+	@Step("Sending  details: ")
 	public String getDayPeriodValue() throws Exception {
 		
 		String f2= driver.findElement(dPeriodTextField).getAttribute("value");
@@ -174,8 +175,8 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 		
 	}
 	
-	@Step("Sending Td monthly period: {0} ")
-	public ABECreateTdLiabilitiesAndOperationPage sendKeysTdPeriod(String monthlyPeriod,String dailyPeriod) throws Exception {
+	@Step("Sending  monthly period: {0} ")
+	public ABECreateDepositLiabilitiesAndOperationPage sendKeysTdPeriod(String monthlyPeriod,String dailyPeriod) throws Exception {
 
 		PageFunctionUtils.clickOnElement(driver,mPeriodTextField);
 		PageFunctionUtils.clearDataInWebElement(driver, mPeriodTextField);
@@ -189,10 +190,11 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 	}
 	
 	@Step("Press submit button:  ")
-	public ABECreateTdLiabilitiesAndOperationPage pressSubmitButton() throws Exception {
+	public ABECreateDepositLiabilitiesAndOperationPage pressSubmitButton() throws Exception {
 
 		PageFunctionUtils.waitOnElement(driver, SubmitButton);
 		PageFunctionUtils.clickOnElement(driver,SubmitButton);
+		try{PageFunctionUtils.clickOnElement(driver,SubmitButton);}catch(Exception e){}
 		PageFunctionUtils.sleep2();
 		
 		return this;
@@ -200,14 +202,15 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 	}
 	
 	
-	@Step("Saving TD ID: {0}")
-	public ABECreateTdLiabilitiesAndOperationPage saveTd(String linkedId) throws Exception {
-
+	@Step("Saving Deposit ID: {0}")
+	public ABECreateDepositLiabilitiesAndOperationPage saveDepositId(String DepositType , String linkedId) throws Exception {
+		
 		try {
+			
 			acId = driver.findElement(accountIdSuccessMessage).getText();
 			System.out.println(acId);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 			PageFunctionUtils.clickOnElement(driver,SubmitButton);
 			driver.switchTo().parentFrame();
@@ -215,17 +218,37 @@ public class ABECreateTdLiabilitiesAndOperationPage {
 
 		}
 		
-		
 		System.out.println("ACID: "+ acId.substring(41));
-		int rowByTcid1 = CSVUtils.getRowByTcid(Paths.ABECREATETDLIABILITIESANDOPERATIONCSV, linkedTcidCsvColumnName, linkedId);
-		int columnByColumnName1 = CSVUtils.getColumnByColumnName(Paths.ABECREATETDLIABILITIESANDOPERATIONCSV, referenceCsvColumnName);
-		int rowByTcid2 = CSVUtils.getRowByTcid(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONCSV, tcIdCsvColumnName, linkedId);
-		int columnByColumnName2 = CSVUtils.getColumnByColumnName(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONCSV, accountIdCsvColumnName);
-		if(rowByTcid1 != -1 && rowByTcid2 != -1) {
-			CSVUtils.insertValueInCsvCell(Paths.ABECREATETDLIABILITIESANDOPERATIONCSV, rowByTcid1, columnByColumnName1, acId.substring(41));
-			CSVUtils.insertValueInCsvCell(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONCSV, rowByTcid2, columnByColumnName2, acId.substring(41));
+		
+		switch(DepositType)
+		{
+			case "TD":
+			{
+				int rowByTcid1 = CSVUtils.getRowByTcid(Paths.ABECREATETDLIABILITIESANDOPERATIONCSV, linkedTcidCsvColumnName, linkedId);
+				int columnByColumnName1 = CSVUtils.getColumnByColumnName(Paths.ABECREATETDLIABILITIESANDOPERATIONCSV, referenceCsvColumnName);
+				int rowByTcid2 = CSVUtils.getRowByTcid(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONCSV, tcIdCsvColumnName, linkedId);
+				int columnByColumnName2 = CSVUtils.getColumnByColumnName(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONCSV, accountIdCsvColumnName);
+				if(rowByTcid1 != -1 && rowByTcid2 != -1) {
+					CSVUtils.insertValueInCsvCell(Paths.ABECREATETDLIABILITIESANDOPERATIONCSV, rowByTcid1, columnByColumnName1, acId.substring(41));
+					CSVUtils.insertValueInCsvCell(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONCSV, rowByTcid2, columnByColumnName2, acId.substring(41));
+				}
+			}break;
+			
+			case "CD" : 
+			{
+				int rowByTcid1 = CSVUtils.getRowByTcid(Paths.ABECREATECDLIABILITIESANDOPERATIONCSV, linkedTcidCsvColumnName, linkedId);
+				int columnByColumnName1 = CSVUtils.getColumnByColumnName(Paths.ABECREATECDLIABILITIESANDOPERATIONCSV, referenceCsvColumnName);
+				int rowByTcid2 = CSVUtils.getRowByTcid(Paths.ABEVERIFYCDLIABILITIESANDOPERATIONCSV, tcIdCsvColumnName, linkedId);
+				int columnByColumnName2 = CSVUtils.getColumnByColumnName(Paths.ABEVERIFYCDLIABILITIESANDOPERATIONCSV, accountIdCsvColumnName);
+				if(rowByTcid1 != -1 && rowByTcid2 != -1) {
+					CSVUtils.insertValueInCsvCell(Paths.ABECREATECDLIABILITIESANDOPERATIONCSV, rowByTcid1, columnByColumnName1, acId.substring(41));
+					CSVUtils.insertValueInCsvCell(Paths.ABEVERIFYCDLIABILITIESANDOPERATIONCSV, rowByTcid2, columnByColumnName2, acId.substring(41));
+			}break;
 		}
-	
+
+		
+		}
+		
 		return this;
 	}
 	

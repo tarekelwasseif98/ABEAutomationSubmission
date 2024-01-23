@@ -5,8 +5,8 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000035",
-  "mixedBillId1": "'1401EDC24000036",
+  "billId": "'1401EDC24000089",
+  "mixedBillId1": "'1401EDC24000090",
   "expectedResult": "successfully"
  },
  {
@@ -15,7 +15,7 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000038",
+  "billId": "'1401EDC24000092",
   "expectedResult": "successfully"
  },
  {
@@ -24,7 +24,7 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000039",
+  "billId": "'1401EDC24000093",
   "expectedResult": "successfully"
  },
  {
@@ -33,7 +33,7 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000040",
+  "billId": "'1401EDC24000094",
   "expectedResult": "successfully"
  },
  {
@@ -42,9 +42,9 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000041",
-  "mixedBillId1": "'1401EDC24000042",
-  "mixedBillId2": "'1401EDC24000043",
+  "billId": "'1401EDC24000095",
+  "mixedBillId1": "'1401EDC24000096",
+  "mixedBillId2": "'1401EDC24000097",
   "expectedResult": "successfully"
  },
  {
@@ -53,7 +53,6 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
-  "billId": "'1401EDC24000044",
   "expectedResult": "successfully"
  },
  {
@@ -70,6 +69,8 @@
   "username": "PT20",
   "password": "Infy@123",
   "menu": "VEOB",
+  "billId": "'1401EDC24000100",
+  "mixedBillId1": "'1401EDC24000101",
   "expectedResult": "successfully"
  }
 ]

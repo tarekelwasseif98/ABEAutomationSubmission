@@ -123,8 +123,7 @@ public class FinacleFieldsUtils {
     
     
     private static final String APPLICABLERULES = "Other";
-    
-    
+   
     public static final String TENORTYPESIGHT = "Sight";
     public static final String TENORTYPEDEFERRED = "Deferred";
     public static final String TENORTYPEMIXEDPAYMENT = "Mixed Payment";

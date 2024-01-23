@@ -28,7 +28,7 @@ import utils.WebdriverFactory;
 //@Test(groups = "verifyTd", dependsOnGroups = "OpenTd", alwaysRun = true)
 @Listeners({AllureTestNg.class})
 
-public class ABEVerifyTdLiabilitiesAndOperationTest {
+public class ABEVerifyCDLiabilitiesAndOperationTest {
 	
 	WebDriver driver = null;
 	@BeforeMethod(description= "Initiating Browser")
@@ -44,20 +44,20 @@ public class ABEVerifyTdLiabilitiesAndOperationTest {
 	
 	}
 	
-	@DataProvider(name="Verify Td DataProvider")
+	@DataProvider(name="Verify CD DataProvider")
 	public Object[] dpMethod() throws Exception {
-    	Workbook workbook = new Workbook(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONCSV);
-		workbook.save(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONJSON);
+    	Workbook workbook = new Workbook(Paths.ABEVERIFYCDLIABILITIESANDOPERATIONCSV);
+		workbook.save(Paths.ABEVERIFYCDLIABILITIESANDOPERATIONJSON);
         Class<ABEVerifyDepositLiabilitiesAndOperationData> targetClass = ABEVerifyDepositLiabilitiesAndOperationData.class;
         JsonReader<ABEVerifyDepositLiabilitiesAndOperationData> jsonReader = new JsonReader<>(targetClass);
-        List<ABEVerifyDepositLiabilitiesAndOperationData> dataList = jsonReader.readJsonFile(Paths.ABEVERIFYTDLIABILITIESANDOPERATIONJSON);
+        List<ABEVerifyDepositLiabilitiesAndOperationData> dataList = jsonReader.readJsonFile(Paths.ABEVERIFYCDLIABILITIESANDOPERATIONJSON);
         dataList.toArray();
         return dataList.toArray();
 	}
 	
-	@Test(dataProvider = "Verify Td DataProvider", dataProviderClass = ABEVerifyTdLiabilitiesAndOperationTest.class)
+	@Test(dataProvider = "Verify CD DataProvider", dataProviderClass = ABEVerifyCDLiabilitiesAndOperationTest.class)
 	@Step("{testCaseId}")
-	public void ABE_VerifyTDAccount(ABEVerifyDepositLiabilitiesAndOperationData data) throws Exception {
+	public void ABE_VerifyCDAccount(ABEVerifyDepositLiabilitiesAndOperationData data) throws Exception {
 		Allure.getLifecycle().updateTestCase(tc -> tc.setName("Test Case ID: " + data.getTcId()));
 		Allure.parameter("Data: ", data.toString());		
 		ABEVerifyDepositLiabilitiesAndOperationProcedures.ABEVerifyDepositLiabilitiesAndOperationByChecker(driver, data);
