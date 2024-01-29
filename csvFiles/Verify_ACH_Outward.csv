@@ -1,2 +1,0 @@
-tcId,summary,username,password,menu,Pos,expectedResult
-FCB-4734,Payments_ACH_OutwardPayment_VerifyingOutwardPaymentEGP_ByBranchChecker_A2,PT165,Infy@123,MPOR,'000000000279,The record is verified successfully.

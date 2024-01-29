@@ -9,7 +9,7 @@
     <classes>
 		<class name="tests.ABECreateACHOutwardTest"/>
 		<class name="tests.ABEVerifyACHOutwardTest"/>
-		<class name="tests.ABEAuthorizeACHOutwardTest"/>
+		<class name="tests.ABEAuthorizeACHOutwardTest"/> 
 		
 		<class name="tests.ABECreateACHUSOutwardTest"/>
 		<class name="tests.ABEVerifyACHUSOutwardTest"/>

@@ -20,7 +20,7 @@ public class ABECreateCASASavingsAccountLiabilitiesAndOperation_TestDataUpdate {
 											+ "LEFT JOIN tbaadm.smt S ON S.ACID = A.ACID AND S.ACCT_STATUS = 'D' "
 											+ "WHERE  "
 											+ "    C.ENTITY_CRE_FLAG = 'Y' "
-											+ "    AND C.KYC_STATUS = 'A' "
+											+ "    AND EXISTS (select 1 from CRMUSER.ENTITYDOCUMENT D where D.ORGKEY = A.CIF_ID AND DOCEXPIRYDATE > Current_Date) "
 											+ "    AND {0}"
 											+ "	   AND {1}"
 											+ "    AND S.ACID IS NULL "

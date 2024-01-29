@@ -56,6 +56,22 @@ public class PageFunctionUtils {
 		wait.until(ExpectedConditions.elementToBeClickable(by));
 	}
 	
+	
+	public static boolean elementIsClickable(WebDriver driver, By by) throws InterruptedException {
+		WebElement element = driver.findElement(by);
+	
+		WebDriverWait wait = new WebDriverWait(driver, Properties.MAXTIME);
+		
+		if( wait.until(ExpectedConditions.elementToBeClickable(by)) != null )
+		{	
+			return true;
+		}
+		else 
+		{
+			return false;
+		}
+	}
+	
 	public static void waitOnFrameAndSwitchXpath(WebDriver driver, By by) throws InterruptedException {
 			Thread.sleep(3000);
 			WebDriverWait wait = new WebDriverWait(driver, Properties.MAXTIME);

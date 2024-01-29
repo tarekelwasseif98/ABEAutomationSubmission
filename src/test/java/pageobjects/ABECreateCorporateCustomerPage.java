@@ -544,7 +544,8 @@ public class ABECreateCorporateCustomerPage {
 		PageFunctionUtils.clickOnElement(driver, selectButtonRoleENRICH);
 		PageFunctionUtils.clickOnElement(driver, okRoleSelectionENRICH);
 		PageFunctionUtils.clickOnElement(driver, updateButtonRelationshipENRICH);
-		PageFunctionUtils.clickOnElement(driver, saveAndValidateRelationshipDetailsENRICH);
+		PageFunctionUtils.sleep2();
+		PageFunctionUtils.clickOnElement(driver, saveAndValidateRelationshipDetailsENRICH); 
 		PageFunctionUtils.waitOnElement(driver, viewSummaryRelationShipENRICH);
 		PageFunctionUtils.clickOnElement(driver, viewSummaryRelationShipENRICH);
 		return this;
@@ -564,6 +565,7 @@ public class ABECreateCorporateCustomerPage {
 			PageFunctionUtils.clickOnElement(driver, selectButtonRoleENRICH);
 			PageFunctionUtils.clickOnElement(driver, okRoleSelectionENRICH);
 			PageFunctionUtils.clickOnElement(driver, updateButtonRelationshipENRICH);
+			PageFunctionUtils.sleep2();
 			PageFunctionUtils.clickOnElement(driver, saveAndValidateRelationshipDetailsENRICH);
 			PageFunctionUtils.waitOnElement(driver, viewSummaryRelationShipENRICH);
 			PageFunctionUtils.clickOnElement(driver, viewSummaryRelationShipENRICH);
@@ -573,6 +575,7 @@ public class ABECreateCorporateCustomerPage {
 	//Submit Enrich
 	@Step("Submit Enrich")
 	public ABECreateCorporateCustomerPage submitEnrich() throws Exception {
+		System.out.println("this is submit step");
 		PageFunctionUtils.waitOnElement(driver, submitENRICH);
 		PageFunctionUtils.clickOnElement(driver, submitENRICH);
 		return this;

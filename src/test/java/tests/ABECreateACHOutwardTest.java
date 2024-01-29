@@ -17,7 +17,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import pageobjects.FinacleLoginPage;
 import procedures.ABECreateOutwardTransferPaymentProcedures;
-import testdataupdate.Create_ACH_OutwardCSV_TestDataUpdate;
+import testdataupdate.ABECreateACHOutward_TestDataUpdate;
 import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
@@ -35,7 +35,7 @@ public class ABECreateACHOutwardTest {
 	@BeforeClass
 	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABECREATEACHOUTWARDCSV, "Pos");
-		Create_ACH_OutwardCSV_TestDataUpdate.Update();
+		ABECreateACHOutward_TestDataUpdate.Update();
 	}
 
 	WebDriver driver = null;
