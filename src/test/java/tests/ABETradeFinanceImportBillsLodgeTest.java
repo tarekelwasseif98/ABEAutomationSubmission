@@ -1,6 +1,5 @@
 package tests;
 
-import java.io.IOException;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -10,13 +9,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.aspose.cells.Workbook;
-import com.opencsv.exceptions.CsvException;
 import data.JsonReader;
 import data.ABETradeFinanceImportBillsLodgeData;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import pageobjects.FinacleLoginPage;
 import procedures.ABETradeFinanceImportBillsLodgeProcedures;
+import testdataupdate.ABETradeFinanceImportBillsLodge_TestDataUpdate;
 import utils.AssertionFactory;
 import utils.CSVUtils;
 import utils.Paths;
@@ -29,13 +28,15 @@ public class ABETradeFinanceImportBillsLodgeTest {
 
 
 	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABETRADEFINANCEIMPORTBILLSLODGECSV, "billId");
 		CSVUtils.clearColumnByName(Paths.ABETRADEFINANCEIMPORTBILLSLODGEVERIFYCSV, "billId");
 		CSVUtils.clearColumnByName(Paths.ABEACCEPTIMPORTBILLSTRADEFINANCECSV, "billId");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYACCEPTIMPORTBILLSTRADEFINANCECSV, "billId");
 		CSVUtils.clearColumnByName(Paths.ABEREALIZEIMPORTBILLSTRADEFINANCECSV, "billId");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYREALIZEIMPORTBILLSTRADEFINANCECSV, "billId");
+		
+		ABETradeFinanceImportBillsLodge_TestDataUpdate.Update();
 	}
 	
 	WebDriver driver = null;

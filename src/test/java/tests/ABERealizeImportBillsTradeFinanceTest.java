@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -16,6 +17,7 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import pageobjects.FinacleLoginPage;
 import procedures.ABERealizeImportBillsTradeFinanceProcedures;
+import testdataupdate.ABERealizeImportBillsTradeFinance_TestDataUpdate;
 import utils.AssertionFactory;
 import utils.Paths;
 import utils.Properties;
@@ -25,6 +27,15 @@ import utils.WebdriverFactory;
 public class ABERealizeImportBillsTradeFinanceTest {
 	
 	WebDriver driver = null;
+	
+	
+	@BeforeClass(description= "Update csv")
+	public void beforeMethod() throws Exception
+	{
+		ABERealizeImportBillsTradeFinance_TestDataUpdate.Update();
+	}
+	
+	
 	@BeforeMethod(description= "Initiating Browser")
 	public void beforeTest(Object [] testData) throws Exception {
 		ABERealizeImportBillsTradeFinanceData data = (ABERealizeImportBillsTradeFinanceData) testData[0];

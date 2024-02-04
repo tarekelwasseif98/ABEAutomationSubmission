@@ -4,6 +4,7 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
@@ -28,8 +29,8 @@ import io.qameta.allure.testng.AllureTestNg;
 public class ABEPurchaseExportBillsTradeFinanceTest {
 	WebDriver driver = null;
 	
-	@BeforeMethod(description= "Update csv")
-	public void beforeMethod() throws Exception
+	@BeforeClass(description= "Update csv")
+	public void beforeClass() throws Exception
 	{
     	ABEPurchaseExportBillsTradeFinance_TestDataUpdate.Update();
 	}
