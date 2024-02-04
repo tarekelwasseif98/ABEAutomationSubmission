@@ -1,12 +1,14 @@
 package utils;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class PageFunctionUtils {
 	public static void clickOnElement(WebDriver driver, By by) {
@@ -14,7 +16,10 @@ public class PageFunctionUtils {
 		wait.until(ExpectedConditions.elementToBeClickable(by));
 		driver.findElement(by).click();
 	}
-	
+	 public static void scrollToElement(WebDriver driver, By editForMixedButton) {
+	        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+	        jsExecutor.executeScript("arguments[0].scrollIntoView(true);", editForMixedButton);
+	    }
 	@Deprecated
 	public static void clickOnElementWorkAround(WebDriver driver, By by) {
 		int count = 0;
@@ -45,10 +50,29 @@ public class PageFunctionUtils {
 		driver.findElement(by).sendKeys(keysToSend);
 	}
 	
+	
+	public static void enterButton(WebDriver driver,By by) throws Exception {
+		WebDriverWait wait = new WebDriverWait(driver, Properties.MINTIME);
+		wait.until(ExpectedConditions.elementToBeClickable(by));
+		driver.findElement(by).sendKeys(Keys.ENTER);
+	}
+	
+	
+	public static void deleteWithControlButton(WebDriver driver,By by) throws Exception {
+		WebDriverWait wait = new WebDriverWait(driver, Properties.MINTIME);
+		wait.until(ExpectedConditions.elementToBeClickable(by));
+		driver.findElement(by).sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));  
+	}
+	
+	
+	
+	
+	
+	
 	public static void clearDataInWebElement(WebDriver driver,By by) throws Exception {
 		WebDriverWait wait = new WebDriverWait(driver, Properties.MINTIME);
 		wait.until(ExpectedConditions.elementToBeClickable(by));
-		driver.findElement(by).clear();;
+		driver.findElement(by).clear();
 	}
 	
 	public static void waitOnElement(WebDriver driver, By by) throws InterruptedException {
@@ -78,12 +102,19 @@ public class PageFunctionUtils {
 	
 	public static void sleep2() throws InterruptedException {
 		Thread.sleep(Properties.SLEEPTIME2);
-		}
+	}
 	
 	public static void scrollUp(WebDriver driver) throws InterruptedException {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0, -document.body.scrollHeight);");
+	}
+	
+	public static void scrollDown(WebDriver driver) throws InterruptedException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("window.scrollBy(0,-1500)", "");
 		}
+	
+	
 	
 	public static void scrollUpToElement(WebDriver driver, By by) throws InterruptedException {
 		WebElement element = driver.findElement(by);
@@ -130,13 +161,31 @@ public class PageFunctionUtils {
 	}
 	
 	public static void closeWarning(WebDriver driver) throws InterruptedException {
-		PageFunctionUtils.switchToParentFrame(driver);
-		Boolean isPresent = driver.findElements(By.xpath("(//button[normalize-space()='Close'])[1]")).size() > 0;
-		if(isPresent) {
+				PageFunctionUtils.switchToParentFrame(driver);
+				Boolean isPresent = driver.findElements(By.xpath("(//button[normalize-space()='Close'])[1]")).size() > 0;
+			
+				if(isPresent) {
+					PageFunctionUtils.clickOnElement(driver, By.xpath("(//button[normalize-space()='Close'])[1]"));
+				
+					PageFunctionUtils.waitOnFrameAndSwitchXpath(driver, By.xpath("//iframe[@name='formArea']"));
+				} else {
+					PageFunctionUtils.waitOnFrameAndSwitchXpath(driver, By.xpath("//iframe[@name='formArea']"));
+				}
+	}
+	
+	public static void closeWarningForGoButton(WebDriver driver) throws InterruptedException {
+	  
+		System.out.println("switch to parent");
+		
+		try {
+			System.out.println("is true");				
 			PageFunctionUtils.clickOnElement(driver, By.xpath("(//button[normalize-space()='Close'])[1]"));
 			PageFunctionUtils.waitOnFrameAndSwitchXpath(driver, By.xpath("//iframe[@name='formArea']"));
-		} else {
+		} catch(Exception e) {
+			System.out.println("is false");
+			PageFunctionUtils.clickOnElement(driver, By.xpath("(//button[normalize-space()='Close'])[1]"));
 			PageFunctionUtils.waitOnFrameAndSwitchXpath(driver, By.xpath("//iframe[@name='formArea']"));
 		}
+	
 	}
 }
