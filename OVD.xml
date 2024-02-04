@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Import Bills">
+<listeners>
+	<listener class-name="listeners.Listeners"/>
+</listeners>
+   <test thread-count="1" parallel = "classes" name="Over Draft Account"> 
+	   
+	  
+         <classes>	 		
+	 		
+     <class name="tests.ABEOpenOVDTest"/>
+	<!--<class name="tests.ABEModifyOVDTest"/>
+	 	<class name="tests.ABEVerifyOVDTest"/>  -->
+        </classes>
+     </test>
+</suite>

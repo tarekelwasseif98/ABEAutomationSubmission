@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<listeners>
+	<listener class-name="listeners.Listeners"/>
+</listeners>
+
+	 	<test thread-count="1" parallel = "classes" name="Issue Outward and Inward LG Trade Finance">
+		
+         <classes>	 		
+
+    <class name ="tests.ABEAddInwardGuaranteeTest"/>
+	 	<class name ="tests.ABEVerifyInwardGuaranteeTest"/>
+	 	<class name="tests.ABEIssueOutwardLGTradeFinanceTest"/>
+	 	<class name="tests.ABEVerifyOutwardLGTradeFinanceTest"/>
+	
+	 	
+        </classes>
+     </test>
+</suite>
