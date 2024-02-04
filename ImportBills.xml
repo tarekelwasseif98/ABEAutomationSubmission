@@ -8,7 +8,7 @@
 <test thread-count="1" name="Import Bills">
 	
     <classes>
-		<class name="tests.ABETradeFinanceImportBillsLodgeTest"/>
+	     <class name="tests.ABETradeFinanceImportBillsLodgeTest"/>
 		 <class name="tests.ABETradeFinanceImportBillsLodgeVerifyTest"/>
 		 
 		 <class name="tests.ABEAcceptImportBillTradeFinanceTest"/>
@@ -16,16 +16,9 @@
 		 
 		 <class name="tests.ABECoAcceptImportBillsTradeFinanceTest"/>
 		 <class name="tests.ABEVerifyCoAcceptImportBillsTradeFinanceTest"/>
-		 
+		
 		 <class name="tests.ABERealizeImportBillsTradeFinanceTest"/>
 		 <class name="tests.ABEVerifyRealizeImportBillsTradeFinanceTest"/>
-		 
-		 
-		 
-		 
-		 
-		 
-		 
 		 
     </classes>
 </test>

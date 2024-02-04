@@ -27,8 +27,8 @@ public class debug {
     	//ABECreateCASASavingsAccountLiabilitiesAndOperation_TestDataUpdate.Update();
     	
     	//----------------BATCH 3 ----------------------------
-    	//
-    	//
+    	//ABETradeFinanceImportBillsLodge_TestDataUpdate.Update();
+    	ABERealizeImportBillsTradeFinance_TestDataUpdate.Update();
     	//Create_ACH_OutwardCSV_TestDataUpdate.Update();
     	//ABECreateACHUSOutward_TestDataUpdate.Update();
     	//ABECreateACHEROutward_TestDataUpdate.Update();
@@ -44,7 +44,7 @@ public class debug {
     	//ABEAddInwardGuarantee_TestDataUpdate.Update();
     	//ABEIssueOutwardLGTradeFinance_TestDataUpdate.Update();
     	//ABEOpenOverDraftAccount_TestDataUpdate.Update();
-    	ABECreateCDLiabilitiesAndOperation_TestDataUpdate.Update();
+    	//ABECreateCDLiabilitiesAndOperation_TestDataUpdate.Update();
     	//
     	//
     	

@@ -1,6 +1,6 @@
 tcId,summary,username,password,menu,billId,mixedBillId1,mixedBillId2,acceptanceDate,CoacceptanceDate,expectedResult,linkedTcid
-FCB-6970,TradeFinance_Import_Bills_Under_Collection_Co-Acceptance _Usance_Foreign_EUR_ByMaker_L5,PT65,Infy@123,CIIBL,'1408IDC23000357,,,06/12/2023,06/12/2023,successfully,
-FCB-6952,TradeFinance_Import_Bills_Under_Collection_Co-Acceptance _Usance_Local_EGP_ByMaker_J5,PT65,Infy@123,CIIBL,'1408IDC23000348,,,06/12/2023,06/12/2023,successfully,
-FCB-7003,TradeFinance_Import_Bills_Under_Collection_Co-Accept _Mixed Tenor_Local_EGP_ByMaker_R5,PT65,Infy@123,CIIBL,'1408IDC23000345,'1408IDC23000346,'1408IDC23000347,06/12/2023,06/12/2023,successfully,
-FCB-7011,TradeFinance_Import_Bills_Under_Collection_Co-Acceptance _Mixed Tenor_Foreign_USD_ByMaker_S5,PT65,Infy@123,CIIBL,'1408IDC23000349,'1408IDC23000350,'1408IDC23000351,06/12/2023,06/12/2023,successfully,
-FCB-7021,TradeFinance_Import_Bills_Under_Collection_Co-Acceptance _Mixed Tenor_Foreign_EUR_ByMaker_AB7,PT65,Infy@123,CIIBL,'1408IDC23000181,'1408IDC23000183,'1408IDC23000183,06/12/2023,06/12/2023,successfully,
+FCB-6970,TradeFinance_Import_Bills_Under_Collection_Co-Acceptance _Usance_Foreign_EUR_ByMaker_L5,PT65,Infy@123,CIIBL,'1408IDC24000077,,,18/01/2024,18/01/2024,successfully,
+FCB-6952,TradeFinance_Import_Bills_Under_Collection_Co-Acceptance _Usance_Local_EGP_ByMaker_J5,PT65,Infy@123,CIIBL,'1408IDC24000068,,,18/01/2024,18/01/2024,successfully,
+FCB-7003,TradeFinance_Import_Bills_Under_Collection_Co-Accept _Mixed Tenor_Local_EGP_ByMaker_R5,PT65,Infy@123,CIIBL,'1408IDC24000065,'1408IDC23000346,'1408IDC23000347,18/01/2024,18/01/2024,successfully,
+FCB-7011,TradeFinance_Import_Bills_Under_Collection_Co-Acceptance _Mixed Tenor_Foreign_USD_ByMaker_S5,PT65,Infy@123,CIIBL,'1408IDC24000069,'1408IDC23000350,'1408IDC23000351,18/01/2024,18/01/2024,successfully,
+FCB-7021,TradeFinance_Import_Bills_Under_Collection_Co-Acceptance _Mixed Tenor_Foreign_EUR_ByMaker_AB7,PT65,Infy@123,CIIBL,'1408IDC24000072,'1408IDC23000183,'1408IDC23000183,18/01/2024,18/01/2024,successfully,

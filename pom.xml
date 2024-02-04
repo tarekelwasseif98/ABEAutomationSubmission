@@ -162,7 +162,7 @@
     		 <version>3.0.0-M4</version>
     		 <configuration>
 				 <suiteXmlFiles>
-					 <suiteXmlFile>LiabilitiesExecutionList.xml</suiteXmlFile>
+					 <suiteXmlFile>ImportBills.xml</suiteXmlFile>
 				</suiteXmlFiles>
 				<properties>
 					<property>

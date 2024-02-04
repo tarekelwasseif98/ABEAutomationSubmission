@@ -7,6 +7,7 @@ public class ABERealizeImportBillsTradeFinanceData {
 	private String username;
 	private String password;
 	private String menu;
+	private String ccy;
 	private String billId;
 	private String mixedBillId1;
 	private String mixedBillId2;
@@ -52,6 +53,13 @@ public class ABERealizeImportBillsTradeFinanceData {
 	}
 	public void setMenu(String menu) {
 		this.menu = menu;
+	}
+	public String getCcy() {
+		return ccy;
+	}
+
+	public void setCcy(String ccy) {
+		this.ccy = ccy;
 	}
 	public String getBillId() {
 		return billId;
@@ -143,14 +151,13 @@ public class ABERealizeImportBillsTradeFinanceData {
 	public void setSolId(String solId) {
 		this.solId = solId;
 	}
-	
 	@Override
 	public String toString() {
 		return "ABERealizeImportBillsTradeFinanceData [tcId=" + tcId + ", summary=" + summary + ", username=" + username
-				+ ", password=" + password + ", menu=" + menu + ", billId=" + billId + ", mixedBillId1=" + mixedBillId1
-				+ ", mixedBillId2=" + mixedBillId2 + ", realizationAccountId=" + realizationAccountId
-				+ ", billRealizationAmount=" + billRealizationAmount + ", realizationValueDate=" + realizationValueDate
-				+ ", mixedBill1RealizationAccountId=" + mixedBill1RealizationAccountId
+				+ ", password=" + password + ", menu=" + menu + ", ccy=" + ccy + ", billId=" + billId
+				+ ", mixedBillId1=" + mixedBillId1 + ", mixedBillId2=" + mixedBillId2 + ", realizationAccountId="
+				+ realizationAccountId + ", billRealizationAmount=" + billRealizationAmount + ", realizationValueDate="
+				+ realizationValueDate + ", mixedBill1RealizationAccountId=" + mixedBill1RealizationAccountId
 				+ ", mixedBill1RealizationAmount=" + mixedBill1RealizationAmount + ", mixedBill1RealizationValueDate="
 				+ mixedBill1RealizationValueDate + ", mixedBill2RealizationAccountId=" + mixedBill2RealizationAccountId
 				+ ", mixedBill2RealizationAmount=" + mixedBill2RealizationAmount + ", mixedBill2RealizationValueDate="

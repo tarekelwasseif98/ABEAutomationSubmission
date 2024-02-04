@@ -1,6 +1,6 @@
 tcId,summary,username,password,menu,billId,mixedBillId1,mixedBillId2,expectedResult,linkedTcid
-FCB-7004,TradeFinance_Import_Bills_Under_Collection_Verify_Co-Acceptance_Mixed Tenor_Local_EGP_ByChecker_R6,PT69,Infy@123,VIIB,'1408IDC23000345,'1408IDC23000346,'1408IDC23000347,The bill ID is verified successfully.,
-FCB-7012,TradeFinance_Import_Bills_Under_Collection_Verify_Co-Acceptance_Mixed Tenor_Foreign_USD_ByChecker_S6,PT69,Infy@123,VIIB,'1408IDC23000349,'1408IDC23000350,'1408IDC23000351,The bill ID is verified successfully.,
-FCB-7022,TradeFinance_Import_Bills_Under_Collection_Verify_Co-Acceptance_Mixed Tenor_Foreign_EUR_ByChecker_AB8,PT69,Infy@123,VIIB,'1408IDC23000181,'1408IDC23000183,'1408IDC23000183,The bill ID is verified successfully.,
-FCB-6953,TradeFinance_Import_Bills_Under_Collection_Verify_Co-Acceptance_Usance_Local_EGP_ByChecker_J6,PT69,Infy@123,VIIB,'1408IDC23000348,,,The bill ID is verified successfully.,
-FCB-6971,TradeFinance_Import_Bills_Under_Collection_Verify_Co-Acceptance_Usance_Foreign_EUR_ByChecker_L6,PT69,Infy@123,VIIB,'1408IDC23000357,,,The bill ID is verified successfully.,
+FCB-7004,TradeFinance_Import_Bills_Under_Collection_Verify_Co-Acceptance_Mixed Tenor_Local_EGP_ByChecker_R6,PT69,Infy@123,VIIB,'1408IDC24000065,'1408IDC23000346,'1408IDC23000347,The bill ID is verified successfully.,
+FCB-7012,TradeFinance_Import_Bills_Under_Collection_Verify_Co-Acceptance_Mixed Tenor_Foreign_USD_ByChecker_S6,PT69,Infy@123,VIIB,'1408IDC24000069,'1408IDC23000350,'1408IDC23000351,The bill ID is verified successfully.,
+FCB-7022,TradeFinance_Import_Bills_Under_Collection_Verify_Co-Acceptance_Mixed Tenor_Foreign_EUR_ByChecker_AB8,PT69,Infy@123,VIIB,'1408IDC24000072,'1408IDC23000183,'1408IDC23000183,The bill ID is verified successfully.,
+FCB-6953,TradeFinance_Import_Bills_Under_Collection_Verify_Co-Acceptance_Usance_Local_EGP_ByChecker_J6,PT69,Infy@123,VIIB,'1408IDC24000068,,,The bill ID is verified successfully.,
+FCB-6971,TradeFinance_Import_Bills_Under_Collection_Verify_Co-Acceptance_Usance_Foreign_EUR_ByChecker_L6,PT69,Infy@123,VIIB,'1408IDC24000077,,,The bill ID is verified successfully.,
