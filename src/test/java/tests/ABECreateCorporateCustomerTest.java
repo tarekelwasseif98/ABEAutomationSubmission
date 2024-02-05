@@ -19,6 +19,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import pageobjects.FinacleLoginPage;
 import procedures.ABECreateCorporateCustomerProcedures;
+import testdataupdate.ABECreateCorporateCustomer_TestDataUpdate;
 import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
@@ -34,8 +35,10 @@ import io.qameta.allure.testng.AllureTestNg;
 public class ABECreateCorporateCustomerTest {
 
 	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	public void oneTimeSetUp() throws Exception  {
 		CSVUtils.clearColumnByName(Paths.ABECREATECORPORATECUSTOMERCSV, "cif");
+		
+		ABECreateCorporateCustomer_TestDataUpdate.Update();
 	}
 
 	WebDriver driver = null;

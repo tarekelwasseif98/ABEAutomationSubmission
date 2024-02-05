@@ -1,6 +1,5 @@
 package tests;
 
-import java.io.IOException;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -11,13 +10,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.aspose.cells.Workbook;
-import com.opencsv.exceptions.CsvException;
 import data.JsonReader;
 import data.ABEOpenMudarabahTUAData;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import pageobjects.FinacleLoginPage;
 import procedures.ABEOpenMudarabahTUAProcedures;
+import testdataupdate.ABEOpenMudarabahTUA_TestDataUpdate;
 import utils.Properties;
 import utils.ScreenshotHelper;
 import utils.WebdriverFactory;
@@ -29,11 +28,13 @@ import io.qameta.allure.testng.AllureTestNg;
 @Listeners({AllureTestNg.class})
 public class ABEOpenMudarabahTUATest {
 	@BeforeClass
-	public void oneTimeSetUp() throws IOException, CsvException {
+	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABEOPENMUDARABAHTUACSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYMUDARABAHTUAOPENINGCSV, "accountId");
 		CSVUtils.clearColumnByName(Paths.ABECLOSEMUDARABAHTUACSV, "accountId");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYMUDARABAHTUACLOSURECSV, "accountId");
+		
+		ABEOpenMudarabahTUA_TestDataUpdate.Update();
 	}
 	
 	WebDriver driver = null;

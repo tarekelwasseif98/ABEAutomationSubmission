@@ -13,7 +13,9 @@ public class debug {
     	//ABEDisburseCorporateLoanCorporateLoans_TestDataUpdate.Update();
     	//ABEOpenCurrentAccountMudarabahCAA_TestDataUpdate.Update();
     	//ABEDisburseMurabahaAccountMurabahaFinancing_TestDataUpdate.Update();
-    	//ABECloseMudarabahTUA_TestDataUpdate.Update();   								
+    	//ABEOpenMudarabahTUA_TestDataUpdate.Update();
+    	//ABECloseMudarabahTUA_TestDataUpdate.Update(); 
+    	//ABEOpenWakalahTUA_TestDataUpdate.Update();
     	//ABECloseWakalahTUA_TestDataUpdate.Update();									
     	
     	//----------------BATCH 2 ----------------------------
@@ -33,15 +35,14 @@ public class debug {
     	
     	
     	//----------------BATCH 4 ----------------------------
-    
-    	
+    	//ABECreateCorporateCustomer_TestDataUpdate.Update();
+    	//ABEAdviseInwardLCTradeFinance_TestDataUpdate.Update();
+    	//
+    	//ABEAddInwardGuarantee_TestDataUpdate.Update();
+    	//ABEIssueOutwardLGTradeFinance_TestDataUpdate.Update();
     	
     	stopwatch.stop();
     	System.out.println(stopwatch.getTime());
-    	/*
-    	String s = "";
-    	System.out.println(s);
-    	*/
     	
-    	} //end of main
+        } //end of main
 }// end of class 
