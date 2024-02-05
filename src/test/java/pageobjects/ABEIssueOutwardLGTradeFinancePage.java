@@ -833,18 +833,18 @@ public ABEIssueOutwardLGTradeFinancePage pressSubmitButton() throws Exception {
 @Step("Save a/c. id")
 public ABEIssueOutwardLGTradeFinancePage saveAccountId(String linkedTcid ) throws Exception {
 
-int rowByTcid1 = CSVUtils.getRowByTcid(Paths.ISSUEOUTWARDLGTRADEFINANCECSV, linkedTcidCsvColumnName, linkedTcid);
-int columnByColumnName1 = CSVUtils.getColumnByColumnName(Paths.ISSUEOUTWARDLGTRADEFINANCECSV, referenceCsvColumnName);
+int rowByTcid1 = CSVUtils.getRowByTcid(Paths.ABEISSUEOUTWARDLGTRADEFINANCECSV, linkedTcidCsvColumnName, linkedTcid);
+int columnByColumnName1 = CSVUtils.getColumnByColumnName(Paths.ABEISSUEOUTWARDLGTRADEFINANCECSV, referenceCsvColumnName);
 	
 
-int rowByTcid2 = CSVUtils.getRowByTcid(Paths.VERIFYOUTWARDLGTRADEFINANCECSV, tcIdCsvColumnName, linkedTcid);
-int columnByColumnName2 = CSVUtils.getColumnByColumnName(Paths.VERIFYOUTWARDLGTRADEFINANCECSV, guaranteeIdCsvColumnName);
+int rowByTcid2 = CSVUtils.getRowByTcid(Paths.ABEVERIFYOUTWARDLGTRADEFINANCECSV, tcIdCsvColumnName, linkedTcid);
+int columnByColumnName2 = CSVUtils.getColumnByColumnName(Paths.ABEVERIFYOUTWARDLGTRADEFINANCECSV, guaranteeIdCsvColumnName);
 
 
 if(rowByTcid1 != -1 && rowByTcid2 != -1) {
 
-	CSVUtils.insertValueInCsvCell(Paths.ISSUEOUTWARDLGTRADEFINANCECSV, rowByTcid1, columnByColumnName1, acId);
-	CSVUtils.insertValueInCsvCell(Paths.VERIFYOUTWARDLGTRADEFINANCECSV, rowByTcid2, columnByColumnName2, acId); 
+	CSVUtils.insertValueInCsvCell(Paths.ABEISSUEOUTWARDLGTRADEFINANCECSV, rowByTcid1, columnByColumnName1, acId);
+	CSVUtils.insertValueInCsvCell(Paths.ABEVERIFYOUTWARDLGTRADEFINANCECSV, rowByTcid2, columnByColumnName2, acId); 
 
 }
 

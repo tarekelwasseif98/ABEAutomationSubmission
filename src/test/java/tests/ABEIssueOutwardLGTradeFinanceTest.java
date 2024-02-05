@@ -37,7 +37,7 @@ package tests;
 		@BeforeClass
 		public void oneTimeSetUp() throws IOException, CsvException {
 	
-			CSVUtils.clearColumnByName(Paths.ISSUEOUTWARDLGTRADEFINANCECSV, "referenceGuarantee");
+			CSVUtils.clearColumnByName(Paths.ABEISSUEOUTWARDLGTRADEFINANCECSV, "referenceGuarantee");
 			
            
 		}
@@ -58,11 +58,11 @@ package tests;
 		
 		@DataProvider(name="Issue outward payment LG trade fnance DataProvider")
 		public Object[] dpMethod() throws Exception {
-	    	Workbook workbook = new Workbook(Paths.ISSUEOUTWARDLGTRADEFINANCECSV);
-			workbook.save(Paths.ISSUEOUTWARDLGTRADEFINANCEJSON);
+	    	Workbook workbook = new Workbook(Paths.ABEISSUEOUTWARDLGTRADEFINANCECSV);
+			workbook.save(Paths.ABEISSUEOUTWARDLGTRADEFINANCEJSON);
 	        Class<ABEIssueOutwardLGTradeFinanceData> targetClass = ABEIssueOutwardLGTradeFinanceData.class;
 	        JsonReader<ABEIssueOutwardLGTradeFinanceData> jsonReader = new JsonReader<>(targetClass);
-	        List<ABEIssueOutwardLGTradeFinanceData> dataList = jsonReader.readJsonFile(Paths.ISSUEOUTWARDLGTRADEFINANCEJSON);
+	        List<ABEIssueOutwardLGTradeFinanceData> dataList = jsonReader.readJsonFile(Paths.ABEISSUEOUTWARDLGTRADEFINANCEJSON);
 	        dataList.toArray();
 	        return dataList.toArray();
 		}

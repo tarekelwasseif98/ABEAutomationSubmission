@@ -52,11 +52,11 @@ public class ABEVerifyOutwardLGTradeFinanceTest {
 		
 		@DataProvider(name="Verify outward LG trade finance DataProvider")
 		public Object[] dpMethod() throws Exception {
-	    	Workbook workbook = new Workbook(Paths.VERIFYOUTWARDLGTRADEFINANCECSV);
-			workbook.save(Paths.VERIFYOUTWARDLGTRADEFINANCEJSON);
+	    	Workbook workbook = new Workbook(Paths.ABEVERIFYOUTWARDLGTRADEFINANCECSV);
+			workbook.save(Paths.ABEVERIFYOUTWARDLGTRADEFINANCEJSON);
 	        Class<ABEVerifyOutwardLGTradeFinanceData> targetClass = ABEVerifyOutwardLGTradeFinanceData.class;
 	        JsonReader<ABEVerifyOutwardLGTradeFinanceData> jsonReader = new JsonReader<>(targetClass);
-	        List<ABEVerifyOutwardLGTradeFinanceData> dataList = jsonReader.readJsonFile(Paths.VERIFYOUTWARDLGTRADEFINANCEJSON);
+	        List<ABEVerifyOutwardLGTradeFinanceData> dataList = jsonReader.readJsonFile(Paths.ABEVERIFYOUTWARDLGTRADEFINANCEJSON);
 	        dataList.toArray();
 	        return dataList.toArray();
 		}

@@ -37,9 +37,9 @@ public class ABEAddInwardGuaranteeTest {
 
 	@BeforeClass
 	public void oneTimeSetUp() throws IOException, CsvException {
-		CSVUtils.clearColumnByName(Paths.ADDINWARDGUARANTEECSV, "guaranteeNumberReference");			
-		CSVUtils.clearColumnByName(Paths.VERIFYINWARDGUARANTEECSV, "guaranteeNumberReferenceId");
-		CSVUtils.clearColumnByName(Paths.ISSUEOUTWARDLGTRADEFINANCECSV, "guaranteeNumberId");
+		CSVUtils.clearColumnByName(Paths.ABEADDINWARDGUARANTEECSV, "guaranteeNumberReference");			
+		CSVUtils.clearColumnByName(Paths.ABEVERIFYINWARDGUARANTEECSV, "guaranteeNumberReferenceId");
+		CSVUtils.clearColumnByName(Paths.ABEISSUEOUTWARDLGTRADEFINANCECSV, "guaranteeNumberId");
 
 	}
 
@@ -59,11 +59,11 @@ public class ABEAddInwardGuaranteeTest {
 	
 	@DataProvider(name="Add inward guarantee DataProvider")
 	public Object[] dpMethod() throws Exception {
-    	Workbook workbook = new Workbook(Paths.ADDINWARDGUARANTEECSV);
-		workbook.save(Paths.ADDINWARDGUARANTEEJSON);
+    	Workbook workbook = new Workbook(Paths.ABEADDINWARDGUARANTEECSV);
+		workbook.save(Paths.ABEADDINWARDGUARANTEEJSON);
         Class<ABEAddInwardGuaranteeData> targetClass = ABEAddInwardGuaranteeData.class;
         JsonReader<ABEAddInwardGuaranteeData> jsonReader = new JsonReader<>(targetClass);
-        List<ABEAddInwardGuaranteeData> dataList = jsonReader.readJsonFile(Paths.ADDINWARDGUARANTEEJSON);
+        List<ABEAddInwardGuaranteeData> dataList = jsonReader.readJsonFile(Paths.ABEADDINWARDGUARANTEEJSON);
         dataList.toArray();
         return dataList.toArray();
 	}

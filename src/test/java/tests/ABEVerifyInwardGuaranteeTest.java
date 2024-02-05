@@ -51,11 +51,11 @@ package tests;
 		
 		@DataProvider(name="Verify inward guarantee DataProvider")
 		public Object[] dpMethod() throws Exception {
-	    	Workbook workbook = new Workbook(Paths.VERIFYINWARDGUARANTEECSV);
-			workbook.save(Paths.VERIFYINWARDGUARANTEEJSON);
+	    	Workbook workbook = new Workbook(Paths.ABEVERIFYINWARDGUARANTEECSV);
+			workbook.save(Paths.ABEVERIFYINWARDGUARANTEEJSON);
 	        Class<ABEVerifyInwardGuaranteeData> targetClass = ABEVerifyInwardGuaranteeData.class;
 	        JsonReader<ABEVerifyInwardGuaranteeData> jsonReader = new JsonReader<>(targetClass);
-	        List<ABEVerifyInwardGuaranteeData> dataList = jsonReader.readJsonFile(Paths.VERIFYINWARDGUARANTEEJSON);
+	        List<ABEVerifyInwardGuaranteeData> dataList = jsonReader.readJsonFile(Paths.ABEVERIFYINWARDGUARANTEEJSON);
 	        dataList.toArray();
 	        return dataList.toArray();
 		}
