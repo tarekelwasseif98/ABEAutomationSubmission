@@ -1,6 +1,6 @@
 tcId,summary,username,password,menu,mandate,expectedResult
-FCB-1051,Payment_StandingOrder_Verify_StandingOrderCreation_Derived_Daily_ACH_EGP_ByChecker_C2,PT165,Infy@123,MMSO,'AE32,The standing order is verified successfully.
-FCB-1053,Payment_StandingOrder_Verify_StandingOrderCreation_Fixed_Monthly_LocalSwift_EUR_ByChecker_D2,PT165,Infy@123,MMSO,'AE34,The standing order is verified successfully.
-FCB-1055,Payment_StandingOrder_Verify_StandingOrderCreation_Fixed_Monthly_Swift_USD_ByChecker_E2,PT165,Infy@123,MMSO,'AE36,The standing order is verified successfully.
-FCB-1057,Payment_StandingOrder_Verify_StandingOrder_Derived_Ndays_ACH_EGP_ByChecker_A2,PT165,Infy@123,MMSO,'AE38,The standing order is verified successfully.
-FCB-1067,Payment_StandingOrder_Verify_StandingOrderCreation_Derived_Weekly_ACH_EGP_ByChecker_B2,PT165,Infy@123,MMSO,'AE40,The standing order is verified successfully.
+FCB-1051,Payment_StandingOrder_Verify_StandingOrderCreation_Derived_Daily_ACH_EGP_ByChecker_C2,PT165,Infy@123,MMSO,'AE81,The standing order is verified successfully.
+FCB-1053,Payment_StandingOrder_Verify_StandingOrderCreation_Fixed_Monthly_LocalSwift_EUR_ByChecker_D2,PT165,Infy@123,MMSO,'AE77,The standing order is verified successfully.
+FCB-1055,Payment_StandingOrder_Verify_StandingOrderCreation_Fixed_Monthly_Swift_USD_ByChecker_E2,PT165,Infy@123,MMSO,'AE83,The standing order is verified successfully.
+FCB-1057,Payment_StandingOrder_Verify_StandingOrder_Derived_Ndays_ACH_EGP_ByChecker_A2,PT165,Infy@123,MMSO,'AE79,The standing order is verified successfully.
+FCB-1067,Payment_StandingOrder_Verify_StandingOrderCreation_Derived_Weekly_ACH_EGP_ByChecker_B2,PT165,Infy@123,MMSO,'AE73,The standing order is verified successfully.

@@ -22,6 +22,8 @@ import utils.Paths;
 import utils.AssertionFactory;
 import io.qameta.allure.testng.AllureTestNg;
 
+
+//@Test(groups = "VerifyPurchaseExportBills" , dependsOnGroups="PurchaseExportBills", alwaysRun = true)
 @Listeners({AllureTestNg.class})
 public class ABEVerifyPurchaseExportBillsTradeFinanceTest {
 	WebDriver driver = null;

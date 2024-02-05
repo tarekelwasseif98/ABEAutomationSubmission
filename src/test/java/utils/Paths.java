@@ -195,8 +195,21 @@ public class Paths {
 	public static final String ABEISSUEOUTWARDLGTRADEFINANCECSV = "csvFiles\\IssueOutwardLGTradeFinance.csv";
 	public static final String ABEISSUEOUTWARDLGTRADEFINANCEJSON =  "jsonFiles\\" + ABEISSUEOUTWARDLGTRADEFINANCECSV.substring(9, Paths.ABEISSUEOUTWARDLGTRADEFINANCECSV.length()-4) + ".json";
 
-	public static final String ABEOPENOVERDRAFTACCOUNTCSV = "csvFiles\\OpenOverDraftAccount.csv";
+	public static final String ABEOPENOVERDRAFTACCOUNTCSV = "csvFiles\\ABEOpenOverDraftAccount.csv";
 	public static final String ABEOPENOVERDRAFTACCOUNTJSON =  "jsonFiles\\" + ABEOPENOVERDRAFTACCOUNTCSV.substring(9, Paths.ABEOPENOVERDRAFTACCOUNTCSV.length()-4) + ".json";
+     
+	
+	public static final String ABEVERIFYOVERDRAFTACCOUNTCSV = "csvFiles\\ABEVerifyOverDraftAccount.csv";
+	public static final String ABEVERIFYOVERDRAFTACCOUNTJSON = "jsonFiles\\" + ABEVERIFYOVERDRAFTACCOUNTCSV.substring(9, Paths.ABEVERIFYOVERDRAFTACCOUNTCSV.length()-4) + ".json";
+
+    
+	public static final String ABEMODIFYOVERDRAFTACCOUNTBEFOREVERIFICATIONCSV = "csvFiles\\ABEModifyOverDraftAccountBeforeVerification.csv";
+	public static final String ABEMODIFYOVERDRAFTACCOUNTBEFOREVERIFICATIONJSON =  "jsonFiles\\" + ABEMODIFYOVERDRAFTACCOUNTBEFOREVERIFICATIONCSV.substring(9, Paths.ABEMODIFYOVERDRAFTACCOUNTBEFOREVERIFICATIONCSV.length()-4) + ".json";
+	
+	
+	
+	public static final String ABEISSUEOUTWARDLCSsTRADEFINANCECSV = "csvFiles\\IssueOutwardLCsTradeFinance.csv";
+	public static final String ABEISSUEOUTWARDLCSsTRADEFINANCEJSON =  "jsonFiles\\" + ABEISSUEOUTWARDLCSsTRADEFINANCECSV.substring(9, Paths.ABEISSUEOUTWARDLCSsTRADEFINANCECSV.length()-4) + ".json";
 
 
 }

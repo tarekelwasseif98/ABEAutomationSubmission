@@ -1,13 +1,15 @@
 package data;
 
-public class ABECreateTdLiabilitiesAndOperationData {
+public class ABECreateDepositLiabilitiesAndOperationData {
 	
 	private String tcId;
 	private String summary;
 	private String username;
 	private String password;
 	private String menu;
+	private String cifType;
 	private String cif;
+	private String DepositType;
 	private String schemeCode;
 	private String ccy;
 	private String initialDepositAmmount;
@@ -37,6 +39,12 @@ public class ABECreateTdLiabilitiesAndOperationData {
 	public void setUsername(String username) {
 		this.username = username;
 	}
+	public String getCifType() {
+		return cifType;
+	}
+	public void setCifType(String cifType) {
+		this.cifType = cifType;
+	}
 	public String getPassword() {
 		return password;
 	}
@@ -54,6 +62,12 @@ public class ABECreateTdLiabilitiesAndOperationData {
 	}
 	public void setCif(String cif) {
 		this.cif = cif;
+	}
+	public String getDepositType() {
+		return DepositType;
+	}
+	public void setDepositType(String depositType) {
+		DepositType = depositType;
 	}
 	public String getSchemeCode() {
 		return schemeCode;
@@ -105,12 +119,15 @@ public class ABECreateTdLiabilitiesAndOperationData {
 	}
 	@Override
 	public String toString() {
-		return "ABECreateTdLiabilitiesAndOperationData [tcId=" + tcId + ", summary=" + summary + ", username="
-				+ username + ", password=" + password + ", menu=" + menu + ", cif=" + cif + ", schemeCode=" + schemeCode
-				+ ", ccy=" + ccy + ", initialDepositAmmount=" + initialDepositAmmount + ", debitAcId=" + debitAcId
-				+ ", linkedTcid=" + linkedTcid + ", expectedResult=" + expectedResult + ", dailyPeriod=" + dailyPeriod
+		return "ABECreateDepositLiabilitiesAndOperationData [tcId=" + tcId + ", summary=" + summary + ", username="
+				+ username + ", password=" + password + ", menu=" + menu + ", cifType=" + cifType + ", cif=" + cif
+				+ ", DepositType=" + DepositType + ", schemeCode=" + schemeCode + ", ccy=" + ccy
+				+ ", initialDepositAmmount=" + initialDepositAmmount + ", debitAcId=" + debitAcId + ", linkedTcid="
+				+ linkedTcid + ", expectedResult=" + expectedResult + ", dailyPeriod=" + dailyPeriod
 				+ ", monthlyPeriod=" + monthlyPeriod + "]";
 	}
+	
+	
 
 	
 	

@@ -1,6 +1,6 @@
 package data;
 
-public class ABEVerifyTdLiabilitiesAndOperationData {
+public class ABEVerifyDepositLiabilitiesAndOperationData {
 	
 	private String tcId;
 	private String summary;
@@ -55,7 +55,7 @@ public class ABEVerifyTdLiabilitiesAndOperationData {
 	
 	@Override
 	public String toString() {
-		return "ABEVerifyTdLiabilitiesAndOperation [tcId=" + tcId + ", summary=" + summary + ", username=" + username
+		return "ABEVerifyDepositLiabilitiesAndOperation [tcId=" + tcId + ", summary=" + summary + ", username=" + username
 				+ ", password=" + password + ", menu=" + menu + ", accountId=" + accountId + ", expectedResult="
 				+ expectedResult + "]";
 	}
