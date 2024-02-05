@@ -12,6 +12,10 @@ import utils.CSVUtils;
 
 public class Updater {
 
+	public static final String ANSI_RESET = "\u001B[0m";
+	public static final String ANSI_BLACK = "\u001B[30m";
+	public static final String ANSI_RED = "\u001B[31m";
+
 	
 	public static void update(String csvFilePath , String[] UpdatedColumns , String[] ControlColumns , String basequery) throws Exception
 	{
@@ -37,22 +41,26 @@ public class Updater {
             for(int i = 0 ; i < ControlColumns.length ; i++)
             {
             	String CsvColumnValue = null;
+            	
             	try{CsvColumnValue = csvRecord.get( ControlColumns[i]);}
             	catch (Exception IllegalArgumentException) {}
             	
         		if( CsvColumnValue == null || CsvColumnValue == "" || CsvColumnValue == "\'" )
         		{
-	        		System.err.println("[db Error] : value in "+ ControlColumns[i] +" column is missing or invalid ");
+        			System.out.println(ANSI_RED + "[db Error] : value in "+ ControlColumns[i] +" column is missing or invalid "  + ANSI_RESET);
 	        		ErrorFlag = true;
 	        		continue;
         		}
-            
+
             	if( CsvColumnValue.startsWith("'") || CsvColumnValue.startsWith("\""))
     			{
-            		query = query.replace("{"+i+"}", CsvColumnValue.substring(1) );
+            		CsvColumnValue  = FixKeyWords(CsvColumnValue.substring(1));
+            		
+            		query = query.replace("{"+i+"}", CsvColumnValue);
       			}
         		else 
         		{
+        			CsvColumnValue  = FixKeyWords(CsvColumnValue);
         			query = query.replace("{"+i+"}", CsvColumnValue );
         		}
             }
@@ -69,15 +77,16 @@ public class Updater {
 			try{dbResults = dbConnection.runQuery(query).getResults();}
 			catch(Exception e)
 			{
-				System.err.println("[db Error] : Invalid Query");
-				System.err.println(e);
+				System.out.println(ANSI_RED + "[db Error] : Invalid Query" + ANSI_RESET);
+				System.out.println(ANSI_RED + e  + ANSI_RESET);
+
 				continue;
 			}
 			
 			//move ResultSet iterator to point to first record in query results 
 			dbResults.next();
 			
-			//Loop over results columns  . this loops should be over rows and columns but since we only pull only one record each time we font neet the nested for loops
+			//Loop over results columns. these loops should be over rows and columns but since we only pull only one record each time we don't need the nested loops
 	        for(int i = 0 ; i < UpdatedColumns.length ; i++)
 	        {
 	            int colIndexInCSV = CSVUtils.getColumnByColumnName(csvFilePath, UpdatedColumns[i]);
@@ -88,8 +97,9 @@ public class Updater {
 	                CSVUtils.insertValueInCsvCell(csvFilePath, rowIndexInCSV , colIndexInCSV , Result);
 	            }
 	            catch (Exception e) {
-	            	System.err.println("[db ERROR] : NO available record the meet the criteria on the database");
-	            	System.err.println(e);
+	            	System.out.println(ANSI_RED + "[db ERROR] : NO available record the meet the criteria on the database"   + ANSI_RESET);
+	            	System.out.println(ANSI_RED + e  + ANSI_RESET);
+	            	
 	            	continue;
 	            }
 	        }
@@ -97,6 +107,19 @@ public class Updater {
         }
         csvParser.close();
         dbConnection.disconnect();
+	}
+	
+	
+	private static String FixKeyWords(String str)
+	{
+		switch(str)
+		{
+			case "Retail"			:str="RETL";break;
+			case "Corporate"		:str="CO";break;
+			default:{}
+		}
+		
+		return str;
 	}
 }
 

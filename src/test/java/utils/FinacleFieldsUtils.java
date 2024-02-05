@@ -20,10 +20,14 @@ public class FinacleFieldsUtils {
 	public static final String ONHOLIDAYPREVIOUSDAY = "Previous Day";
 	public static final String ONHOLIDAYSKIP = "Skip";
 	public static final int [] DATEVALUES = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31};
-	
+	public static final String DRAWINGPOWERINDICATORDERIVED = "Derived";
+	public static final String DRAWINGPOWERINDICATOREQUAL = "Equal";
+	public static final String DRAWINGPOWERINDICATORMAINTAINED = "Maintained";
+	public static final String DRAWINGPOWERINDICATORPARENT = "Parent";
 	public static final String UNDERDOCUMENTARYCREDITYES = "Yes";
 	public static final String UNDERDOCUMENTARYCREDITNO = "No";
-	
+	public static final String ADDRESSTYPEBANKIDENTIFIER = "Bank Identifier";
+	public static final String ADDRESSTYPENAMEANDADDRESS = "Name and Address";
 	public static final String SWIFTADDRESSDETAILSYES = "yes";
 	public static final String SWIFTADDRESSDETAILSNO = "no";
 	public static final String BILLTENORSIGHT = "Sight";
@@ -67,7 +71,6 @@ public class FinacleFieldsUtils {
     public static final String GURANATEETYPELOPER = "LOPER";
     public static final String GURANATEETYPEOCBID = "OCBID";
     public static final String PAYMENTSTATUSREADY = "Message Ready";
-	
     public static final String UNDERDOCUMENTRYCREDITNO = "no";
     public static final String INTERESTPLANRELATIVELYPEGGEDTOCOLLATERAL = "Relatively Pegged to Collateral";
     public static final String INTERESTPLANFIXEDUPTOMATURITYDATE = "Fixed up to Maturity Date";
@@ -79,60 +82,4 @@ public class FinacleFieldsUtils {
     public static final String INTERESTPLANFLOATINGUPTOMATURITY = "Floating up to Maturity";
     public static final String UNDERDOCUMENTRYCREDITYES = "yes";
 
-    
-    public static final String DRAWINGPOWERINDICATORDERIVED = "Derived";
-	public static final String DRAWINGPOWERINDICATOREQUAL = "Equal";
-	public static final String DRAWINGPOWERINDICATORMAINTAINED = "Maintained";
-	public static final String DRAWINGPOWERINDICATORPARENT = "Parent";
-	
-	public static final String COLLATERALTYPESINGLE = "Single";
-	public static final String COLLATERALTYPEMULTIPLE = "Multiple";
-	public static final String NOTCOLLATERALTYPE = "Not Collateral";
-	
-	public static final String RENEWALDETAILSOPTIONS = "Limited";
-    public static final String GURANATEETYPEFADVG = "FADVG";
-    public static final String GURANATEETYPELOADV = "LOADV";
-    
-    public static final String GUARANTEETYPEIFBID = "IFBID";
-    public static final String GUARANTEETYPELIPER = "LIPER";
-    public static final String GUARANTEETYPEIFPER = "IFPER";
-    public static final String GUARANTEETYPEIFADV = "IFADV";
-    public static final String GUARANTEETYPEILADV = "ILADV";
-    public static final String GUARANTEETYPEILBID = "ILBID";
-    
-    public static final String CCYEUR = "EUR";
-    public static final String CCYUSD = "USD";
-    public static final String CCYEGP = "EGP";
-    
-    public static final String ADDRESSTYPEBANKIDENTIFIER = "Bank Identifier";
-    public static final String ADDRESSTYPENAMEANDADDRESS = "Name and Address";
-    
-    public static final String CHARAGEBORNEBY = "Applicant";
-      
-    
-    public static final String CREDITDETAILSSTANDBY = "Standby" ;
-    public static final String CREDITDETAILSTRANSFERABLE = "Transferable";
-    public static final String CREDITDETAILSUNTRANSFERABLE = "Untransferable";
-    public static final String CREDITDETAILSREVOLVING = "Revolving";
-    
-    public static final String AVAILABLEByPayment = "By Payment";
-    public static final String AVAILABLEByAcceptance = "By Acceptance";
-    
-    public static final String AVAILABLEByMixed = "By Mixed Payment";
-    public static final String AVAILABLEByNegotiation = "By Negotiation";
-    
-    
-    public static final String APPLICABLERULES = "Other";
-    
-    
-    public static final String TENORTYPESIGHT = "Sight";
-    public static final String TENORTYPEDEFERRED = "Deferred";
-    public static final String TENORTYPEMIXEDPAYMENT = "Mixed Payment";
-    public static final String TENORTYPEUSANCE = "Usance";
-   
-    
- 
-    
-    
-    
 }

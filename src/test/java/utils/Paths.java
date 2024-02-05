@@ -185,14 +185,18 @@ public class Paths {
 	public static final String ABEATHORIZEESWIFTOUTWARDJSON =  "jsonFiles\\" + ABEATHORIZEESWIFTOUTWARDCSV.substring(9, Paths.ABEATHORIZEESWIFTOUTWARDCSV.length()-4) + ".json";
 	
 	public static final String ABECREATESTOCSV  = "csvFiles\\ABECreateSTO.csv";
-	public static final String ABEVERIFYSTOCSV= "csvFiles\\ABEVerifySTO.csv";
+	public static final String ABEVERIFYSTOCSV  = "csvFiles\\ABEVerifySTO.csv";
 	public static final String ABECREATESTOJSON =  "jsonFiles\\" + ABECREATESTOCSV.substring(9, Paths.ABECREATESTOCSV.length()-4) + ".json";
 	public static final String ABEVERIFYSTOJSON = "jsonFiles\\" + ABEVERIFYSTOCSV.substring(9, Paths.ABEVERIFYSTOCSV.length()-4) + ".json";
 
-	public static final String Create_ACH_Outward = "";
-	public static final String ABECreateACHUSOutward = "";
-	public static final String ABECreateACHEROutward = "";
-	public static final String ABECreateESWIFTOutward = "";
-	public static final String ABECreateSWIFTOutward = "";
+	public static final String ABEADDINWARDGUARANTEECSV = "csvFiles\\AddInwardGuarantee.csv";
+	public static final String ABEADDINWARDGUARANTEEJSON =  "jsonFiles\\" + ABEADDINWARDGUARANTEECSV.substring(9, Paths.ABEADDINWARDGUARANTEECSV.length()-4) + ".json";
+
+	public static final String ABEISSUEOUTWARDLGTRADEFINANCECSV = "csvFiles\\IssueOutwardLGTradeFinance.csv";
+	public static final String ABEISSUEOUTWARDLGTRADEFINANCEJSON =  "jsonFiles\\" + ABEISSUEOUTWARDLGTRADEFINANCECSV.substring(9, Paths.ABEISSUEOUTWARDLGTRADEFINANCECSV.length()-4) + ".json";
+
+	public static final String ABEOPENOVERDRAFTACCOUNTCSV = "csvFiles\\OpenOverDraftAccount.csv";
+	public static final String ABEOPENOVERDRAFTACCOUNTJSON =  "jsonFiles\\" + ABEOPENOVERDRAFTACCOUNTCSV.substring(9, Paths.ABEOPENOVERDRAFTACCOUNTCSV.length()-4) + ".json";
+
 
 }

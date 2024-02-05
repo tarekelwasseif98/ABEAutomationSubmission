@@ -51,7 +51,7 @@ public class ABEOpenRetailLoanRetailLoansPage {
 	public static String successMessage;
 	public static String  referenceCsvColumnName = "reference";
 	public static String  accountIdCsvColumnName = "accountId";
-	public static String disburseAccountIdCsvColumnName = "accountId";
+	public static String disburseAccountIdCsvColumnName = "disbursmentAccount";
 	public static String  tcIdCsvColumnName = "tcId";
 	public static String  linkedTcidCsvColumnName = "linkedTcId";
 	private By interestParameterDetailsSection = By.xpath("(//span[@id='_sc_intParamDet_button_title'])[1]");
@@ -244,25 +244,35 @@ public class ABEOpenRetailLoanRetailLoansPage {
 	}
 	
 	@Step("Save a/c. id")
-	public ABEOpenRetailLoanRetailLoansPage saveAccountId(String linkedId, String linkedId2,String linkedId3) throws Exception {
+	public ABEOpenRetailLoanRetailLoansPage saveAccountId(String linkedId, String linkedId2,String linkedId3, String DisbursementAccount) throws Exception {
+		
+		//add loan account id to ABEOpenLoanAccount csv
 		int rowByTcid1 = CSVUtils.getRowByTcid(Paths.ABEOPENRETAILLOANRETAILLOANSCSV, linkedTcidCsvColumnName, linkedId);
 		int columnByColumnName1 = CSVUtils.getColumnByColumnName(Paths.ABEOPENRETAILLOANRETAILLOANSCSV, referenceCsvColumnName);
-		int rowByTcid2 = CSVUtils.getRowByTcid(Paths.ABEVERIFYRETAILLOANRETAILLOANSCSV, tcIdCsvColumnName, linkedId);
 		
+		//add loan account id to ABEVerifyRetailLoanAccount csv
+		int rowByTcid2 = CSVUtils.getRowByTcid(Paths.ABEVERIFYRETAILLOANRETAILLOANSCSV, tcIdCsvColumnName, linkedId);
 		int columnByColumnName2 = CSVUtils.getColumnByColumnName(Paths.ABEVERIFYRETAILLOANRETAILLOANSCSV, accountIdCsvColumnName);
 		
+		//add loan account id to ABEDisburseRetailLoanAccount csv
 		int rowByTcid3 = CSVUtils.getRowByTcid(Paths.ABEDISBURSERETAILLOANRETAILLOANSCSV, tcIdCsvColumnName, linkedId2);
-		int columnByColumnName3 = CSVUtils.getColumnByColumnName(Paths.ABEDISBURSERETAILLOANRETAILLOANSCSV, disburseAccountIdCsvColumnName);
+		int columnByColumnName3 = CSVUtils.getColumnByColumnName(Paths.ABEDISBURSERETAILLOANRETAILLOANSCSV, accountIdCsvColumnName);
 		
+		//add loan account id to ABEVerifyDisburseRetailLoanAccount  csv
 		int rowByTcid4 = CSVUtils.getRowByTcid(Paths.ABEVERIFYRETAILLOANDISBURSMENTRETAILLOANSCSV, tcIdCsvColumnName, linkedId3);
 		int columnByColumnName4 = CSVUtils.getColumnByColumnName(Paths.ABEVERIFYRETAILLOANDISBURSMENTRETAILLOANSCSV, accountIdCsvColumnName);
 		
-		if(rowByTcid1 != -1 && rowByTcid2 != -1 && rowByTcid3 != -1 && rowByTcid4 != -1) {
+		//add Disbursement account to ABEDisburseRetailLoanAccount csv
+		int rowByTcid5 = CSVUtils.getRowByTcid(Paths.ABEDISBURSERETAILLOANRETAILLOANSCSV, tcIdCsvColumnName, linkedId2);
+		int columnByColumnName5 = CSVUtils.getColumnByColumnName(Paths.ABEDISBURSERETAILLOANRETAILLOANSCSV, disburseAccountIdCsvColumnName);
+
+		
+		if(rowByTcid1 != -1 && rowByTcid2 != -1 && rowByTcid3 != -1 && rowByTcid4 != -1 && rowByTcid5 != -1) {
 			CSVUtils.insertValueInCsvCell(Paths.ABEOPENRETAILLOANRETAILLOANSCSV, rowByTcid1, columnByColumnName1, acId);
 			CSVUtils.insertValueInCsvCell(Paths.ABEVERIFYRETAILLOANRETAILLOANSCSV, rowByTcid2, columnByColumnName2, acId);
 			CSVUtils.insertValueInCsvCell(Paths.ABEDISBURSERETAILLOANRETAILLOANSCSV, rowByTcid3, columnByColumnName3, acId);
 			CSVUtils.insertValueInCsvCell(Paths.ABEVERIFYRETAILLOANDISBURSMENTRETAILLOANSCSV, rowByTcid4, columnByColumnName4, acId);
-
+			CSVUtils.insertValueInCsvCell(Paths.ABEDISBURSERETAILLOANRETAILLOANSCSV, rowByTcid5, columnByColumnName5, DisbursementAccount.substring(1) );
 		}
 		return this;
 		

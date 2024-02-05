@@ -2,6 +2,7 @@ package tests;
 
 import java.util.List;
 
+import org.apache.commons.lang3.time.StopWatch;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -31,7 +32,9 @@ import utils.WebdriverFactory;
 @Listeners({AllureTestNg.class})
 public class ABEOpenRetailLoanRetailLoansTest {
 	
-	@BeforeClass
+	WebDriver driver = null;
+	
+	@BeforeClass(description= "Update CSV")
 	public void oneTimeSetUp() throws Exception {
 		CSVUtils.clearColumnByName(Paths.ABEOPENRETAILLOANRETAILLOANSCSV, "reference");
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYRETAILLOANRETAILLOANSCSV, "accountId");
@@ -39,9 +42,9 @@ public class ABEOpenRetailLoanRetailLoansTest {
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYRETAILLOANDISBURSMENTRETAILLOANSCSV, "accountId");
 		
 		ABEOpenRetailLoanRetailLoans_TestDataUpdate.Update();
+  
 	}
 	
-	WebDriver driver = null;
 	@BeforeMethod(description= "Initiating Browser")
 	public void beforeTest(Object [] testData) throws Exception {
 		ABEOpenRetailLoanRetailLoansData data = (ABEOpenRetailLoanRetailLoansData) testData[0];
@@ -65,7 +68,7 @@ public class ABEOpenRetailLoanRetailLoansTest {
         return dataList.toArray();
 	}
 	@Test(dataProvider = "Open Retail Loan DataProvider", dataProviderClass = ABEOpenRetailLoanRetailLoansTest.class)
-	public void ABECreateTd(ABEOpenRetailLoanRetailLoansData data) throws Exception {
+	public void ABEOpenRetailLoan(ABEOpenRetailLoanRetailLoansData data) throws Exception {
 		Allure.getLifecycle().updateTestCase(tc -> tc.setName("Test Case ID: " + data.getTcId()));
 		
 		Allure.parameter("Data: ", data.toString());		

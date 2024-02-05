@@ -1,0 +1,12 @@
+[
+ {
+  "tcId": "FCB-4735",
+  "summary": "Payments_ACH_OutwardPayment_VerifyingOutwardPaymentEGP_ByAuthorizer_A3",
+  "username": "PT161",
+  "password": "Infy@123",
+  "menu": "AOPO",
+  "Pos": "'000000000275",
+  "expectedResult": "successfully",
+  "paysysID": "ACH"
+ }
+]
