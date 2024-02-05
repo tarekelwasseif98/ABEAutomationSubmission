@@ -15,7 +15,7 @@ public class debug {
     	//ABEOpenMurabahaAccountMurabahaFinancing_TestDataUpdate.Update();
     	//ABEOpenMudarabahTUA_TestDataUpdate.Update();
     	//ABEOpenWakalahTUA_TestDataUpdate.Update();
-    	ABELodgeExportBillsTradeFinance_TestDataUpdate.Update();
+    	//ABELodgeExportBillsTradeFinance_TestDataUpdate.Update();
     	//ABEPurchaseExportBillsTradeFinance_TestDataUpdate.Update();
     	//ABERealizeExportBillsTradeFinance_TestDataUpdate.Update();
     	
@@ -44,6 +44,9 @@ public class debug {
     	//ABEAddInwardGuarantee_TestDataUpdate.Update();
     	//ABEIssueOutwardLGTradeFinance_TestDataUpdate.Update();
     	//ABEOpenOverDraftAccount_TestDataUpdate.Update();
+    	ABECreateCDLiabilitiesAndOperation_TestDataUpdate.Update();
+    	//
+    	//
     	
     	
     	stopwatch.stop();

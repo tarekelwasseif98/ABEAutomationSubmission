@@ -28,11 +28,10 @@
 		  
 	
 		     <class name="tests.ABECreateTdLiabilitiesAndOperationTest"/>		
-		     <class name="tests.ABEVerifyTdLiabilitiesAndOperationTest"/> 
-		  -->
+		     <class name="tests.ABEVerifyTdLiabilitiesAndOperationTest"/> -->
+		 
 		      <class name="tests.ABECreateCDLiabilitiesAndOperationTest"/>		     
 		      <class name="tests.ABEVerifyCDLiabilitiesAndOperationTest"/> 
-		      
           </classes>
      </test>
 </suite>

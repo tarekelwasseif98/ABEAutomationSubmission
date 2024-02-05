@@ -3,7 +3,7 @@ package testdataupdate;
 import database.Updater;
 import utils.Paths;
 
-public class Create_ACH_OutwardCSV_TestDataUpdate {
+public class ABECreateACHOutward_TestDataUpdate {
 
 	//columns names in the CSV that need to be updated . must be in the same order of the CSV file  
 	
@@ -12,11 +12,14 @@ public class Create_ACH_OutwardCSV_TestDataUpdate {
 	
 	private static final String csvFilePath = Paths.ABECREATEACHOUTWARDCSV;
 	
-	private static final String basequery = "select A.FORACID from TBAADM.GAM A  "
-			+ "join tbaadm.SMT S on S.ACID = A.ACID  "
-			+ "where S.ACCT_STATUS = 'A' "
+	private static final String basequery = "SELECT A.FORACID from TBAADM.GAM A  "
+			+ "JOIN tbaadm.SMT S on S.ACID = A.ACID  "
+			+ "WHERE S.ACCT_STATUS = 'A' "
+			+ "AND A.ENTITY_CRE_FLG = 'Y' "
+			+ "AND A.ACCT_CLS_FLG = 'N' "
+			+ "AND A.FREZ_CODE NOT IN ('D','T') "
 			+ "AND SCHM_TYPE IN ( 'CAA' , 'SBA') "
-			+ "AND A.clr_bal_amt > {1} "
+			+ "AND A.clr_bal_amt > 2000+{1} "
 			+ "AND A.ACCT_CRNCY_CODE = '{0}' "
 			+ "AND ROWNUM <=150 "
 			+ "ORDER BY DBMS_RANDOM.value "

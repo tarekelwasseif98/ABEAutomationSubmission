@@ -22,6 +22,7 @@ public class ABELodgeExportBillsTradeFinanceProcedures {
 			lodgeExportBillsTradeFinancePage.pressUnderDocumentaryCreditNoButton();
 			}
 		
+		
 		lodgeExportBillsTradeFinancePage.pressGoButton()
 										 .sendKeysOperativeAccountIdTextField(data.getOperativeAccountId());
 		

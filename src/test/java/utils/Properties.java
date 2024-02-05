@@ -7,7 +7,7 @@ public class Properties {
 	//public static final String HUBURL = "http://10.43.174.19:4444";
 	public static final int MINTIME = 15;
 	public static final int MAXTIME = 65;
-	public static final int SLEEPTIME = 6000;
+	public static final int SLEEPTIME = 3000;
 	public static final int SLEEPTIME2 = 1000;
 	public static final String FINACLEURL = "https://finwebsit.abe.com.eg:1443/fininfra/ui/SSOLogin.jsp";
 	
@@ -16,5 +16,10 @@ public class Properties {
 	public static final String DBSCHEMA = "tbaadm";
 	public static final String DBUSER = "readonly";
 	public static final String DBPASSWORD = "readonly";
+	
+	//HardCodedVales to be changed manually with environments 
+	public static final String CorpAccountNumberForSchemeAMAN114 = "10100660841501001";
+	public static final int MinorMaximumAge = 18 * 365;
+	public static final int AdultMaximumAge = 58 * 365;
 	
 }

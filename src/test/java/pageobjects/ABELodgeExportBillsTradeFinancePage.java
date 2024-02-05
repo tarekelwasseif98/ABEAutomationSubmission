@@ -452,6 +452,7 @@ public class ABELodgeExportBillsTradeFinancePage {
 			PageFunctionUtils.clearDataInWebElement(driver, collectingBankIdentifierTextField);
 			PageFunctionUtils.clickOnElement(driver, collectingBankIdentifierTextField);
 			PageFunctionUtils.enterDataInWebElement(driver, collectingBankIdentifierTextField, collectingBankIdentifier.substring(1));
+			PageFunctionUtils.sleep2();
 		}
 		return this;
 	}
@@ -459,10 +460,15 @@ public class ABELodgeExportBillsTradeFinancePage {
 	@Step("Sending collecting bank name: {0}")
 	public ABELodgeExportBillsTradeFinancePage sendKeysCollectingBankNameTextField(String collectingBankName) throws Exception {
 		if(collectingBankName != null) {
-			PageFunctionUtils.waitOnElement(driver, collectingBankNameTextField);
-			PageFunctionUtils.clearDataInWebElement(driver, collectingBankNameTextField);
-			PageFunctionUtils.clickOnElement(driver, collectingBankNameTextField);
-			PageFunctionUtils.enterDataInWebElement(driver, collectingBankNameTextField, collectingBankName);
+			PageFunctionUtils.sleep2();
+			System.out.println("this is after the sleep");
+			if( PageFunctionUtils.elementIsClickable(driver, collectingBankNameTextField) )
+			{
+				System.out.println("this is inside the if");
+				PageFunctionUtils.clearDataInWebElement(driver, collectingBankNameTextField);
+				PageFunctionUtils.clickOnElement(driver, collectingBankNameTextField);
+				PageFunctionUtils.enterDataInWebElement(driver, collectingBankNameTextField, collectingBankName);
+			}
 		}
 		return this;
 	}
@@ -521,11 +527,13 @@ public class ABELodgeExportBillsTradeFinancePage {
 	
 	@Step("Sending correspondent bank name: {0}")
 	public ABELodgeExportBillsTradeFinancePage sendKeysCorrespondentBankNameTextField(String correspondentBankName) throws Exception {
-		if(correspondentBankName != null) {
-			PageFunctionUtils.waitOnElement(driver, correspondentBankNameTextField);
-			PageFunctionUtils.clearDataInWebElement(driver, correspondentBankNameTextField);
-			PageFunctionUtils.clickOnElement(driver, correspondentBankNameTextField);
-			PageFunctionUtils.enterDataInWebElement(driver, correspondentBankNameTextField, correspondentBankName);
+		if(correspondentBankName != null ) {
+			if(PageFunctionUtils.elementIsClickable(driver, correspondentBankNameTextField))
+			{
+				PageFunctionUtils.clearDataInWebElement(driver, correspondentBankNameTextField);
+				PageFunctionUtils.clickOnElement(driver, correspondentBankNameTextField);
+				PageFunctionUtils.enterDataInWebElement(driver, correspondentBankNameTextField, correspondentBankName);
+			}
 		}
 		return this;
 	}

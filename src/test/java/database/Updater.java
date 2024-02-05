@@ -9,13 +9,17 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
 import utils.CSVUtils;
+import utils.Properties;
 
 public class Updater {
+	
 
 	private static final String ANSI_RESET = "\u001B[0m";
+	@SuppressWarnings("unused")
 	private static final String ANSI_BLACK = "\u001B[30m";
 	private static final String ANSI_RED = "\u001B[31m";
 	private static final int 	BufferSize = 1024*10;	
+	
 
 	
 	public static void update(String csvFilePath , String[] UpdatedColumns , String[] ControlColumns , String basequery) throws Exception
@@ -50,18 +54,18 @@ public class Updater {
         		{
         			System.out.println(ANSI_RED + "[db Error] : value in "+ ControlColumns[i] +" column is missing or invalid "  + ANSI_RESET);
 	        		ErrorFlag = true;
-	        		continue;
+	        		break;
         		}
 
             	if( CsvColumnValue.startsWith("'") || CsvColumnValue.startsWith("\""))
     			{
-            		CsvColumnValue  = FixKeyWords(CsvColumnValue.substring(1));
+            		CsvColumnValue  = FixKeyWords(ControlColumns[i] , CsvColumnValue.substring(1));
             		
             		query = query.replace("{"+i+"}", CsvColumnValue);
       			}
         		else 
         		{
-        			CsvColumnValue  = FixKeyWords(CsvColumnValue);
+        			CsvColumnValue  = FixKeyWords(ControlColumns[i] , CsvColumnValue);
         			query = query.replace("{"+i+"}", CsvColumnValue );
         		}
             }
@@ -87,6 +91,7 @@ public class Updater {
 			//move ResultSet iterator to point to first record in query results 
 			dbResults.next();
 			
+			boolean flag = true;
 			//Loop over results columns. these loops should be over rows and columns but since we only pull only one record each time we don't need the nested loops
 	        for(int i = 0 ; i < UpdatedColumns.length ; i++)
 	        {
@@ -96,6 +101,11 @@ public class Updater {
 	            try {
 	                Result = dbResults.getString(i+1);
 	                if(Result == null ) { throw new Exception();}
+	                
+	                
+	                if(flag == true) {System.out.print("[debug] :");flag=false;}
+	                System.out.print(" , "+ Result);
+	                
 	                
 	                CSVUtils.insertValueInCsvCell(csvFilePath, rowIndexInCSV , colIndexInCSV , Result);
 	            }
@@ -115,18 +125,40 @@ public class Updater {
 	}
 	
 	
-	private static String FixKeyWords(String str)
+	private static String FixKeyWords(String ColumnName , String str)
 	{
-		switch(str.toLowerCase())
+		switch(ColumnName.toLowerCase())
 		{
-			case "retail"			:str=" C.SEGMENTATION_CLASS = 'RETL' AND (C.STAFFFLAG is null or C.STAFFFLAG != 'Y') ";break;
-			case "corporate"		:str=" C.SEGMENTATION_CLASS = 'CO' AND (C.STAFFFLAG is null or C.STAFFFLAG != 'Y') ";break;
-			case "staff"		:str=" C.STAFFFLAG = 'Y' AND C.STAFFEMPLOYEEID NOT IN ('1589') ";break;
-			case "minor"		:str=" C.CUSTOMERMINOR = 'Y' ";break;
-			case "adult"		:str="CURRENT_DATE - C.CUST_DOB between 7665 and 21170 ";break;
+		case "ciftype":
+			{
+				switch(str.toLowerCase())
+				{
+					case "retail"			:str=" C.SEGMENTATION_CLASS IN ('RETL') AND UNIQUEID  is not null AND (C.STAFFFLAG is null or C.STAFFFLAG != 'Y') ";break;
+					case "staff"		    :str=" C.STAFFFLAG = 'Y' AND C.STAFFEMPLOYEEID NOT IN ('1589') ";break;
+					case "corporate"		:str=" C.SEGMENTATION_CLASS IN ('CO')  AND UNIQUEID  is null  AND (C.STAFFFLAG is null or C.STAFFFLAG != 'Y') ";break;
+					default:{}
+				}
+			}break;
+		case "cifage":
+			{
+				switch(str.toLowerCase())
+				{
+					case "minor"		:str=" C.CUSTOMERMINOR = 'Y' ";break;
+					case "adult"		:str="CURRENT_DATE - C.CUST_DOB between "+Properties.MinorMaximumAge+" and "+Properties.AdultMaximumAge+" ";break;
+					default:{}
+				}
+			}break;
+		case "schemecode":
+			{
+				switch(str)
+				{
+					case "1167"			:str=" '"+ Properties.CorpAccountNumberForSchemeAMAN114 +"' AS ";break;
+					default:{str="";}
+				}
+			}break;
 			default:{}
+			
 		}
-		
 		return str;
 	}
 }
