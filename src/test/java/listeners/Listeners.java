@@ -1,10 +1,15 @@
 package listeners;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
+import org.testng.IAnnotationTransformer;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.ITestAnnotation;
 
-public class Listeners implements ITestListener {
+public class Listeners implements ITestListener , IAnnotationTransformer {
 	int steps = 0;
 	public void onTestStart(ITestResult result) {
 	}  
@@ -31,4 +36,12 @@ public class Listeners implements ITestListener {
 	  
 	public void onFinish(ITestContext context) {
 	}  
+	
+	@SuppressWarnings("rawtypes")
+	@Override
+	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+		annotation.setRetryAnalyzer(RetryListener.class);
+	}
+	
+	
 }

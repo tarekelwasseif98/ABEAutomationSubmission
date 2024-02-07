@@ -29,12 +29,45 @@ public class ABETradeFinanceImportBillsLodgeTest {
 
 	@BeforeClass
 	public void oneTimeSetUp() throws Exception {
+		//lodge
 		CSVUtils.clearColumnByName(Paths.ABETRADEFINANCEIMPORTBILLSLODGECSV, "billId");
+		CSVUtils.clearColumnByName(Paths.ABETRADEFINANCEIMPORTBILLSLODGECSV, "mixedBillId1");
+		CSVUtils.clearColumnByName(Paths.ABETRADEFINANCEIMPORTBILLSLODGECSV, "mixedBillId2");
+		
+		//verify lodge
 		CSVUtils.clearColumnByName(Paths.ABETRADEFINANCEIMPORTBILLSLODGEVERIFYCSV, "billId");
+		CSVUtils.clearColumnByName(Paths.ABETRADEFINANCEIMPORTBILLSLODGEVERIFYCSV, "mixedBillId1");
+		CSVUtils.clearColumnByName(Paths.ABETRADEFINANCEIMPORTBILLSLODGEVERIFYCSV, "mixedBillId2");
+		
+		//accept
 		CSVUtils.clearColumnByName(Paths.ABEACCEPTIMPORTBILLSTRADEFINANCECSV, "billId");
+		CSVUtils.clearColumnByName(Paths.ABEACCEPTIMPORTBILLSTRADEFINANCECSV, "mixedBillId1");
+		CSVUtils.clearColumnByName(Paths.ABEACCEPTIMPORTBILLSTRADEFINANCECSV, "mixedBillId2");
+		
+		//verify accept
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYACCEPTIMPORTBILLSTRADEFINANCECSV, "billId");
+		CSVUtils.clearColumnByName(Paths.ABEVERIFYACCEPTIMPORTBILLSTRADEFINANCECSV, "mixedBillId1");
+		CSVUtils.clearColumnByName(Paths.ABEVERIFYACCEPTIMPORTBILLSTRADEFINANCECSV, "mixedBillId2");
+		
+		//co-accept
+		CSVUtils.clearColumnByName(Paths.ABECoAcceptImportBillsTradeFinanceCsv, "billId");
+		CSVUtils.clearColumnByName(Paths.ABECoAcceptImportBillsTradeFinanceCsv, "mixedBillId1");
+		CSVUtils.clearColumnByName(Paths.ABECoAcceptImportBillsTradeFinanceCsv, "mixedBillId2");
+		
+		//verify co-accept
+		CSVUtils.clearColumnByName(Paths.ABEVerifyCoAcceptImportBillsTradeFinanceCsv, "billId");
+		CSVUtils.clearColumnByName(Paths.ABEVerifyCoAcceptImportBillsTradeFinanceCsv, "mixedBillId1");
+		CSVUtils.clearColumnByName(Paths.ABEVerifyCoAcceptImportBillsTradeFinanceCsv, "mixedBillId2");	
+		
+		//realize
 		CSVUtils.clearColumnByName(Paths.ABEREALIZEIMPORTBILLSTRADEFINANCECSV, "billId");
+		CSVUtils.clearColumnByName(Paths.ABEREALIZEIMPORTBILLSTRADEFINANCECSV, "mixedBillId1");
+		CSVUtils.clearColumnByName(Paths.ABEREALIZEIMPORTBILLSTRADEFINANCECSV, "mixedBillId2");
+		
+		//verify realize
 		CSVUtils.clearColumnByName(Paths.ABEVERIFYREALIZEIMPORTBILLSTRADEFINANCECSV, "billId");
+		CSVUtils.clearColumnByName(Paths.ABEVERIFYREALIZEIMPORTBILLSTRADEFINANCECSV, "mixedBillId1");
+		CSVUtils.clearColumnByName(Paths.ABEVERIFYREALIZEIMPORTBILLSTRADEFINANCECSV, "mixedBillId2");
 		
 		ABETradeFinanceImportBillsLodge_TestDataUpdate.Update();
 	}

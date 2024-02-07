@@ -13,7 +13,7 @@
 		 
 		 <class name="tests.ABEAcceptImportBillTradeFinanceTest"/>
 		 <class name="tests.ABEVerifyAcceptImportBillsTradeFinanceTest"/>
-		 
+		
 		 <class name="tests.ABECoAcceptImportBillsTradeFinanceTest"/>
 		 <class name="tests.ABEVerifyCoAcceptImportBillsTradeFinanceTest"/>
 		

@@ -70,30 +70,26 @@ public class ABEAcceptImportBillTradeFinanceProcedures {
 //			   .pressSubmitButton();
 //
 //		}
-//		else if (data.getMixedBillId1() == null && data.getMixedBillId2() != null){
-//			acceptImportBills.sendKeysBillId(data.getBillId())
-//			.sendKeysTenorBillId(data.getMixedBillId2());
-//			 acceptImportBills.pressGoButton()
-//			   .pressTenorEditButton()
-//			   .sendKeysAcceptanceDateTextField(data.getAcceptanceDate())
-//			   .pressUpdateButton()
-//			   .pressTenorEditButton2()
-//			   .sendKeysAcceptanceDateTextField2(data.getAcceptanceDate())
-//			   .pressUpdateButton()
-//			   .pressBillDetailsTab()
-//			   .pressChargeDetailsTab()
-//			   .pressEventDetailsTab()
-//			   .pressTransactionDetailsTab()
-//			   .pressGeneralDetailsTab()
-//			   .pressPartyDetailsTab()
-//			   .pressSubmitButton();
-//		
-//				}
+		else if (data.getMixedBillId1() == null && data.getMixedBillId2() != null){
+			acceptImportBills.sendKeysBillId(data.getBillId())
+			.sendKeysTenorBillId(data.getMixedBillId2());
+			 acceptImportBills.pressGoButton()
+			   .pressTenorEditButton()
+			   .sendKeysAcceptanceDateTextField(data.getAcceptanceDate())
+			   .pressUpdateButton()
+			   .pressTenorEditButton2()
+			   .sendKeysAcceptanceDateTextField2(data.getAcceptanceDate())
+			   .pressUpdateButton()
+			   .pressBillDetailsTab()
+			   .pressChargeDetailsTab()
+			   .pressEventDetailsTab()
+			   .pressTransactionDetailsTab()
+			   .pressGeneralDetailsTab()
+			   .pressPartyDetailsTab()
+			   .pressMessageDetailsTab()
+			   .pressSubmitButton();
 		
-									   
-									  
-									   
-									
+			}				
 		}
 
 }

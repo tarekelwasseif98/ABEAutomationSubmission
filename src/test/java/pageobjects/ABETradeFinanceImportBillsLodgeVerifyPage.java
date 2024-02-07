@@ -52,6 +52,8 @@ public class ABETradeFinanceImportBillsLodgeVerifyPage {
 	public static String mixedBillAccountId2;
 	public static boolean mixedBillTenor2IsDisplayedAccept;
 	public static boolean mixedBillTenor2IsDisplayedVerifyAccept;
+	public static boolean mixedBillTenor2IsDisplayedCoAccept;
+	public static boolean mixedBillTenor2IsDisplayedVerifyCoAccept;
 	public static boolean mixedBillTenor2IsDisplayedPurchase;
 	public static boolean mixedBillTenor2IsDisplayedVerifyPurchase;
 	public static boolean mixedBillTenor2IsDisplayedRealize;
@@ -219,13 +221,19 @@ public class ABETradeFinanceImportBillsLodgeVerifyPage {
 			mixedBillAccountId2 = null;
 			mixedBillTenor2IsDisplayedAccept = false;
 			mixedBillTenor2IsDisplayedVerifyAccept = false;
+			mixedBillTenor2IsDisplayedCoAccept = false ;
+			mixedBillTenor2IsDisplayedVerifyCoAccept = false ;
 			mixedBillTenor2IsDisplayedPurchase = false;
 			mixedBillTenor2IsDisplayedVerifyPurchase = false;
 			mixedBillTenor2IsDisplayedRealize = false;
 			mixedBillTenor2IsDisplayedVerifyRealize = false;
+			
 			PageFunctionUtils.waitOnElement(driver, tenorDetailsViewButton2);
+			
 			mixedBillTenor2IsDisplayedAccept = PageFunctionUtils.elementIsDisplayed(driver, tenorDetailsViewButton2);
 			mixedBillTenor2IsDisplayedVerifyAccept = PageFunctionUtils.elementIsDisplayed(driver, tenorDetailsViewButton2);
+			mixedBillTenor2IsDisplayedCoAccept = PageFunctionUtils.elementIsDisplayed(driver, tenorDetailsViewButton2);
+			mixedBillTenor2IsDisplayedVerifyCoAccept = PageFunctionUtils.elementIsDisplayed(driver, tenorDetailsViewButton2);
 			mixedBillTenor2IsDisplayedPurchase = PageFunctionUtils.elementIsDisplayed(driver, tenorDetailsViewButton2);
 			mixedBillTenor2IsDisplayedVerifyPurchase = PageFunctionUtils.elementIsDisplayed(driver, tenorDetailsViewButton2);
 			mixedBillTenor2IsDisplayedRealize = PageFunctionUtils.elementIsDisplayed(driver, tenorDetailsViewButton2);
@@ -234,6 +242,7 @@ public class ABETradeFinanceImportBillsLodgeVerifyPage {
 			mixedBillTenor2 = driver.findElement(billTenorDropDownList).getAttribute(FinacleFieldsUtils.ATTRIBUTETITLE);
 			mixedBillAccountId2 = driver.findElement(tenorDetailsBillIdTextField).getAttribute(FinacleFieldsUtils.ATTRIBUTEVALUE);
 			System.out.println( mixedBillTenor2 + " "+mixedBillAccountId2);
+			
 		} catch(Exception e) {
 			
 		}
@@ -325,28 +334,30 @@ public class ABETradeFinanceImportBillsLodgeVerifyPage {
 				}
 			
 			if(coAcceptLinkedTcid != null) {
+				
 				int rowByTcid11 = CSVUtils.getRowByTcid(Paths.ABETRADEFINANCEIMPORTBILLSLODGEVERIFYCSV, CoAcceptLinkedTcidCsvColumnName, coAcceptLinkedTcid);
 				int rowByTcid22 = CSVUtils.getRowByTcid(Paths.ABECoAcceptImportBillsTradeFinanceCsv, tcIdCsvColumnName, coAcceptLinkedTcid);
 				int columnByColumnName11 = CSVUtils.getColumnByColumnName(Paths.ABECoAcceptImportBillsTradeFinanceCsv, mixedBillId1CsvColumnName);
 				int columnByColumnName22 = CSVUtils.getColumnByColumnName(Paths.ABECoAcceptImportBillsTradeFinanceCsv, mixedBillId2CsvColumnName);
 				if(rowByTcid11 != -1 && rowByTcid22 != -1) {
-					if(mixedBillTenor2IsDisplayedRealize) {
+					if(mixedBillTenor2IsDisplayedCoAccept) {
 						CSVUtils.insertValueInCsvCell(Paths.ABECoAcceptImportBillsTradeFinanceCsv, rowByTcid22, columnByColumnName11, mixedBillAccountId1);
 						CSVUtils.insertValueInCsvCell(Paths.ABECoAcceptImportBillsTradeFinanceCsv, rowByTcid22, columnByColumnName22, mixedBillAccountId2);
 						}
-					mixedBillTenor2IsDisplayedRealize = false;
+					mixedBillTenor2IsDisplayedCoAccept = false;
 					}
+				
 				if(verifyCoAcceptLinkedTcid != null) {
-					int rowByTcid33 = CSVUtils.getRowByTcid(Paths.ABETRADEFINANCEIMPORTBILLSLODGEVERIFYCSV, verifyRealizeLinkedTcidCsvColumnName, verifyCoAcceptLinkedTcid);
+					int rowByTcid33 = CSVUtils.getRowByTcid(Paths.ABETRADEFINANCEIMPORTBILLSLODGEVERIFYCSV, verifyCoAcceptLinkedTcidCsvColumnName , verifyCoAcceptLinkedTcid);
 					int rowByTcid44 = CSVUtils.getRowByTcid(Paths.ABEVerifyCoAcceptImportBillsTradeFinanceCsv, tcIdCsvColumnName, verifyCoAcceptLinkedTcid);
 					int columnByColumnName33 = CSVUtils.getColumnByColumnName(Paths.ABEVerifyCoAcceptImportBillsTradeFinanceCsv, mixedBillId1CsvColumnName);
 					int columnByColumnName44 = CSVUtils.getColumnByColumnName(Paths.ABEVerifyCoAcceptImportBillsTradeFinanceCsv, mixedBillId2CsvColumnName);
 					if(rowByTcid33 != -1 && rowByTcid44 != -1) {
-						if(mixedBillTenor2IsDisplayedVerifyRealize) {
+						if(mixedBillTenor2IsDisplayedVerifyCoAccept) {
 							CSVUtils.insertValueInCsvCell(Paths.ABEVerifyCoAcceptImportBillsTradeFinanceCsv, rowByTcid44, columnByColumnName33, mixedBillAccountId1);
 							CSVUtils.insertValueInCsvCell(Paths.ABEVerifyCoAcceptImportBillsTradeFinanceCsv, rowByTcid44, columnByColumnName44, mixedBillAccountId2);
 							}
-						mixedBillTenor2IsDisplayedVerifyRealize = false;
+						mixedBillTenor2IsDisplayedVerifyCoAccept = false;
 						}
 					}
 				
